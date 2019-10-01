@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
 a {
   text-decoration: none; }
 
+/*1 Стр. Вход */
 .sign-in {
   padding-top: 212px;
   padding-bottom: 29px;
@@ -112,6 +114,204 @@ a {
       text-decoration: underline; }
   .sign-in .copy {
     margin-top: 102px; }
+
+/*header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0; }
+  .header .left {
+    display: flex;
+    align-items: center; }
+  .header .right {
+    position: relative;
+    margin-right: 30px; }
+
+.nav__btn {
+  padding: 28px 30px;
+  border-right: 1px solid #f0f0f0;
+  cursor: pointer; }
+  .nav__btn span {
+    display: block;
+    width: 14px;
+    height: 2px;
+    margin: 2px 0;
+    background-color: #333; }
+
+.logo {
+  padding: 6px 41px 6px 42px;
+  border-right: 1px solid #f0f0f0; }
+
+.search {
+  margin-left: 20px; }
+  .search__submit {
+    padding: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle; }
+  .search__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon-search.svg) center no-repeat;
+    background-size: 24px; }
+  .search__input {
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    vertical-align: middle; }
+    .search__input::placeholder {
+      color: #999;
+      font-size: 14px; }
+
+.account {
+  display: flex;
+  align-items: center; }
+  .account-col {
+    text-align: right;
+    margin-right: 10px; }
+  .account__name {
+    color: #333;
+    font-size: 15px; }
+  .account__position {
+    color: #999;
+    font-size: 14px; }
+  .account-image {
+    margin-right: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%; }
+  .account__img {
+    width: 100%; }
+  .account-arrow {
+    cursor: pointer; }
+  .account__arrow-up {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/arrow-up.png) center no-repeat;
+    background-size: 18px; }
+  .account-menu {
+    position: absolute;
+    bottom: -100px;
+    right: 0; }
+    .account-menu__list {
+      margin: 0;
+      padding: 20px 33px 18px 26px;
+      list-style: none;
+      background-color: #fff;
+      border: 1px solid #f0f0f0;
+      box-shadow: 0px 10px 24px 0 rgba(0, 0, 0, 0.06); }
+    .account-menu__item {
+      text-align: right; }
+      .account-menu__item:not(:last-child) {
+        margin-bottom: 8px; }
+    .account-menu__link {
+      color: #333;
+      font-size: 14px; }
+      .account-menu__link.red {
+        color: #E62128; }
+
+/*Боковая панель */
+.main {
+  display: flex; }
+
+.left-menu {
+  width: 100%;
+  max-width: 270px;
+  min-width: 270px;
+  margin-right: 30px;
+  padding-top: 30px;
+  border-right: 1px solid #f0f0f0;
+  box-sizing: border-box; }
+  .left-menu .theme {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    padding-left: 30px; }
+  .left-menu .copy {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid #f0f0f0; }
+
+.menu {
+  padding-bottom: 600px; }
+  .menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .menu__item {
+    padding: 13px 0 13px 27px;
+    border-left: 3px solid transparent; }
+    .menu__item.current {
+      margin-right: -1px;
+      background-color: #FAFAFA;
+      border-left: 3px solid #E62128; }
+      .menu__item.current .menu__link {
+        color: #E62128; }
+  .menu__link {
+    font-size: 15px;
+    color: #333;
+    vertical-align: middle; }
+    .menu__link .icon {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-right: 13px;
+      background-size: 18px;
+      vertical-align: middle; }
+
+.icon-home {
+  background: url(../img/icon-home.svg) center no-repeat; }
+.icon-general {
+  background: url(../img/icon-general.svg) center no-repeat; }
+.icon-sales {
+  background: url(../img/icon-sales.svg) center no-repeat; }
+.icon-production {
+  background: url(../img/icon-production.svg) center no-repeat; }
+.icon-guides {
+  background: url(../img/icon-guides.svg) center no-repeat; }
+.icon-reports {
+  background: url(../img/icon-reports.svg) center no-repeat; }
+.icon-settings {
+  background: url(../img/icon-settings.svg) center no-repeat; }
+
+/*2 Главная */
+.content {
+  flex-grow: 3;
+  width: 100%;
+  margin-right: 30px; }
+  .content__title {
+    margin-top: 26px;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700; }
+    .content__title:before {
+      content: "";
+      display: inline-block;
+      width: 3px;
+      height: 17px;
+      margin-right: 11px;
+      background-color: #E62128; }
+  .content .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .content .announcement {
+    width: 350px;
+    height: 264px;
+    margin-bottom: 30px;
+    background-color: #FAFAFA; }
+    .content .announcement:not(:last-child) {
+      margin-right: 30px; }
+  .content .big-announcement {
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA; }
 
 .error-message {
   display: none; }
