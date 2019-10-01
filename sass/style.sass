@@ -139,6 +139,8 @@ a
     height: 2px
     margin: 2px 0
     background-color: #333
+  &.red span
+    background-color: #E62128
 .logo
   padding: 6px 41px 6px 42px
   border-right: 1px solid #f0f0f0
@@ -194,11 +196,14 @@ a
     height: 18px
     background: url(../img/arrow-up.png) center no-repeat
     background-size: 18px
+    transform: rotate(0)
+    &.rotate
+      transform: rotate(180deg)
   &-menu
     position: absolute
     bottom: -100px
     right: 0
-    //display: none
+    display: none
     &__list
       margin: 0
       padding: 20px 33px 18px 26px
@@ -227,6 +232,19 @@ a
   padding-top: 30px
   border-right: 1px solid #f0f0f0
   box-sizing: border-box
+  &.small-menu
+    min-width: auto
+    max-width: none
+    width: auto
+    .theme
+      justify-content: center
+      padding-left: 0
+    .menu__item
+      padding: 13px 15px 13px 25px
+    .menu__link span, .theme__name, .copy
+      display: none
+    .switch-btn
+      margin: 0
   .theme
     justify-content: flex-start
     margin-bottom: 30px
@@ -245,12 +263,28 @@ a
   &__item
     padding: 13px 0 13px 27px
     border-left: 3px solid transparent
+    
     &.current
       margin-right: -1px
       background-color: #FAFAFA
       border-left: 3px solid #E62128
       .menu__link
         color: #E62128
+      .icon
+        &-home
+          background: url(../img/icon-home-red.svg) center no-repeat
+        &-general
+          background: url(../img/icon-general-red.svg) center no-repeat
+        &-sales
+          background: url(../img/icon-sales-red.svg) center no-repeat
+        &-production
+          background: url(../img/icon-production-red.svg) center no-repeat
+        &-guides
+          background: url(../img/icon-guides-red.svg) center no-repeat
+        &-reports
+          background: url(../img/icon-reports-red.svg) center no-repeat
+        &-settings
+          background: url(../img/icon-settings-red.svg) center no-repeat
   &__link
     font-size: 15px
     color: #333
