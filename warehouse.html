@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cargasm</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="nav__btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="logo">
+      <a href="#" class="logo__link">
+        <img src="" alt="" class="logo__img">
+      </a>
+    </div>
+    <div class="search">
+      <input type="text" class="search__input" placeholder="Поиск">
+      <button type="submit"><i class="search__icon"></i></button>
+    </div>
+    <div class="account">
+      <div class="account-col">
+        <div class="account__name">Андрей Безруков</div>
+        <div class="account__position">Менеджер</div>
+      </div>
+      <div class="account-image">
+        <img src="" alt="Фото Андрея Безрукова" class="account__img">
+      </div>
+      <div class="account-arrow">
+        <i class="account__arrow-up"></i>
+      </div>
+      <div class="account-menu">
+        <ul class="account-menu__list">
+          <li class="account-menu__item">
+            <a href="#" class="account-menu__link">Настройка профиля</a>
+          </li>
+          <li class="account-menu__item">
+            <a href="#" class="account-menu__link">Выход</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <aside class="left-menu">
+    <div class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link"><i class="icon-main"></i>Главная</a></li>
+        <li class="menu__item"><a href="#" class="menu__link"><i class="icon-general"></i>Общее</a><i class="icon-arrow"></i></li>
+        <li class="menu__item"><a href="#" class="menu__link"><i class="icon-sales"></i>Продажи</a><i class="icon-arrow"></i></li>
+        <li class="menu__item"><a href="#" class="menu__link"><i class="icon-production"></i>Производство</a><i class="icon-arrow"></i></li>
+        <li class="menu__item"><a href="#" class="menu__link"><i class="icon-guides"></i>Справочники</a><i class="icon-arrow"></i></li>
+        <li class="menu__item"><a href="#" class="menu__link"><i class="icon-reports"></i>Отчеты</a><i class="icon-arrow"></i></li>
+        <li class="menu__item"><a href="#" class="menu__link"><i class="icon-settings"></i>Настройки</a><i class="icon-arrow"></i></li>
+      </ul>
+    </div>
+    
+    <div class="theme">
+      <p class="theme__text">Светлая</p>
+      <div class="switch-btn switch-btn__white"><span class="circle"></span></div>
+      <p class="theme__text">Темная</p>
+    </div>
+  
+    <div class="copy">&copy; 2019. All right reserved. <br>ООО &laquo;Бизнес-Инновации&raquo;</div>
+  </aside>
+  <div class="content">
+    <h2 class="content__title">Приходные накладные</h2>
+    <div class="row">
+      <div class="left">
+        <a href="#" class="btn"><i class="icon-invoice-add"></i> Добавить накладную</a>
+        <a href="#" class="btn">Все записи</a>
+      </div>
+      <div class="right">
+        <a href="#" class="city">Все</a>
+        <a href="#" class="city">Беларусь</a>
+        <a href="#" class="city">Россия</a>
+        <a href="#" class="city">Украина</a>
+      </div>
+    </div>
+    <table class="table-invoice">
+      <thead>
+        <tr>
+          <th>Накладная</th>
+          <th>Склад</th>
+          <th>Тип накладной</th>
+          <th>Записи накладной</th>
+          <th>Назначение</th>
+          <th>Статус</th>
+          <th>Сотрудник</th>
+          <th>Примечания</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="invoice__number">64</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td>
+            <div class="invoice-from">РФ</div>
+            <i class="red-arrow"></i>
+            <div class="invoice-to">РФ</div>
+          </td>
+          <td>Инвентаризационная</td>
+          <td>
+            <a href="#" class="btn">Записи накладной</a>
+            <a href="#" class="btn">Группировка</a>
+          </td>
+          <td>На склад</td>
+          <td>
+            <div class="invoice__status">Готовится к отправке</div>
+            <a class="btn red-btn">Отправка на склад</a>
+          </td>
+          <td>
+            <div class="invoice__worked">Олег иванов</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td class="invoice__note">Продолжение</td>
+        </tr>
+        <!---->
+        <tr>
+          <td>
+            <div class="invoice__number">62</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td>
+            <div class="invoice-from">РФ</div>
+            <i class="red-arrow"></i>
+            <div class="invoice-to">РФ</div>
+          </td>
+          <td>Инвентаризационная</td>
+          <td>
+            <a href="#" class="btn">Записи накладной</a>
+            <a href="#" class="btn">Группировка</a>
+          </td>
+          <td>На склад</td>
+          <td>
+            <div class="invoice__status">Прибыл на склад</div>
+            <a class="btn">Контроль</a>
+          </td>
+          <td>
+            <div class="invoice__worked">Олег иванов</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td class="invoice__note">Продолжение</td>
+        </tr>
+        <!----><tr>
+          <td>
+            <div class="invoice__number">64</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td>
+            <div class="invoice-from">РФ</div>
+            <i class="red-arrow"></i>
+            <div class="invoice-to">РФ</div>
+          </td>
+          <td>Инвентаризационная</td>
+          <td>
+            <a href="#" class="btn">Записи накладной</a>
+            <a href="#" class="btn">Группировка</a>
+          </td>
+          <td>На склад</td>
+          <td>
+            <div class="invoice__status">Готовится к отправке</div>
+            <a class="btn red-btn">Отправка на склад</a>
+          </td>
+          <td>
+            <div class="invoice__worked">Олег иванов</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td class="invoice__note">Продолжение</td>
+        </tr>
+        <!---->
+        <tr>
+          <td>
+            <div class="invoice__number">62</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td>
+            <div class="invoice-from">РФ</div>
+            <i class="red-arrow"></i>
+            <div class="invoice-to">РФ</div>
+          </td>
+          <td>Инвентаризационная</td>
+          <td>
+            <a href="#" class="btn">Записи накладной</a>
+            <a href="#" class="btn">Группировка</a>
+          </td>
+          <td>На склад</td>
+          <td>
+            <div class="invoice__status">Прибыл на склад</div>
+            <a class="btn red-btn">Контроль</a>
+          </td>
+          <td>
+            <div class="invoice__worked">Олег иванов</div>
+            <div class="invoice__date">2019-09-18</div>
+            <div class="invoice__time">15:58:20</div>
+          </td>
+          <td class="invoice__note">Продолжение</td>
+        </tr>
+        <!---->
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+
+</html>

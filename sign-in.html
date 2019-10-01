@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cargasm</title>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="sign-in">
+    <div class="logo">
+      <a href="#" class="logo__link">
+        <img src="img/logo-signin.svg" alt="Логотип Cargasm" class="logo__img">
+      </a>
+    </div>
+    <form action="#" method="post" class="form">
+      <h2 class="form__title">Добрый день!</h2>
+      <p class="form__subtitle">Мы рады видеть тебя!</p>
+      <label>
+        <input type="text" name="email" placeholder="E-mail" class="form__input">
+        <span class="error-message">Описание ошибки</span>
+      </label>
+      <!--Пример ошибки, добавляется класс error и меняется placeholder-->
+      <!--<label class="error">
+        <input type="text" name="email" placeholder="Ошибка" class="form__input">
+        <span class="error-message">Описание ошибки</span>
+      </label>-->
+      <label>
+        <input type="password" name="pass" placeholder="&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;" class="form__input">
+        <p>Пароль</p>
+        <span class="show-password"><img src="img/icon-show.svg" class="show-password__icon"></span>
+        <span class="error-message">Описание ошибки</span>
+      </label>
+      <div class="row">
+        <label class="memorize">
+          <input type="checkbox" name="memorize" class="memorize__hidden">
+          <span class="memorize__btn"></span>
+          <p class="memorize__text">Запомнить меня</p>
+        </label>
+        <input type="submit" value="ВОЙТИ" class="form__submit btn red-btn">
+      </div>
+    </form>
+    <div class="reg">Новенький тут? <a href="#" class="reg__link">Пройди регистрацию</a></div>
+    <div class="recover-pass">Забыл свой пароль? <a href="#" class="recover-pass__link">Давай восстановим</a></div>
+    
+    <div class="theme">
+      <p class="theme__name">Светлая</p>
+      <label>
+        <input type="checkbox" name="white-theme" checked class="theme__hidden-checkbox">
+        <div class="switch-btn switch-btn__white"><span class="circle"></span></div>
+      </label>
+      <p class="theme__name">Темная</p>
+    </div>
+
+    <div class="copy">&copy; 2019. All right reserved. ООО &laquo;Бизнес-Инновации&raquo;</div>
+  </div>
+  
+  
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+

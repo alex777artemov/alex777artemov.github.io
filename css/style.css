@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.sign-in {
+  padding-top: 212px;
+  padding-bottom: 29px;
+  background-color: #f5f5f5;
+  text-align: center; }
+  .sign-in .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .sign-in .form {
+    display: inline-block;
+    max-width: 540px;
+    margin-top: 40px;
+    padding: 102px 95px 104px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+    border: 1px solid #EAEDF3; }
+    .sign-in .form__title {
+      margin: 0 0 8px;
+      color: #333;
+      font-family: "Exo 2", sans-serif;
+      font-size: 30px;
+      font-weight: bold; }
+    .sign-in .form__subtitle {
+      margin: 0 0 50px;
+      color: #999;
+      font-family: "Exo 2", sans-serif;
+      font-size: 18px; }
+    .sign-in .form__input {
+      display: block;
+      width: 350px;
+      height: 48px;
+      margin: 0 auto 20px;
+      padding: 0 19px;
+      color: #333;
+      font-size: 15px;
+      background-color: #fff;
+      border: 1px solid #D7DCDE;
+      border-radius: 2px;
+      box-sizing: border-box; }
+      .sign-in .form__input::placeholder {
+        color: #999;
+        font-size: 15px; }
+      .sign-in .form__input[name="pass"]::placeholder {
+        font-size: 8px !important; }
+    .sign-in .form label {
+      display: inline-block;
+      position: relative; }
+      .sign-in .form label p {
+        position: absolute;
+        left: 15px;
+        top: -9px;
+        margin: 0;
+        padding: 0 5px;
+        color: #959595;
+        font-size: 14px;
+        background-color: #fff; }
+  .sign-in .show-password {
+    position: absolute;
+    top: 12px;
+    right: 10px; }
+    .sign-in .show-password__icon {
+      cursor: pointer; }
+  .sign-in .memorize {
+    cursor: pointer; }
+    .sign-in .memorize__hidden {
+      display: none; }
+      .sign-in .memorize__hidden:checked + .memorize__btn {
+        display: inline-block;
+        vertical-align: middle;
+        width: 18px;
+        min-width: 18px;
+        height: 18px;
+        background: url(../img/icon-checked.svg) center no-repeat; }
+    .sign-in .memorize__btn {
+      display: inline-block;
+      vertical-align: middle;
+      width: 18px;
+      min-width: 18px;
+      height: 18px;
+      background: #ececec; }
+    .sign-in .memorize__text {
+      position: static !important;
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 8px !important;
+      color: #999999;
+      font-size: 15px; }
+  .sign-in .reg {
+    margin-top: 35px;
+    color: #999;
+    font-size: 15px; }
+    .sign-in .reg__link {
+      color: #2764C6;
+      text-decoration: underline; }
+  .sign-in .recover-pass {
+    margin-top: 12px;
+    margin-bottom: 112px;
+    color: #999;
+    font-size: 15px; }
+    .sign-in .recover-pass__link {
+      color: #2764C6;
+      text-decoration: underline; }
+  .sign-in .copy {
+    margin-top: 102px; }
+
+.error-message {
+  display: none; }
+.error .error-message {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  display: block;
+  color: #E62128;
+  font-size: 10px; }
+.error .form__input {
+  border: 1px solid #E62128 !important; }
+  .error .form__input::placeholder {
+    color: #E62128 !important; }
+.error p {
+  color: #E62128 !important; }
+
+.red-btn {
+  min-width: 170px;
+  height: 48px;
+  color: #333;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #D7DCDE !important; }
+  .red-btn:hover {
+    color: #E62128; }
+  .red-btn:active {
+    color: #ffffff;
+    background-color: #E62128;
+    box-shadow: 0px 8px 24px rgba(188, 28, 26, 0.52);
+    border: none !important; }
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .theme__hidden-checkbox {
+    display: none; }
+    .theme__hidden-checkbox:checked + .switch-btn .circle {
+      left: 0 !important; }
+  .theme__name {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 15px; }
+
+.switch-btn {
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  background-color: #D7DCDE;
+  border-radius: 100px; }
+  .switch-btn .circle {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #E62128;
+    border-radius: 50%; }
+
+.copy {
+  color: #999999;
+  font-size: 14px;
+  font-family: "Exo 2", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
