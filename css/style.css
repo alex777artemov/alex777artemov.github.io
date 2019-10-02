@@ -11,6 +11,7 @@ a {
 .sign-in {
   padding-top: 212px;
   padding-bottom: 29px;
+  height: 100vh;
   background-color: #f5f5f5;
   text-align: center; }
   .sign-in .row {
@@ -129,7 +130,7 @@ a {
     margin-right: 30px; }
 
 .nav__btn {
-  padding: 28px 30px;
+  padding: 28px 33px 28px 32px;
   border-right: 1px solid #f0f0f0;
   cursor: pointer; }
   .nav__btn span {
@@ -223,9 +224,11 @@ a {
 
 /*Боковая панель */
 .main {
-  display: flex; }
+  display: flex;
+  height: calc(100vh - 71px); }
 
 .left-menu {
+  position: relative;
   width: 100%;
   max-width: 270px;
   min-width: 270px;
@@ -233,6 +236,10 @@ a {
   padding-top: 30px;
   border-right: 1px solid #f0f0f0;
   box-sizing: border-box; }
+  .left-menu .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
   .left-menu.small-menu {
     min-width: auto;
     max-width: none;
@@ -241,7 +248,7 @@ a {
       justify-content: center;
       padding-left: 0; }
     .left-menu.small-menu .menu__item {
-      padding: 13px 15px 13px 25px; }
+      padding: 13px 18px 13px 27px; }
     .left-menu.small-menu .menu__link span, .left-menu.small-menu .theme__name, .left-menu.small-menu .copy {
       display: none; }
     .left-menu.small-menu .switch-btn {
@@ -258,55 +265,54 @@ a {
     padding-bottom: 20px;
     border-top: 1px solid #f0f0f0; }
 
-.menu {
-  padding-bottom: 600px; }
-  .menu__list {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-  .menu__item {
-    position: relative;
-    padding: 13px 0 13px 27px;
-    border-left: 3px solid transparent; }
-    .menu__item.current {
-      margin-right: -1px;
-      background-color: #FAFAFA;
-      border-left: 3px solid #E62128; }
-      .menu__item.current .menu__link {
-        color: #E62128; }
-      .menu__item.current .icon-home {
-        background: url(../img/icon-home-red.svg) center no-repeat; }
-      .menu__item.current .icon-general {
-        background: url(../img/icon-general-red.svg) center no-repeat; }
-      .menu__item.current .icon-sales {
-        background: url(../img/icon-sales-red.svg) center no-repeat; }
-      .menu__item.current .icon-production {
-        background: url(../img/icon-production-red.svg) center no-repeat; }
-      .menu__item.current .icon-guides {
-        background: url(../img/icon-guides-red.svg) center no-repeat; }
-      .menu__item.current .icon-reports {
-        background: url(../img/icon-reports-red.svg) center no-repeat; }
-      .menu__item.current .icon-settings {
-        background: url(../img/icon-settings-red.svg) center no-repeat; }
-    .menu__item .icon-arrow {
-      position: absolute;
-      right: 30px;
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      background: url(../img/arrow-up.png) center no-repeat;
-      vertical-align: middle; }
-  .menu__link {
-    font-size: 15px;
-    color: #333;
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.menu__item {
+  position: relative;
+  padding: 13px 0 13px 27px;
+  border-left: 3px solid transparent; }
+  .menu__item.current {
+    margin-right: -1px;
+    background-color: #FAFAFA;
+    border-left: 3px solid #E62128; }
+    .menu__item.current .menu__link {
+      color: #E62128; }
+    .menu__item.current .icon-home {
+      background: url(../img/icon-home-red.svg) center no-repeat; }
+    .menu__item.current .icon-general {
+      background: url(../img/icon-general-red.svg) center no-repeat; }
+    .menu__item.current .icon-sales {
+      background: url(../img/icon-sales-red.svg) center no-repeat; }
+    .menu__item.current .icon-production {
+      background: url(../img/icon-production-red.svg) center no-repeat; }
+    .menu__item.current .icon-guides {
+      background: url(../img/icon-guides-red.svg) center no-repeat; }
+    .menu__item.current .icon-reports {
+      background: url(../img/icon-reports-red.svg) center no-repeat; }
+    .menu__item.current .icon-settings {
+      background: url(../img/icon-settings-red.svg) center no-repeat; }
+  .menu__item .icon-arrow {
+    position: absolute;
+    right: 30px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/arrow-up.png) center no-repeat;
+    vertical-align: middle;
+    transform: rotate(180deg); }
+.menu__link {
+  font-size: 15px;
+  color: #333;
+  vertical-align: middle; }
+  .menu__link .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 13px;
+    background-size: 18px;
     vertical-align: middle; }
-    .menu__link .icon {
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      margin-right: 13px;
-      background-size: 18px;
-      vertical-align: middle; }
 
 .icon-home {
   background: url(../img/icon-home.svg) center no-repeat; }
@@ -325,9 +331,10 @@ a {
 
 /*2 Главная */
 .content {
+  overflow: auto;
   flex-grow: 3;
   width: 100%;
-  margin-right: 30px;
+  padding-right: 30px;
   margin-bottom: 30px; }
   .content__title {
     margin-top: 26px;
@@ -347,7 +354,7 @@ a {
     align-items: center;
     justify-content: space-between; }
   .content .announcement {
-    width: 350px;
+    width: 100%;
     height: 264px;
     margin-bottom: 30px;
     background-color: #FAFAFA; }
@@ -395,6 +402,7 @@ a {
     .table-production tbody tr td:not(:last-child) {
       border-right: 1px solid #f0f0f0; }
 
+/*4 Приходные накладные */
 .error-message {
   display: none; }
 .error .error-message {
