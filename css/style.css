@@ -10,6 +10,9 @@ a {
 .mb5 {
   margin-bottom: 5px; }
 
+input {
+  outline: 0; }
+
 /*1 Стр. Вход */
 .sign-in {
   padding-top: 212px;
