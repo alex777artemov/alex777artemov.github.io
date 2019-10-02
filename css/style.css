@@ -7,6 +7,9 @@ body {
 a {
   text-decoration: none; }
 
+.mb5 {
+  margin-bottom: 5px; }
+
 /*1 Стр. Вход */
 .sign-in {
   padding-top: 212px;
@@ -197,9 +200,9 @@ a {
     height: 18px;
     background: url(../img/arrow-up.png) center no-repeat;
     background-size: 18px;
-    transform: rotate(0); }
+    transform: rotate(180deg); }
     .account__arrow-up.rotate {
-      transform: rotate(180deg); }
+      transform: rotate(0); }
   .account-menu {
     position: absolute;
     bottom: -100px;
@@ -403,6 +406,360 @@ a {
       border-right: 1px solid #f0f0f0; }
 
 /*4 Приходные накладные */
+.table-invoice thead tr th {
+  padding: 10px; }
+.table-invoice tbody tr {
+  vertical-align: top; }
+  .table-invoice tbody tr td {
+    padding: 10px; }
+    .table-invoice tbody tr td:nth-child(1) {
+      width: 92px; }
+    .table-invoice tbody tr td:nth-child(4) {
+      width: 170px; }
+.table-invoice .red-arrow {
+  color: #E62128; }
+
+.invoice__number {
+  color: #E62128;
+  font-size: 14px;
+  line-height: 16px; }
+.invoice__date {
+  margin-top: 1px;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px; }
+.invoice__time {
+  color: #999;
+  font-size: 12px;
+  line-height: 16px; }
+.invoice-from {
+  color: #333;
+  font-size: 14px; }
+.invoice-to {
+  color: #333;
+  font-size: 14px; }
+.invoice__status {
+  margin-bottom: 14px;
+  line-height: 16px; }
+.invoice__worker {
+  line-height: 16px; }
+.invoice__date {
+  color: #999;
+  font-size: 12px;
+  line-height: 16px; }
+.invoice__time {
+  color: #999;
+  font-size: 12px;
+  line-height: 16px; }
+.invoice__note {
+  color: #999;
+  font-size: 14px; }
+
+/*5 Заказы */
+.table-orders thead tr th {
+  padding: 10px; }
+.table-orders tbody tr {
+  vertical-align: top; }
+  .table-orders tbody tr td {
+    padding: 10px; }
+    .table-orders tbody tr td:nth-child(1) {
+      width: 82px; }
+    .table-orders tbody tr td:nth-child(3) {
+      width: 134px; }
+    .table-orders tbody tr td:nth-child(4) {
+      width: 178px; }
+    .table-orders tbody tr td:nth-child(5) {
+      width: 36px; }
+    .table-orders tbody tr td:nth-child(6) {
+      width: 186px; }
+    .table-orders tbody tr td:nth-child(7) {
+      width: 127px; }
+    .table-orders tbody tr td:nth-child(8) {
+      width: 174px; }
+    .table-orders tbody tr td .row {
+      justify-content: flex-start; }
+.table-orders .btn-square {
+  position: relative;
+  margin-top: 9px; }
+  .table-orders .btn-square .value {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    background: #E62128;
+    border-radius: 50%; }
+.table-orders .square {
+  margin-bottom: 1px; }
+  .table-orders .square-green {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #5FB75F;
+    border-radius: 3px; }
+  .table-orders .square-red {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #EA3131;
+    border-radius: 3px; }
+.table-orders .cost {
+  line-height: 20px; }
+  .table-orders .cost__value {
+    line-height: 20px; }
+.table-orders .delivery {
+  margin-top: 8px;
+  line-height: 20px; }
+  .table-orders .delivery__value {
+    line-height: 20px; }
+.table-orders .row .btn-square {
+  margin-right: 10px; }
+.table-orders .row .note__name {
+  line-height: 20px; }
+.table-orders .row .note__speciality {
+  margin-top: 4px;
+  color: #999;
+  font-size: 12px; }
+.table-orders .row .note__date {
+  margin-top: 4px;
+  color: #999;
+  font-size: 12px; }
+
+.orders__number {
+  margin-bottom: 3px;
+  color: #E62128;
+  line-height: 16px; }
+.orders__sale {
+  line-height: 16px; }
+.orders__name {
+  line-height: 20px; }
+.orders__phone {
+  line-height: 20px; }
+.orders__red-phone {
+  margin-top: 4px;
+  color: #E62128;
+  font-size: 12px; }
+.orders__status {
+  line-height: 20px;
+  margin-bottom: 9px; }
+.orders__address {
+  line-height: 20px; }
+.orders__method {
+  margin-top: 9px;
+  color: #E62128; }
+.orders__num {
+  color: #2764C6;
+  line-height: 20px;
+  text-decoration: underline; }
+.orders__date {
+  margin-top: 4px;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px; }
+
+/*6 номенклатура */
+.table-nomenclature thead tr th {
+  padding: 10px; }
+.table-nomenclature tbody tr {
+  vertical-align: top; }
+  .table-nomenclature tbody tr td {
+    padding: 10px;
+    line-height: 20px; }
+    .table-nomenclature tbody tr td:nth-child(1) {
+      width: 50px; }
+    .table-nomenclature tbody tr td:nth-child(2) {
+      width: 129px; }
+      .table-nomenclature tbody tr td:nth-child(2) .btn-square {
+        margin-top: 9px; }
+    .table-nomenclature tbody tr td:nth-child(5) {
+      width: 194px; }
+    .table-nomenclature tbody tr td:nth-child(6) {
+      width: 186px; }
+    .table-nomenclature tbody tr td:nth-child(7) {
+      text-align: center;
+      width: 68px; }
+    .table-nomenclature tbody tr td:nth-child(8) {
+      text-align: center;
+      width: 75px; }
+    .table-nomenclature tbody tr td:last-child {
+      vertical-align: middle;
+      width: 56px; }
+
+.nomenclature__id {
+  color: #E62128; }
+.nomenclature__name-subtitle {
+  margin-top: 4px;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px; }
+.nomenclature__reserve {
+  color: #2764C6;
+  text-decoration: underline; }
+
+/*7 записи заказов */
+.table-count {
+  margin-top: 29px; }
+  .table-count tbody tr td {
+    padding: 20px 20px 19px 20px; }
+    .table-count tbody tr td:nth-child(1) {
+      width: 98px;
+      text-align: center; }
+    .table-count tbody tr td:nth-child(3) {
+      width: 94px;
+      text-align: center; }
+    .table-count tbody tr td:nth-child(4) {
+      width: 96px;
+      text-align: center; }
+    .table-count tbody tr td:nth-child(5) {
+      width: 112px;
+      text-align: center; }
+    .table-count tbody tr td:nth-child(6) {
+      width: 116px;
+      text-align: center; }
+
+.table-type {
+  margin-top: 49px; }
+  .table-type thead tr th {
+    padding-right: 10px; }
+  .table-type tbody tr td {
+    padding: 20px 20px 19px 20px; }
+    .table-type tbody tr td:nth-child(2) {
+      width: 87px;
+      text-align: center; }
+    .table-type tbody tr td:nth-child(3) {
+      width: 139px;
+      text-align: center; }
+
+.table-status {
+  margin-top: 49px; }
+  .table-status thead tr th {
+    padding-right: 10px; }
+  .table-status tbody tr td {
+    padding: 20px 20px 19px 20px; }
+    .table-status tbody tr td:nth-child(1) {
+      width: 98px;
+      text-align: center; }
+    .table-status tbody tr td:nth-child(3) {
+      width: 87px;
+      text-align: center; }
+    .table-status tbody tr td:nth-child(4) {
+      width: 139px;
+      text-align: center; }
+
+.table-article {
+  margin-top: 49px; }
+  .table-article thead tr th {
+    padding-right: 10px; }
+    .table-article thead tr th:nth-child(3) {
+      text-align: center; }
+  .table-article tbody tr:last-child {
+    vertical-align: top; }
+  .table-article tbody tr td {
+    padding: 20px 20px 19px 20px; }
+    .table-article tbody tr td:nth-child(1) {
+      width: 285px; }
+    .table-article tbody tr td:nth-child(3) {
+      width: 139px;
+      text-align: center; }
+    .table-article tbody tr td span {
+      display: block;
+      line-height: 20px; }
+
+.icon-sale {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/icon-sale.svg) center no-repeat;
+  background-size: 24px; }
+
+.icon-more {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/icon-more.svg) center no-repeat;
+  background-size: 18px; }
+
+.icon-copy {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/icon-copy.svg) center no-repeat;
+  background-size: 24px; }
+
+.icon-add {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 7px;
+  background: url(../img/icon-add.svg) center no-repeat;
+  background-size: 12px; }
+
+.icon-excel {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/icon-excel.svg) center no-repeat;
+  background-size: 18px; }
+
+.icon-edit {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/icon-edit.svg) center no-repeat;
+  background-size: 24px; }
+
+.icon-back {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icon-back.svg) center no-repeat;
+  background-size: 18px;
+  vertical-align: middle; }
+
+.icon-filter {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/icon-filter.svg) center no-repeat;
+  background-size: 24px; }
+
+.panel-row {
+  align-items: flex-end !important;
+  padding-top: 29px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #F0F0F0; }
+  .panel-row .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .panel-row .left .btn-white {
+      vertical-align: middle;
+      margin-right: 10px;
+      padding: 9px 13px 9px 10px; }
+  .panel-row .right {
+    padding-bottom: 6px; }
+    .panel-row .right .section {
+      margin-left: 40px;
+      color: #333;
+      font-size: 14px; }
+      .panel-row .right .section.current {
+        padding-bottom: 18px;
+        color: #E62128;
+        border-bottom: 1px solid #E62128; }
+    .panel-row .right .city {
+      margin-left: 27px;
+      color: #333;
+      font-size: 14px; }
+      .panel-row .right .city.current {
+        padding-bottom: 18px;
+        color: #E62128;
+        border-bottom: 1px solid #E62128; }
+
 .error-message {
   display: none; }
 .error .error-message {
@@ -423,7 +780,8 @@ a {
   outline: none;
   border: none;
   border-radius: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+  box-sizing: border-box; }
 
 .red-btn {
   min-width: 170px;
@@ -451,6 +809,37 @@ a {
   .btn-white:hover {
     background: linear-gradient(0deg, #ffffff, #e5e5e5); }
   .btn-white:active {
+    background: #e5e5e5; }
+
+.btn-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  background: linear-gradient(0deg, #FF363D, #E62128);
+  border: 1px solid #E62128;
+  border-radius: 4px; }
+  .btn-red:hover {
+    background: linear-gradient(0deg, #E62128, #FF363D); }
+  .btn-red:active {
+    background: #E62128; }
+
+.btn-square {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(0deg, #e5e5e5, #ffffff);
+  border: 1px solid #D7DCDE;
+  border-radius: 4px;
+  vertical-align: middle; }
+  .btn-square:hover {
+    background: linear-gradient(0deg, #ffffff, #e5e5e5); }
+  .btn-square:active {
     background: #e5e5e5; }
 
 .theme {
@@ -488,5 +877,30 @@ a {
   color: #999999;
   font-size: 14px;
   font-family: "Exo 2", sans-serif; }
+
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table thead tr th {
+    padding: 0 20px 9px 20px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left; }
+  table tbody tr:nth-child(odd) {
+    background: #fafafa; }
+  table tbody tr:nth-child(even) {
+    background: #ffffff; }
+  table tbody tr td {
+    padding: 10px 20px 10px 20px;
+    color: #333;
+    font-size: 14px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    box-sizing: border-box; }
+    table tbody tr td:not(:last-child) {
+      border-right: 1px solid #f0f0f0; }
+    table tbody tr td a {
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

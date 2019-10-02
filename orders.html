@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cargasm</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="left">
+      <div class="nav__btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img src="img/logo-header.svg" alt="Логотип CARGASM" class="logo__img">
+        </a>
+      </div>
+      <div class="search">
+        <button type="submit" class="search__submit"><i class="search__icon"></i></button>
+        <input type="text" class="search__input" placeholder="Поиск...">
+      </div>
+    </div>
+    <div class="right">
+      <div class="account">
+        <div class="account-col">
+          <div class="account__name">Андрей Безруков</div>
+          <div class="account__position">Менеджер</div>
+        </div>
+        <div class="account-image">
+          <img src="img/avatar.jpg" alt="Фото Андрея Безрукова" class="account__img">
+        </div>
+        <div class="account-arrow">
+          <i class="account__arrow-up"></i>
+        </div>
+      </div>
+      <div class="account-menu">
+        <ul class="account-menu__list">
+          <li class="account-menu__item">
+            <a href="#" class="account-menu__link">Настройка профиля</a>
+          </li>
+          <li class="account-menu__item">
+            <a href="#" class="account-menu__link red">Выход</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <main class="main">
+    
+    <aside class="left-menu">
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="current menu__item"><a href="#" class="menu__link"><i class="icon icon-home"></i><span>Главная</span></a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-general"></i><span>Общее</span><i class="icon-arrow"></i></a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-sales"></i><span>Продажи</span><i class="icon-arrow"></i></a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-production"></i><span>Производство</span><i class="icon-arrow"></i></a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-guides"></i><span>Справочники</span><i class="icon-arrow"></i></a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-reports"></i><span>Отчеты</span><i class="icon-arrow"></i></a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-settings"></i><span>Настройки</span><i class="icon-arrow"></i></a></li>
+        </ul>
+      </div>
+      
+      <div class="bottom">
+        <div class="theme">
+          <p class="theme__name">Светлая</p>
+          <label>
+            <input type="checkbox" name="white-theme" checked class="theme__hidden-checkbox">
+            <div class="switch-btn switch-btn__white"><span class="circle"></span></div>
+          </label>
+          <p class="theme__name">Темная</p>
+        </div>
+        <div class="copy">&copy; 2019. All right reserved. <br>ООО &laquo;Бизнес-Инновации&raquo;</div>
+      </div>
+      
+      
+    </aside>
+    <div class="content">
+      <h2 class="content__title">Приходные накладные</h2>
+      <div class="row panel-row">
+        <div class="left">
+          <a href="#" class="btn btn-white"><i class="icon-add"></i> Добавить заказ</a>
+          <a href="#" class="btn btn-white">Выборка</a>
+          <a href="#" class="btn btn-white">Все записи</a>
+          <a href="#" class="btn btn-white">Группа заказов</a>
+        </div>
+        <div class="right">
+          <a href="#" class="city">Все</a>
+          <a href="#" class="city current">Беларусь</a>
+          <a href="#" class="city">Россия</a>
+          <a href="#" class="city">Украина</a>
+        </div>
+      </div>
+      <table class="table table-orders">
+        <thead>
+          <tr>
+            <th>Заказ</th>
+            <th>Сведения</th>
+            <th>Стоимость</th>
+            <th>Статус</th>
+            <th>#</th>
+            <th>Доставка</th>
+            <th>Доп.действия</th>
+            <th>Примечания</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+              <a href="#" class="btn btn-red">Отправлен клиенту</a>
+            </td>
+            <td>
+              <div class="square square-green"></div>
+              <div class="square square-red"></div>
+              <div class="square square-green"></div>
+              <div class="square square-red"></div>
+              <div class="square square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+              <a href="#" class="btn btn-red">Отправлен клиенту</a>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+              <a href="#" class="btn btn-red">Отправлен клиенту</a>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+              <a href="#" class="btn btn-red">Отправлен клиенту</a>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+              <a href="#" class="btn btn-red">Отправлен клиенту</a>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr>
+            <td>
+              <div class="orders__number">1969</div>
+              <div class="orders__sale">Продажа</div>
+              <a class="btn-square"><i class="icon-sale"></i><span class="value">2</span></a>
+            </td>
+            <td>
+              <div class="orders__name">Тучков Сергей Иванович</div>
+              <div class="orders__phone">8 916 099-99-43</div>
+              <div class="orders__red-phone">18-09-19</div>
+            </td>
+            <td>
+              <div class="cost">Заказ:</div>
+              <div class="cost__value">994 480.00(НР)</div>
+              <div class="delivery">Доставка:</div>
+              <div class="delivery__value">0,00(НР)</div>
+            </td>
+            <td>
+              <div class="orders__status">Прибыл на склад</div>
+              <a href="#" class="btn btn-red">Отправлен клиенту</a>
+            </td>
+            <td>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+              <div class="square-red"></div>
+              <div class="square-green"></div>
+            </td>
+            <td>
+              <div class="orders__address">РФ, &laquo;ПВЗ ТЦ Колизей ул. Панфилова, 20&raquo; Волокамск</div>
+              <div class="orders__method">СДЭК</div>
+            </td>
+            <td>
+              <div class="orders__num">№1138426833</div>
+              <div class="orders__date">27-09-2019</div>
+              <a class="btn-square"><i class="icon-more"></i></a>
+            </td>
+            <td>
+              <div class="note__name">Марина Иванова</div>
+              <div class="note__speciality">Менеджер по деталям</div>
+              <div class="note__date">19-09-19 04:08</div>
+              <div class="row">
+                <a class="btn-square"><i class="icon-edit"></i></a>
+                <a class="btn-square"><i class="icon-copy"></i></a>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </main>
+  
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -5,6 +5,8 @@ body
   font-family: $exo2
 a
   text-decoration: none
+.mb5
+  margin-bottom: 5px
 /*1 Стр. Вход*/
 .sign-in
   padding-top: 212px
@@ -197,9 +199,9 @@ a
     height: 18px
     background: url(../img/arrow-up.png) center no-repeat
     background-size: 18px
-    transform: rotate(0)
+    transform: rotate(180deg)
     &.rotate
-      transform: rotate(180deg)
+      transform: rotate(0)
   &-menu
     position: absolute
     bottom: -100px
@@ -416,27 +418,415 @@ a
 /*4 Приходные накладные*/
 .panel-row
   .left
-    
   .right
+    .city
+      &.current
 .icon-add
+.table-invoice
+  thead
+    tr
+      th
+        padding: 10px
+  tbody
+    tr
+      vertical-align: top
+      td
+        padding: 10px
+        &:nth-child(1)
+          width: 92px
+        &:nth-child(4)
+          width: 170px
+            
+  .red-arrow
+    color: #E62128
+        
+.invoice
+  &__number
+    color: #E62128
+    font-size: 14px
+    line-height: 16px
+  &__date
+    margin-top: 1px
+    color: #999
+    font-size: 12px
+    line-height: 16px
+  &__time
+    color: #999
+    font-size: 12px
+    line-height: 16px
+  &-from
+    color: #333
+    font-size: 14px
+  &-to
+    color: #333
+    font-size: 14px
+  &__status
+    margin-bottom: 14px
+    line-height: 16px
+  &__worker
+    line-height: 16px
+  &__date
+    color: #999
+    font-size: 12px
+    line-height: 16px
+  &__time
+    color: #999
+    font-size: 12px
+    line-height: 16px
+  &__note
+    color: #999
+    font-size: 14px
+   
     
-
-
-
-
-
-
-
-
-
-
-
-
     
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*5 Заказы*/
+.table-orders
+  thead
+    tr
+      th
+        padding: 10px
+  tbody
+    tr
+      vertical-align: top
+      td
+        padding: 10px
+        &:nth-child(1)
+          width: 82px
+        &:nth-child(3)
+          width: 134px
+        &:nth-child(4)
+          width: 178px
+        &:nth-child(5)
+          width: 36px
+        &:nth-child(6)
+          width: 186px
+        &:nth-child(7)
+          width: 127px
+        &:nth-child(8)
+          width: 174px
+        .row
+          justify-content: flex-start
+  .btn-square
+    position: relative
+    margin-top: 9px
+    .icon-sale
+    .value
+      position: absolute
+      top: -5px
+      right: -5px
+      display: block
+      width: 16px
+      height: 16px
+      color: #fff
+      font-size: 12px
+      line-height: 16px
+      text-align: center
+      background: #E62128
+      border-radius: 50%
+  .btn-red
+  .square
+    margin-bottom: 1px
+    &-green
+      display: inline-block
+      width: 16px
+      height: 16px
+      background: #5FB75F
+      border-radius: 3px
+    &-red
+      display: inline-block
+      width: 16px
+      height: 16px
+      background: #EA3131
+      border-radius: 3px
+  .cost
+    line-height: 20px
+    &__value
+      line-height: 20px
+  .delivery
+    margin-top: 8px
+    line-height: 20px
+    &__value
+      line-height: 20px
+  .row
+    .btn-square
+      margin-right: 10px
+    .note
+      &__name
+        line-height: 20px
+      &__speciality
+        margin-top: 4px
+        color: #999
+        font-size: 12px
+      &__date
+        margin-top: 4px
+        color: #999
+        font-size: 12px
+.orders
+  &__number
+    margin-bottom: 3px
+    color: #E62128
+    line-height: 16px
+  &__sale
+    line-height: 16px
+  &__name
+    line-height: 20px
+  &__phone
+    line-height: 20px
+  &__red-phone
+    margin-top: 4px
+    color: #E62128
+    font-size: 12px
+    lh16px
+  &__status
+    line-height: 20px
+    margin-bottom: 9px
+  &__address
+    line-height: 20px
+  &__method
+    margin-top: 9px
+    color: #E62128
+  &__num
+    color: #2764C6
+    line-height: 20px
+    text-decoration: underline
+  &__date
+    margin-top: 4px
+    color: #999
+    font-size: 12px
+    line-height: 16px
+
+/*6 номенклатура*/
+.table-nomenclature
+  thead
+    tr
+      th
+        padding: 10px
+  tbody
+    tr
+      vertical-align: top
+      td
+        padding: 10px
+        line-height: 20px
+        &:nth-child(1)
+          width: 50px
+        &:nth-child(2)
+          width: 129px
+          .btn-square
+            margin-top: 9px
+        &:nth-child(5)
+          width: 194px
+        &:nth-child(6)
+          width: 186px
+        &:nth-child(7)
+          text-align: center
+          width: 68px
+        &:nth-child(8)
+          text-align: center
+          width: 75px
+        &:last-child
+          vertical-align: middle
+          width: 56px
+.nomenclature
+  &__id
+    color: #E62128
+  &__name-subtitle
+    margin-top: 4px
+    color: #999
+    font-size: 12px
+    line-height: 16px
+  &__reserve
+    color: #2764C6
+    text-decoration: underline
+/*7 записи заказов*/
+.table-count
+  margin-top: 29px
+  thead
+    tr
+      th
+  tbody
+    tr
+      td
+        padding: 20px 20px 19px 20px 
+        &:nth-child(1)
+          width: 98px 
+          text-align: center
+        &:nth-child(3)
+          width: 94px 
+          text-align: center
+        &:nth-child(4)
+          width: 96px 
+          text-align: center
+        &:nth-child(5)
+          width: 112px 
+          text-align: center
+        &:nth-child(6)
+          width: 116px 
+          text-align: center
+.table-type
+  margin-top: 49px
+  thead
+    tr
+      th
+        padding-right: 10px
+  tbody
+    tr
+      td
+        padding: 20px 20px 19px 20px
+        &:nth-child(2)
+          width: 87px
+          text-align: center
+        &:nth-child(3)
+          width: 139px
+          text-align: center
+.table-status
+  margin-top: 49px
+  thead
+    tr
+      th
+        padding-right: 10px
+  tbody
+    tr
+      td
+        padding: 20px 20px 19px 20px
+        &:nth-child(1)
+          width: 98px
+          text-align: center
+        &:nth-child(3)
+          width: 87px
+          text-align: center
+        &:nth-child(4)
+          width: 139px
+          text-align: center
+.table-article
+  margin-top: 49px
+  thead
+    tr
+      th
+        padding-right: 10px
+        &:nth-child(3)
+          text-align: center
+  tbody
+    tr
+      &:last-child
+        vertical-align: top
+      td
+        padding: 20px 20px 19px 20px
+        &:nth-child(1)
+          width: 285px
+        &:nth-child(3)
+          width: 139px
+          text-align: center
+        span
+          display: block
+          line-height: 20px
+
+
+
+
+
+
+
+
+
+.icon-sale
+  display: inline-block
+  width: 100%
+  height: 100%
+  background: url(../img/icon-sale.svg) center no-repeat
+  background-size: 24px
+.icon-more
+  display: inline-block
+  width: 100%
+  height: 100%
+  background: url(../img/icon-more.svg) center no-repeat
+  background-size: 18px
+.icon-copy
+  display: inline-block
+  width: 100%
+  height: 100%
+  background: url(../img/icon-copy.svg) center no-repeat
+  background-size: 24px
+.icon-add
+  display: inline-block
+  width: 12px
+  height: 12px
+  margin-right: 7px
+  background: url(../img/icon-add.svg) center no-repeat
+  background-size: 12px
+.icon-excel
+  display: inline-block
+  width: 100%
+  height: 100%
+  background: url(../img/icon-excel.svg) center no-repeat
+  background-size: 18px
+.icon-edit
+  display: inline-block
+  width: 100%
+  height: 100%
+  background: url(../img/icon-edit.svg) center no-repeat
+  background-size: 24px
+.icon-back
+  display: inline-block
+  width: 18px
+  height: 18px
+  background: url(../img/icon-back.svg) center no-repeat
+  background-size: 18px
+  vertical-align: middle
+.icon-filter
+  display: block
+  width: 100%
+  height: 100%
+  background: url(../img/icon-filter.svg) center no-repeat 
+  background-size: 24px
+.panel-row
+  align-items: flex-end !important
+  padding-top: 29px
+  padding-bottom: 11px
+  border-bottom: 1px solid #F0F0F0
+  .left
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    .btn-white
+      vertical-align: middle
+      margin-right: 10px
+      padding: 9px 13px 9px 10px
+  .right
+    padding-bottom: 6px
+    .section
+      margin-left: 40px
+      color: #333
+      font-size: 14px
+      &.current
+        padding-bottom: 18px
+        color: #E62128
+        border-bottom: 1px solid #E62128
+    .city
+      margin-left: 27px
+      color: #333
+      font-size: 14px
+      &.current
+        padding-bottom: 18px
+        color: #E62128
+        border-bottom: 1px solid #E62128
 .error
   &-message
     display: none
@@ -459,6 +849,7 @@ a
   border: none
   border-radius: 3px
   cursor: pointer
+  box-sizing: border-box
 .red-btn
   min-width: 170px
   height: 48px
@@ -481,6 +872,35 @@ a
   background: linear-gradient(0deg, #e5e5e5, #ffffff)
   border: 1px solid #D7DCDE
   border-radius: 4px
+  &:hover
+    background: linear-gradient(0deg, #ffffff, #e5e5e5)
+  &:active
+    background: #e5e5e5
+.btn-red
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  height: 36px
+  padding-right: 10px
+  padding-left: 10px
+  color: #fff
+  font-size: 14px
+  line-height: 24px
+  background: linear-gradient(0deg, #FF363D, #E62128)
+  border: 1px solid #E62128
+  border-radius: 4px
+  &:hover
+    background: linear-gradient(0deg, #E62128, #FF363D)
+  &:active
+    background: #E62128
+.btn-square
+  display: inline-block
+  width: 36px
+  height: 36px
+  background: linear-gradient(0deg, #e5e5e5, #ffffff)
+  border: 1px solid #D7DCDE
+  border-radius: 4px
+  vertical-align: middle
   &:hover
     background: linear-gradient(0deg, #ffffff, #e5e5e5)
   &:active
@@ -520,3 +940,31 @@ a
   color: #999999
   font-size: 14px
   font-family: $exo2
+table
+  width: 100%
+  border-collapse: collapse
+  thead
+    tr
+      th
+        padding: 0 20px 9px 20px
+        color: #333
+        font-size: 14px
+        font-weight: 700
+        text-align: left
+  tbody
+    tr
+      &:nth-child(odd)
+        background: #fafafa
+      &:nth-child(even)
+        background: #ffffff
+      td
+        padding: 10px 20px 10px 20px
+        color: #333
+        font-size: 14px
+        border-top: 1px solid #f0f0f0
+        border-bottom: 1px solid #f0f0f0
+        box-sizing: border-box
+        &:not(:last-child)
+          border-right: 1px solid #f0f0f0
+        a
+          cursor: pointer
