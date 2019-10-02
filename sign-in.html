@@ -18,21 +18,22 @@
     <form action="#" method="post" class="form">
       <h2 class="form__title">Добрый день!</h2>
       <p class="form__subtitle">Мы рады видеть тебя!</p>
-      <label>
-        <input type="text" name="email" placeholder="E-mail" class="form__input">
+      <div class="placeholder-animation">
+        <input type="text" name="email" class="form__input" required>
+        <label class="placeholder-animation__item">E-mail</label>
         <span class="error-message">Описание ошибки</span>
-      </label>
+      </div>
       <!--Пример ошибки, добавляется класс error и меняется placeholder-->
       <!--<label class="error">
         <input type="text" name="email" placeholder="Ошибка" class="form__input">
         <span class="error-message">Описание ошибки</span>
       </label>-->
-      <label>
-        <input type="password" name="pass" placeholder="&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;" class="form__input">
-        <p>Пароль</p>
+      <div class="placeholder-animation">
+        <input type="password" name="pass" class="form__input" required>
+        <label class="placeholder-animation__item">Пароль</label>
         <span class="show-password"><img src="img/icon-show.svg" class="show-password__icon"></span>
         <span class="error-message">Описание ошибки</span>
-      </label>
+      </div>
       <div class="row">
         <label class="memorize">
           <input type="checkbox" name="memorize" class="memorize__hidden">

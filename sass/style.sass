@@ -57,19 +57,6 @@ a
         font-size: 8px !important
         
     &__submit
-      
-    label
-      display: inline-block
-      position: relative
-      p
-        position: absolute
-        left: 15px
-        top: -9px
-        margin: 0
-        padding: 0 5px
-        color: #959595
-        font-size: 14px
-        background-color: #fff
   .show-password
     position: absolute
     top: 12px
@@ -118,8 +105,25 @@ a
       text-decoration: underline
   .copy
     margin-top: 102px
-
-
+.placeholder-animation
+  position: relative
+  &__item
+    position: absolute
+    left: 19px
+    top: 50%
+    transform: translateY(-50%)
+    color: #959595
+    font-size: 15px
+    pointer-events: none
+    transition: 0.2s ease all
+.form__input:focus ~ .placeholder-animation__item,
+.form__input:valid ~ .placeholder-animation__item
+  left: 15px
+  top: -2px
+  margin: 0
+  padding: 0 5px
+  background-color: #fff
+  font-size: 14px
 /*header*/
 .header
   display: flex
@@ -853,17 +857,11 @@ a
 .red-btn
   min-width: 170px
   height: 48px
-  color: #333
+  color: #ffffff
   font-size: 14px
-  background-color: #fff
-  border: 1px solid #D7DCDE !important
+  background-color: #E62128
   &:hover
-    color: #E62128
-  &:active
-    color: #ffffff
-    background-color: #E62128
     box-shadow: 0px 8px 24px rgba(188, 28, 26, 0.52)
-    border: none !important
 .btn-white
   display: inline-block
   padding: 8px 13px 10px 10px
