@@ -273,36 +273,12 @@ input
     padding-bottom: 20px
     border-top: 1px solid #f0f0f0
 .menu
-  
   &__list
     margin: 0
     padding: 0
     list-style: none
   &__item
     position: relative
-    padding: 13px 0 13px 27px
-    border-left: 3px solid transparent
-    &.current
-      margin-right: -1px
-      background-color: #FAFAFA
-      border-left: 3px solid #E62128
-      .menu__link
-        color: #E62128
-      .icon
-        &-home
-          background: url(../img/icon-home-red.svg) center no-repeat
-        &-general
-          background: url(../img/icon-general-red.svg) center no-repeat
-        &-sales
-          background: url(../img/icon-sales-red.svg) center no-repeat
-        &-production
-          background: url(../img/icon-production-red.svg) center no-repeat
-        &-guides
-          background: url(../img/icon-guides-red.svg) center no-repeat
-        &-reports
-          background: url(../img/icon-reports-red.svg) center no-repeat
-        &-settings
-          background: url(../img/icon-settings-red.svg) center no-repeat
     .icon-arrow
       position: absolute
       right: 30px
@@ -313,14 +289,24 @@ input
       vertical-align: middle
       transform: rotate(180deg)
   &__link
+    display: block
+    padding: 13px 0 13px 27px
     font-size: 15px
     color: #333
     vertical-align: middle
+    &.current
+      margin-right: -1px
+      color: #E62128
+      background-color: #FAFAFA
+      border-left: 3px solid #E62128
+      .icon
+        margin-left: 0px
     .icon
       display: inline-block
       width: 18px
       height: 18px
       margin-right: 13px
+      margin-left: 3px
       background-size: 18px
       vertical-align: middle
 .icon
@@ -338,8 +324,41 @@ input
     background: url(../img/icon-reports.svg) center no-repeat
   &-settings
     background: url(../img/icon-settings.svg) center no-repeat
-
-
+.icon-red
+  &.icon
+    &-home
+      background: url(../img/icon-home-red.svg) center no-repeat
+    &-general
+      background: url(../img/icon-general-red.svg) center no-repeat
+    &-sales
+      background: url(../img/icon-sales-red.svg) center no-repeat
+    &-production
+      background: url(../img/icon-production-red.svg) center no-repeat
+    &-guides
+      background: url(../img/icon-guides-red.svg) center no-repeat
+    &-reports
+      background: url(../img/icon-reports-red.svg) center no-repeat
+    &-settings
+      background: url(../img/icon-settings-red.svg) center no-repeat
+.submenu
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+  &__item
+  &__link
+    display: block
+    padding-left: 80px
+    padding-top: 12px
+    padding-bottom: 14px
+    color: #333
+    font-size: 15px
+    line-height: 18px
+    &.current
+      margin-right: -1px
+      color: #D65151
+      background-color: #FAFAFA
+      border-left: 3px solid #E62128
 
 
 /*2 Главная*/    

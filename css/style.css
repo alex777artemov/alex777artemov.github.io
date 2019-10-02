@@ -285,29 +285,7 @@ input {
   padding: 0;
   list-style: none; }
 .menu__item {
-  position: relative;
-  padding: 13px 0 13px 27px;
-  border-left: 3px solid transparent; }
-  .menu__item.current {
-    margin-right: -1px;
-    background-color: #FAFAFA;
-    border-left: 3px solid #E62128; }
-    .menu__item.current .menu__link {
-      color: #E62128; }
-    .menu__item.current .icon-home {
-      background: url(../img/icon-home-red.svg) center no-repeat; }
-    .menu__item.current .icon-general {
-      background: url(../img/icon-general-red.svg) center no-repeat; }
-    .menu__item.current .icon-sales {
-      background: url(../img/icon-sales-red.svg) center no-repeat; }
-    .menu__item.current .icon-production {
-      background: url(../img/icon-production-red.svg) center no-repeat; }
-    .menu__item.current .icon-guides {
-      background: url(../img/icon-guides-red.svg) center no-repeat; }
-    .menu__item.current .icon-reports {
-      background: url(../img/icon-reports-red.svg) center no-repeat; }
-    .menu__item.current .icon-settings {
-      background: url(../img/icon-settings-red.svg) center no-repeat; }
+  position: relative; }
   .menu__item .icon-arrow {
     position: absolute;
     right: 30px;
@@ -318,14 +296,24 @@ input {
     vertical-align: middle;
     transform: rotate(180deg); }
 .menu__link {
+  display: block;
+  padding: 13px 0 13px 27px;
   font-size: 15px;
   color: #333;
   vertical-align: middle; }
+  .menu__link.current {
+    margin-right: -1px;
+    color: #E62128;
+    background-color: #FAFAFA;
+    border-left: 3px solid #E62128; }
+    .menu__link.current .icon {
+      margin-left: 0px; }
   .menu__link .icon {
     display: inline-block;
     width: 18px;
     height: 18px;
     margin-right: 13px;
+    margin-left: 3px;
     background-size: 18px;
     vertical-align: middle; }
 
@@ -343,6 +331,39 @@ input {
   background: url(../img/icon-reports.svg) center no-repeat; }
 .icon-settings {
   background: url(../img/icon-settings.svg) center no-repeat; }
+
+.icon-red.icon-home {
+  background: url(../img/icon-home-red.svg) center no-repeat; }
+.icon-red.icon-general {
+  background: url(../img/icon-general-red.svg) center no-repeat; }
+.icon-red.icon-sales {
+  background: url(../img/icon-sales-red.svg) center no-repeat; }
+.icon-red.icon-production {
+  background: url(../img/icon-production-red.svg) center no-repeat; }
+.icon-red.icon-guides {
+  background: url(../img/icon-guides-red.svg) center no-repeat; }
+.icon-red.icon-reports {
+  background: url(../img/icon-reports-red.svg) center no-repeat; }
+.icon-red.icon-settings {
+  background: url(../img/icon-settings-red.svg) center no-repeat; }
+
+.submenu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.submenu__link {
+  display: block;
+  padding-left: 80px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  color: #333;
+  font-size: 15px;
+  line-height: 18px; }
+  .submenu__link.current {
+    margin-right: -1px;
+    color: #D65151;
+    background-color: #FAFAFA;
+    border-left: 3px solid #E62128; }
 
 /*2 Главная */
 .content {
