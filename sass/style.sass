@@ -255,7 +255,7 @@ input
     .theme
       justify-content: center
       padding-left: 0
-    .menu__item
+    .menu__link
       padding: 13px 18px 13px 27px
     .menu__link span, .theme__name, .copy
       display: none
@@ -303,6 +303,8 @@ input
       border-left: 3px solid #E62128
       .icon
         margin-left: 0px
+    &:hover
+      background-color: #FAFAFA
     .icon
       display: inline-block
       width: 18px
@@ -361,6 +363,8 @@ input
       color: #D65151
       background-color: #FAFAFA
       border-left: 3px solid #E62128
+    &:hover
+      background-color: #FAFAFA
 
 
 /*2 Главная*/    
@@ -556,18 +560,21 @@ input
     margin-top: 9px
     .icon-sale
     .value
-      position: absolute
-      top: -5px
-      right: -5px
-      display: block
-      width: 16px
-      height: 16px
       color: #fff
       font-size: 12px
-      line-height: 16px
+      line-height: 10px
       text-align: center
-      background: #E62128
-      border-radius: 50%
+      &-wrap
+        position: absolute
+        top: -5px
+        right: -5px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 16px
+        height: 16px
+        background: #E62128
+        border-radius: 50%
   .btn-red
   .square
     margin-bottom: 1px
@@ -907,11 +914,11 @@ input
   color: #fff
   font-size: 14px
   line-height: 24px
-  background: linear-gradient(0deg, #FF363D, #E62128)
+  background: linear-gradient(0deg, #E62128, #FF363D)
   border: 1px solid #E62128
   border-radius: 4px
   &:hover
-    background: linear-gradient(0deg, #E62128, #FF363D)
+    background: linear-gradient(0deg, #FF363D, #E62128)
   &:active
     background: #E62128
 .btn-square

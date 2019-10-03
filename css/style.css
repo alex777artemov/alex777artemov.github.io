@@ -262,7 +262,7 @@ input {
     .left-menu.small-menu .theme {
       justify-content: center;
       padding-left: 0; }
-    .left-menu.small-menu .menu__item {
+    .left-menu.small-menu .menu__link {
       padding: 13px 18px 13px 27px; }
     .left-menu.small-menu .menu__link span, .left-menu.small-menu .theme__name, .left-menu.small-menu .copy {
       display: none; }
@@ -310,6 +310,8 @@ input {
     border-left: 3px solid #E62128; }
     .menu__link.current .icon {
       margin-left: 0px; }
+  .menu__link:hover {
+    background-color: #FAFAFA; }
   .menu__link .icon {
     display: inline-block;
     width: 18px;
@@ -366,6 +368,8 @@ input {
     color: #D65151;
     background-color: #FAFAFA;
     border-left: 3px solid #E62128; }
+  .submenu__link:hover {
+    background-color: #FAFAFA; }
 
 /*2 Главная */
 .content {
@@ -517,18 +521,21 @@ input {
   position: relative;
   margin-top: 9px; }
   .table-orders .btn-square .value {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    display: block;
-    width: 16px;
-    height: 16px;
     color: #fff;
     font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    background: #E62128;
-    border-radius: 50%; }
+    line-height: 10px;
+    text-align: center; }
+    .table-orders .btn-square .value-wrap {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      background: #E62128;
+      border-radius: 50%; }
 .table-orders .square {
   margin-bottom: 1px; }
   .table-orders .square-green {
@@ -850,11 +857,11 @@ input {
   color: #fff;
   font-size: 14px;
   line-height: 24px;
-  background: linear-gradient(0deg, #FF363D, #E62128);
+  background: linear-gradient(0deg, #E62128, #FF363D);
   border: 1px solid #E62128;
   border-radius: 4px; }
   .btn-red:hover {
-    background: linear-gradient(0deg, #E62128, #FF363D); }
+    background: linear-gradient(0deg, #FF363D, #E62128); }
   .btn-red:active {
     background: #E62128; }
 
