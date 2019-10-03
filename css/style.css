@@ -295,6 +295,8 @@ input {
     background: url(../img/arrow-up.png) center no-repeat;
     vertical-align: middle;
     transform: rotate(180deg); }
+    .menu__item .icon-arrow_reverse {
+      transform: rotate(0) !important; }
 .menu__link {
   display: block;
   padding: 13px 0 13px 27px;

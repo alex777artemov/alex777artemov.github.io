@@ -13,4 +13,6 @@ $('.nav__btn').on('click', function(){
 /*Подменю*/
 if($(".submenu__link").hasClass("current")){
   $(".submenu__link.current").closest(".menu__item").find(".icon").addClass("icon-red");
+  $(".submenu__link.current").closest(".menu__item").find(".icon-arrow").addClass("icon-arrow_reverse");
 }
+
