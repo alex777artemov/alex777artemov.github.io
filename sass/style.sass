@@ -3,12 +3,18 @@ body
   margin: 0
   padding: 0
   font-family: $exo2
+  //min-width: 1440px
+  //overflow: auto
 a
   text-decoration: none
 .mb5
   margin-bottom: 5px
 input
   outline: 0
+.overflow
+  width: 100%
+  padding-bottom: 30px
+  overflow: auto
 /*1 Стр. Вход*/
 .sign-in
   padding-top: 212px
@@ -234,6 +240,7 @@ input
 .main
   display: flex
   height: calc(100vh - 71px)
+  flex-basis: 100%
 .left-menu
   position: relative
   width: 100%
@@ -373,7 +380,6 @@ input
   flex-grow: 3
   width: 100%
   padding-right: 30px
-  margin-bottom: 30px
   &__title
     margin-top: 26px
     margin-bottom: 0
@@ -970,6 +976,7 @@ input
   font-family: $exo2
 table
   width: 100%
+  min-width: 1110px
   border-collapse: collapse
   thead
     tr

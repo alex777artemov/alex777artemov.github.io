@@ -13,6 +13,11 @@ a {
 input {
   outline: 0; }
 
+.overflow {
+  width: 100%;
+  padding-bottom: 30px;
+  overflow: auto; }
+
 /*1 Стр. Вход */
 .sign-in {
   padding-top: 212px;
@@ -240,7 +245,8 @@ input {
 /*Боковая панель */
 .main {
   display: flex;
-  height: calc(100vh - 71px); }
+  height: calc(100vh - 71px);
+  flex-basis: 100%; }
 
 .left-menu {
   position: relative;
@@ -376,8 +382,7 @@ input {
   overflow: auto;
   flex-grow: 3;
   width: 100%;
-  padding-right: 30px;
-  margin-bottom: 30px; }
+  padding-right: 30px; }
   .content__title {
     margin-top: 26px;
     margin-bottom: 0;
@@ -916,6 +921,7 @@ input {
 
 table {
   width: 100%;
+  min-width: 1110px;
   border-collapse: collapse; }
   table thead tr th {
     padding: 0 20px 9px 20px;
