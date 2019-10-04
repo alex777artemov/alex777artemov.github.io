@@ -92,7 +92,8 @@ input {
       width: 18px;
       min-width: 18px;
       height: 18px;
-      background: #ececec; }
+      background: #ececec;
+      border-radius: 3px; }
     .sign-in .memorize__text {
       position: static !important;
       display: inline-block;
@@ -218,11 +219,11 @@ input {
     display: block;
     width: 18px;
     height: 18px;
-    background: url(../img/arrow-up.png) center no-repeat;
+    background: url(../img/arrow-up.svg) center no-repeat;
     background-size: 18px;
-    transform: rotate(180deg); }
+    transform: rotate(0); }
     .account__arrow-up.rotate {
-      transform: rotate(0); }
+      transform: rotate(180deg); }
   .account-menu {
     position: absolute;
     bottom: -100px;
@@ -301,7 +302,7 @@ input {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background: url(../img/arrow-up.png) center no-repeat;
+    background: url(../img/arrow-up.svg) center no-repeat;
     vertical-align: middle;
     transform: rotate(180deg); }
     .menu__item .icon-arrow_reverse {
@@ -569,13 +570,14 @@ input {
     line-height: 20px; }
 .table-orders .row .btn-square {
   margin-right: 10px; }
-.table-orders .row .note__name {
+
+.note__name {
   line-height: 20px; }
-.table-orders .row .note__speciality {
+.note__speciality {
   margin-top: 4px;
   color: #999;
   font-size: 12px; }
-.table-orders .row .note__date {
+.note__date {
   margin-top: 4px;
   color: #999;
   font-size: 12px; }

@@ -91,6 +91,7 @@ input
       min-width: 18px
       height: 18px
       background: #ececec
+      border-radius: 3px
     &__text
       position: static !important
       display: inline-block
@@ -211,11 +212,11 @@ input
     display: block
     width: 18px
     height: 18px
-    background: url(../img/arrow-up.png) center no-repeat
+    background: url(../img/arrow-up.svg) center no-repeat
     background-size: 18px
-    transform: rotate(180deg)
+    transform: rotate(0)
     &.rotate
-      transform: rotate(0)
+      transform: rotate(180deg)
   &-menu
     position: absolute
     bottom: -100px
@@ -294,7 +295,7 @@ input
       display: inline-block
       width: 18px
       height: 18px
-      background: url(../img/arrow-up.png) center no-repeat
+      background: url(../img/arrow-up.svg) center no-repeat
       vertical-align: middle
       transform: rotate(180deg)
       &_reverse
@@ -610,17 +611,17 @@ input
   .row
     .btn-square
       margin-right: 10px
-    .note
-      &__name
-        line-height: 20px
-      &__speciality
-        margin-top: 4px
-        color: #999
-        font-size: 12px
-      &__date
-        margin-top: 4px
-        color: #999
-        font-size: 12px
+.note
+  &__name
+    line-height: 20px
+  &__speciality
+    margin-top: 4px
+    color: #999
+    font-size: 12px
+  &__date
+    margin-top: 4px
+    color: #999
+    font-size: 12px
 .orders
   &__number
     margin-bottom: 3px

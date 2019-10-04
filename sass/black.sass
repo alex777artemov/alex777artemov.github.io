@@ -1,0 +1,280 @@
+body,
+/*стр Вход*/
+.sign-in
+  background: #363636
+  .form
+    background: #3C3C3C
+    border: 1px solid #404040
+    &__title
+      color: #f5f5f5
+    &__subtitle
+      color: rgba(245, 245, 245, 0.5)
+    &__input
+      color: #F5F5F5
+      background: #3C3C3C
+      border: 1px solid #404040
+    .memorize__hidden:checked + .memorize__btn
+      background: url(../img/black-icon-checked.svg) center no-repeat
+  .memorize__text
+    color: #F5F5F5
+  .reg__link, .recover-pass__link
+    color: #27A0E0
+.form__input:focus ~ .placeholder-animation__item,
+.form__input:valid ~ .placeholder-animation__item
+  background-color: #3C3C3C
+
+/*стр Главная*/
+.header
+  background-color: #363636
+  border-bottom: 1px solid #404040
+.nav__btn 
+  border-right: 1px solid #404040
+  span
+    background-color: #F5F5F5
+  &.red
+    span
+      background-color: #D65151
+.logo
+  border-right: 1px solid #404040
+.search
+  &__icon
+    background: url(../img/black-icon-search.svg) center no-repeat #363636
+  &__input
+    color: #f5f5f5
+    background: #363636
+.account
+  &__name
+    color: #f5f5f5
+  &__position
+    color: #959595
+  &-image
+    overflow: hidden
+  &-menu
+    &__list
+      border: 1px solid #404040
+      background-color: #363636
+    &__link
+      color: #f5f5f5
+      &.red
+        color: #D65151
+.left-menu
+  background: #363636
+  border-right: 1px solid #404040
+  .copy
+    border-top: 1px solid #404040
+.menu
+  &__item
+    .icon-arrow_reverse
+      background: url(../img/arrow-up-white.svg) center no-repeat
+  &__link
+    color: #f5f5f5
+    &.current
+      color: #D65151
+      background-color: rgba(214, 81, 81, 0.05)
+      border-left: 3px solid #D65151
+    &:hover
+      background-color: rgba(214, 81, 81, 0.05)
+.icon
+  &-home
+    background: url(../img/black-icon-home.svg) center no-repeat
+  &-general
+    background: url(../img/black-icon-general.svg) center no-repeat
+  &-sales
+    background: url(../img/black-icon-sales.svg) center no-repeat
+  &-production
+    background: url(../img/black-icon-production.svg) center no-repeat
+  &-guides
+    background: url(../img/black-icon-guides.svg) center no-repeat
+  &-reports
+    background: url(../img/black-icon-reports.svg) center no-repeat
+  &-settings
+    background: url(../img/black-icon-settings.svg) center no-repeat
+.icon-red
+  &.icon
+    &-home
+      background: url(../img/black-icon-home-red.svg) center no-repeat
+    &-general
+      background: url(../img/black-icon-general-red.svg) center no-repeat
+    &-sales
+      background: url(../img/black-icon-sales-red.svg) center no-repeat
+    &-production
+      background: url(../img/black-icon-production-red.svg) center no-repeat
+    &-guides
+      background: url(../img/black-icon-guides-red.svg) center no-repeat
+    &-reports
+      background: url(../img/black-icon-reports-red.svg) center no-repeat
+    &-settings
+      background: url(../img/black-icon-settings-red.svg) center no-repeat
+.submenu
+  &__list
+  &__item
+  &__link
+    color: #f5f5f5
+    &.current
+      color: #D65151
+      background-color: rgba(214, 81, 81, 0.05)
+      border-left: 3px solid #D65151
+    &:hover
+      background-color: rgba(214, 81, 81, 0.05)
+.copy
+  color: #f5f5f5
+.main
+  background-color: #363636
+.content
+  &__title
+    color: #F5F5F5
+    &:before
+      background-color: #D65151
+  .announcement
+    background-color: #3C3C3C
+  .big-announcement
+    background-color: #3C3C3C
+.table-production 
+  thead
+    tr
+      th
+        color: #f5f5f5
+  tbody 
+    tr
+      &:nth-child(odd)
+        background: #333
+    tr
+      &:nth-child(even)
+        background: #363636
+      td
+        color: #f5f5f5
+        border-top: 1px solid #404040
+        border-bottom: 1px solid #404040
+        &:not(:last-child)
+          border-right: 1px solid #404040
+        &:last-child
+          border-bottom: 1px solid #404040
+/* стр Склад*/
+.invoice
+  &__number
+    color: #D65151
+  &-from
+    color: #F5F5F5
+  &-to
+    color: #F5F5F5
+.table-invoice
+  .red-arrow
+    color: #D65151
+/* стр Заказы*/
+.orders
+  &__number,
+  &__red-phone,
+  &__method
+    color: #D65151
+  &__num
+    color: #27A0E0
+.table-orders 
+  .btn-square 
+    .value-wrap
+      background: #D65151
+  .square-red
+    background: #D65151
+  .square-green
+    background: #7BB17B
+/* стр Номенклатура*/
+.nomenclature
+  &__id
+    color: #D65151
+  &__reserve
+    color: #27A0E0
+/*стр Записи*/
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+.icon-excel
+  background: url(../img/black-icon-excel.svg) center no-repeat
+.icon-copy
+  background: url(../img/black-icon-copy.svg) center no-repeat
+.icon-edit
+  background: url(../img/black-icon-edit.svg) center no-repeat
+.icon-more
+  background: url(../img/black-icon-more.svg) center no-repeat
+.icon-sale
+  background: url(../img/black-icon-sale.svg) center no-repeat
+.icon-add
+  background: url(../img/black-icon-add.svg) center no-repeat
+.icon-back
+  background: url(../img/black-icon-back.svg) center no-repeat
+.icon-filter
+  background: url(../img/black-icon-filter.svg) center no-repeat
+.panel-row 
+  border-bottom: 1px solid #404040
+  .right 
+    .city
+      color: #f5f5f5
+      &.current
+        color: #D65151
+        border-bottom: 1px solid #D65151
+    .section
+      color: #f5f5f5
+      &.current
+        color: #D65151
+        border-bottom: 1px solid #D65151
+table
+  thead
+    tr
+      th
+        color: #f5f5f5
+  tbody
+    tr
+      &:nth-child(odd)
+        background: #333333
+      &:nth-child(even)
+        background: #363636
+      td
+        color: #f5f5f5
+        border-top: 1px solid #404040
+        border-bottom: 1px solid #404040
+        &:not(:last-child)
+          border-right: 1px solid #404040
+        &:last-child
+          border-bottom: 1px solid #404040
+        a
+.theme__name
+  color: #F5F5F5
+.switch-btn
+  background: #555555
+  .circle
+    background: #D65151
+.red-btn
+  background: #D65151
+.btn-white
+  color: #F5F5F5
+  background: linear-gradient(0deg, #393939, #484848)
+  border: 1px solid #333333
+  border-radius: 4px
+  &:hover
+    background: linear-gradient(0deg, #484848, #393939)
+  &:active
+    background: #393939
+.btn-red
+  color: #F5F5F5
+  background: linear-gradient(0deg, #AC3838, #D65151)
+  border: 1px solid #333333
+  border-radius: 4px
+  &:hover
+    background: linear-gradient(0deg, #D65151, #AC3838)
+  &:active
+    background: #AC3838
+.btn-square
+  background: linear-gradient(0deg, #393939, #484848)
+  border: 1px solid #333
+  &:hover
+    background: linear-gradient(0deg, #484848, #393939)
+  &:active
+    background: #393939
