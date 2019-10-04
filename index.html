@@ -54,12 +54,27 @@
   <main class="main">
     
     <aside class="left-menu">
+      <!--к активному пункту меню добавляется класс current к тэгу <a>-->
       <div class="menu">
         <ul class="menu__list">
           <li class="menu__item"><a href="#" class="menu__link current"><i class="icon icon-home"></i><span>Главная</span></a></li>
           <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-general"></i><span>Общее</span><i class="icon-arrow"></i></a></li>
           <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-sales"></i><span>Продажи</span><i class="icon-arrow"></i></a></li>
-          <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-production"></i><span>Производство</span><i class="icon-arrow"></i></a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <i class="icon icon-production"></i>
+              <span>Производство</span>
+              <i class="icon-arrow"></i>
+            </a>
+            <ul class="submenu__list">
+              <li class="submenu__item">
+                <a href="#" class="submenu__link">Производство</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#" class="submenu__link">Склад</a>
+              </li>
+            </ul>
+          </li>
           <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-guides"></i><span>Справочники</span><i class="icon-arrow"></i></a></li>
           <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-reports"></i><span>Отчеты</span><i class="icon-arrow"></i></a></li>
           <li class="menu__item"><a href="#" class="menu__link"><i class="icon icon-settings"></i><span>Настройки</span><i class="icon-arrow"></i></a></li>

@@ -15,8 +15,11 @@ body,
       border: 1px solid #404040
     .memorize__hidden:checked + .memorize__btn
       background: url(../img/black-icon-checked.svg) center no-repeat
-  .memorize__text
-    color: #F5F5F5
+  .memorize
+    &__text
+      color: #F5F5F5
+    &__btn
+      background: #555
   .reg__link, .recover-pass__link
     color: #27A0E0
 .form__input:focus ~ .placeholder-animation__item,
@@ -220,11 +223,15 @@ body,
       &.current
         color: #D65151
         border-bottom: 1px solid #D65151
+      &:hover
+        color: #D65151
     .section
       color: #f5f5f5
       &.current
         color: #D65151
         border-bottom: 1px solid #D65151
+      &:hover
+        color: #D65151
 table
   thead
     tr

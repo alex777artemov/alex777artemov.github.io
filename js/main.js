@@ -11,19 +11,23 @@ $('.nav__btn').on('click', function(){
 /*красная иконка выбранного меню*/
   $(".menu__link.current").find(".icon").addClass("icon-red");
 /*Подменю*/
+$('.menu__link').on('click', function(){
+  $(this).siblings('.submenu__list').toggle();
+  $(this).children('.icon-arrow').toggleClass('icon-arrow_reverse');
+});
 if($(".submenu__link").hasClass("current")){
   $(".submenu__link.current").closest(".menu__item").find(".icon").addClass("icon-red");
-  $(".submenu__link.current").closest(".menu__item").find(".icon-arrow").addClass("icon-arrow_reverse");
+  //$(".submenu__link.current").closest(".menu__item").find(".icon-arrow").addClass("icon-arrow_reverse");
 }
 /*Выбор темы*/
 $( ".theme__hidden-checkbox" ).on("change", function() {
   if(!($(".theme__hidden-checkbox").prop("checked"))){
     $("head").append("<link rel='stylesheet' href='css/black.css'>");
     $(".header .logo__img").attr("src", "img/black-logo-header.svg");
-    $(".sign-in .logo__img").attr("src", "img/black-logo-header.svg");
+    $(".sign-in .logo__img").attr("src", "img/black-logo-signin.svg");
   } else {
     $("link[href='css/black.css']").remove();
     $(".header .logo__img").attr("src", "img/logo-header.svg");
-    $(".sign-in .logo__img").attr("src", "img/logo-header.svg");
+    $(".sign-in .logo__img").attr("src", "img/logo-signin.svg");
   }
 });

@@ -17,6 +17,8 @@
       background: url(../img/black-icon-checked.svg) center no-repeat; }
   .sign-in .memorize__text {
     color: #F5F5F5; }
+  .sign-in .memorize__btn {
+    background: #555; }
   .sign-in .reg__link, .sign-in .recover-pass__link {
     color: #27A0E0; }
 
@@ -207,11 +209,15 @@
     .panel-row .right .city.current {
       color: #D65151;
       border-bottom: 1px solid #D65151; }
+    .panel-row .right .city:hover {
+      color: #D65151; }
   .panel-row .right .section {
     color: #f5f5f5; }
     .panel-row .right .section.current {
       color: #D65151;
       border-bottom: 1px solid #D65151; }
+    .panel-row .right .section:hover {
+      color: #D65151; }
 
 table thead tr th {
   color: #f5f5f5; }
@@ -241,28 +247,34 @@ table tbody tr td {
 
 .btn-white {
   color: #F5F5F5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#393939), to(#484848));
   background: linear-gradient(0deg, #393939, #484848);
   border: 1px solid #333333;
   border-radius: 4px; }
   .btn-white:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#484848), to(#393939));
     background: linear-gradient(0deg, #484848, #393939); }
   .btn-white:active {
     background: #393939; }
 
 .btn-red {
   color: #F5F5F5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#AC3838), to(#D65151));
   background: linear-gradient(0deg, #AC3838, #D65151);
   border: 1px solid #333333;
   border-radius: 4px; }
   .btn-red:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#D65151), to(#AC3838));
     background: linear-gradient(0deg, #D65151, #AC3838); }
   .btn-red:active {
     background: #AC3838; }
 
 .btn-square {
+  background: -webkit-gradient(linear, left bottom, left top, from(#393939), to(#484848));
   background: linear-gradient(0deg, #393939, #484848);
   border: 1px solid #333; }
   .btn-square:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#484848), to(#393939));
     background: linear-gradient(0deg, #484848, #393939); }
   .btn-square:active {
     background: #393939; }
