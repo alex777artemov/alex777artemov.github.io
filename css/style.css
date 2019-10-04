@@ -1133,4 +1133,12 @@ table {
     table tbody tr td a {
       cursor: pointer; }
 
+@media (max-height: 900px) {
+  .sign-in {
+    padding-top: 112px; }
+    .sign-in .recover-pass {
+      margin-bottom: 42px; }
+    .sign-in .copy {
+      margin-top: 42px; } }
+
 /*# sourceMappingURL=style.css.map */
