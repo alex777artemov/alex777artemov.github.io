@@ -285,7 +285,8 @@ input {
     position: absolute;
     top: 70px;
     right: 0;
-    display: none; }
+    display: none;
+    z-index: 9; }
     .account-menu__list {
       margin: 0;
       padding: 20px 33px 18px 26px;
@@ -353,7 +354,7 @@ input {
               justify-content: center;
       padding-left: 0; }
     .left-menu.small-menu .menu__link {
-      padding: 13px 18px 13px 27px; }
+      padding: 14px 18px 14px 27px; }
     .left-menu.small-menu .menu__link span, .left-menu.small-menu .theme__name {
       display: none; }
     .left-menu.small-menu .copy {
@@ -364,7 +365,10 @@ input {
     .left-menu.small-menu .icon-arrow {
       display: none; }
     .left-menu.small-menu .submenu__list {
-      display: none; }
+      display: none;
+      width: 0;
+      height: 0;
+      opacity: 0; }
     .left-menu.small-menu:hover {
       width: 276px;
       max-width: 276px;
@@ -373,11 +377,16 @@ input {
         margin: 0 20px; }
       .left-menu.small-menu:hover .icon-arrow {
         display: block; }
-      .left-menu.small-menu:hover .submenu__list, .left-menu.small-menu:hover .menu__link span, .left-menu.small-menu:hover .theme__name {
+      .left-menu.small-menu:hover .menu__link span, .left-menu.small-menu:hover .theme__name {
         display: block; }
       .left-menu.small-menu:hover .copy {
         opacity: 1;
         width: auto; }
+      .left-menu.small-menu:hover .submenu__list {
+        display: none;
+        width: auto;
+        height: auto;
+        opacity: 1; }
   .left-menu .theme {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -934,8 +943,7 @@ input {
     .panel-row .left .btn-white {
       height: 36px;
       vertical-align: middle;
-      margin-right: 10px;
-      padding: 9px 13px 9px 10px; }
+      margin-right: 10px; }
   .panel-row .right {
     position: relative;
     bottom: -1px;
@@ -1010,7 +1018,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 13px 10px 10px;
+  padding: 9px 10px;
   color: #333;
   font-size: 14px;
   background: -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#ffffff));
