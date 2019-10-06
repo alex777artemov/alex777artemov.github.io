@@ -1144,12 +1144,8 @@ table {
       cursor: pointer; }
 
 @media (max-height: 900px) {
-  .sign-in {
-    padding-top: 112px; }
-    .sign-in .recover-pass {
-      margin-bottom: 42px; }
-    .sign-in .copy {
-      margin-top: 42px; } }
+  .sign-in .copy {
+    margin-bottom: 30px; } }
 /*стр вход правки по отступам */
 /*добавил  div.wrap */
 .sign-in {
@@ -1168,8 +1164,6 @@ table {
           flex-direction: column;
   min-height: 100vh;
   padding: 0; }
-  .sign-in .logo {
-    margin-top: 30px; }
   .sign-in .form {
     margin-top: 30px; }
   .sign-in .wrap {
@@ -1181,7 +1175,6 @@ table {
   .sign-in .theme {
     margin-top: 30px; }
   .sign-in .copy {
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */
