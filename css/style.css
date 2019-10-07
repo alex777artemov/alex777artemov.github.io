@@ -1177,4 +1177,11 @@ table {
   .sign-in .copy {
     margin-top: 30px; }
 
+.header .left {
+  width: 60%; }
+.header .search {
+  width: 100%; }
+  .header .search__input {
+    width: 90%; }
+
 /*# sourceMappingURL=style.css.map */
