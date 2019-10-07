@@ -1180,7 +1180,8 @@ table {
 .header .left {
   width: 60%; }
 .header .search {
-  width: 100%; }
+  width: 100%;
+  white-space: nowrap; }
   .header .search__input {
     width: 90%; }
 
