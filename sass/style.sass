@@ -363,14 +363,19 @@ input
         margin-left: 0px
     &:hover
       background-color: #FAFAFA
+      .icon
+        background-color: #FAFAFA
     .icon
+      position: relative
       display: inline-block
       width: 18px
       height: 18px
       margin-right: 14px
       margin-left: 3px
       background-size: 18px
+      background-color: #fff
       vertical-align: middle
+      z-index: 9
 .icon
   &-home
     background: url(../img/icon-home.svg) center no-repeat
@@ -1120,21 +1125,30 @@ table
     min-width: 81px
     max-width: 81px
     width: 81px
-    transition: max-width .1s ease, min-width .1s ease, width .1s ease
+    //transition: max-width .1s ease, min-width .1s ease, width .1s ease
+    transition: max-width .1s linear, min-width .1s linear, width .1s linear
     &:hover
       min-width: 276px
       max-width: 276px
       width: 276px
       .menu
-        &__link 
+        &__link
+          width: 276px  
           span
-            opacity: 1
+            //width: auto
+            //opacity: 1
           .icon-arrow
+            transition: .25s ease
             opacity: 1
     .menu
       &__link 
+        width: 80px
+        box-sizing: border-box
         span
-          opacity: 0
-          transition: opacity 2.15 ease
+          //opacity: 0
+          //transition: width .25s ease
+          //width: 0
+          //overflow: hidden
         .icon-arrow
           opacity: 0
+          transition: .25s ease
