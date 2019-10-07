@@ -230,9 +230,11 @@ input {
     background-size: 24px; }
   .search__input {
     padding-left: 10px;
+    color: #333;
+    font-size: 14px;
+    vertical-align: middle;
     border: none;
-    outline: none;
-    vertical-align: middle; }
+    outline: none; }
     .search__input::-webkit-input-placeholder {
       color: #999;
       font-size: 14px; }
@@ -1020,7 +1022,8 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 9px 10px;
+  height: 36px;
+  padding: 8px 10px 11px;
   color: #333;
   font-size: 14px;
   background: -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#ffffff));
@@ -1044,8 +1047,7 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   height: 36px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 8px 10px 11px;
   color: #fff;
   font-size: 14px;
   line-height: 24px;
