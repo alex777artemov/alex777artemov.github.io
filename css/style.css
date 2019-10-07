@@ -1191,4 +1191,25 @@ table {
   .header .search__input {
     width: 90%; }
 
+.left-menu.small-menu {
+  min-width: 81px;
+  max-width: 81px;
+  width: 81px;
+  -webkit-transition: max-width 0.1s ease, min-width 0.1s ease, width 0.1s ease;
+  transition: max-width 0.1s ease, min-width 0.1s ease, width 0.1s ease; }
+  .left-menu.small-menu:hover {
+    min-width: 276px;
+    max-width: 276px;
+    width: 276px; }
+    .left-menu.small-menu:hover .menu__link span {
+      opacity: 1; }
+    .left-menu.small-menu:hover .menu__link .icon-arrow {
+      opacity: 1; }
+  .left-menu.small-menu .menu__link span {
+    opacity: 0;
+    -webkit-transition: opacity 2.15 ease;
+    transition: opacity 2.15 ease; }
+  .left-menu.small-menu .menu__link .icon-arrow {
+    opacity: 0; }
+
 /*# sourceMappingURL=style.css.map */
