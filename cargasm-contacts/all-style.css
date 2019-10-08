@@ -5659,6 +5659,10 @@ a[role="tab"]:focus {
 
 
 
+
+.row.contact-top {
+    margin-top: 20px;
+}
 .contact-top .nav-tabs {
 	border: 1px solid #d7dcde;
 	border-radius: 3px;
@@ -5669,6 +5673,7 @@ a[role="tab"]:focus {
 }
 .contact-top .nav-tabs a {
 	min-width: 143px;
+    width: 180px;
 	border-radius: 3px;
 	color: #333;
 	text-align: center;
@@ -5696,4 +5701,23 @@ a[role="tab"]:focus {
 .contact-top .nav-tabs .active a {
 	-webkit-box-shadow: 0 8px 24px 0 rgba(188, 28, 26, .52);
 	box-shadow: 0 8px 24px 0 rgba(188, 28, 26, .52);
+}
+@media (max-width: 767px){
+  .contact-top .nav-tabs li {
+      width: 50%;
+  }
+  .contact-top .nav-tabs a {
+      width: 100%;
+  }
+  .contact-top .nav-tabs > li > a{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+  }
 }
