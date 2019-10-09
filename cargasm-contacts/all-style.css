@@ -5861,6 +5861,7 @@ header .status__btn{
   display: inline-block;
   width: 16px;
   height: 16px;
+  margin-right: 5px;
   background: url(contacts_files/icon-info.svg) center no-repeat;
   -webkit-background-size: 16px;
   background-size: 16px;

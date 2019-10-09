@@ -70,8 +70,8 @@
               <div class="rd-navbar-brand__name"><a href="https://cargasm.ru/"><img src="./contacts_files/logo-invert.png" alt="Cargasm"></a></div>
             </div>
             <div class="col-md-offset-5 col-md-5 text-right">
-              <button class="btn btn-red">Статус заказа</button>
-              <div class="status-block">
+              <a class="btn btn-red open-status">Статус заказа</a>
+              <div class="status-block" style="display: none;">
                 <form action="#" class="status-form">
                   <input type="text" class="status__input" placeholder="Введите номер заказа">
                   <button type="submit" class="btn status__btn">
@@ -82,7 +82,7 @@
                   <ul class="status-result__list">
                     <li class="status-result__item">
                       <a href="#" class="status-result__link">
-                        <span class="status-result__num">w5623900934</span>
+                        <span class="status-result__num">W5623900934</span>
                         <span class="status-result__info"><i class="icon-info"></i>Отправлен клиенту</span>
                       </a>
                     </li>
@@ -130,8 +130,8 @@
               <div class="rd-navbar-brand__name"><a href="https://cargasm.ru/"><img src="./contacts_files/logo-invert.png" alt="Cargasm"></a></div>
               
               <div class="status-wrap">
-                <button class="btn btn-red">Статус заказа</button>
-                <div class="status-block">
+                <a class="btn btn-red open-status">Статус заказа</a>
+                <div class="status-block" style="display: none;">
                   <form action="#" class="status-form">
                     <input type="text" class="status__input" placeholder="Номер заказа">
                     <button type="submit" class="btn status__btn">
@@ -142,7 +142,7 @@
                     <ul class="status-result__list">
                       <li class="status-result__item">
                         <a href="#" class="status-result__link">
-                          <span class="status-result__num">w5623900934</span>
+                          <span class="status-result__num">W5623900934</span>
                           <span class="status-result__info"><i class="icon-info"></i>Отправлен клиенту</span>
                         </a>
                       </li>
@@ -667,7 +667,10 @@
   </ymaps>
 <!--  <ymaps style="z-index: 40000; display: block; position: absolute; width: 188px; top: 671px; left: 713.5px;" class="ymaps-2-1-74-display-none"></ymaps>-->
   <script>
-    
+    $('.open-status').on('click', function(){
+      console.log('нажали');
+      $(this).siblings('.status-block').toggle();
+    });
   </script>
 </body>
 
