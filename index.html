@@ -1,419 +1,528 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>КАРКУША — детский развивающий центр</title>
-	<link rel="stylesheet" type="text/css" href="fonts/fonts.css@201910251305.css">
-	<link rel="stylesheet" type="text/css" href="js/swiper.min.css@201910251305.css">
-	<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.min.css@201910251305.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css@201910251305.css">
-	<link rel="icon" href="favicon.png@201910251305" type="image/png" />
-	<link rel="shortcut icon" href="favicon.png@201910251305" type="image/png" />
-	<link rel="mask-icon" href="http://karkusha.by/favicon.svg?201910251305" color="blue">
-	<link rel="icon" type="image/svg+xml" href="http://karkusha.by/favicon.svg?201910251305">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>КАРКУША - детский развивающий центр</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="mask-icon" href="favicon.svg" color="blue">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <link rel="stylesheet" href="fonts/mplusrounded1c.css">
+  <!--swiper слайдер-->
+  <link rel="stylesheet" href="lib/swiper/swiper.min.css">
+  <!--галерея fancybox-->
+  <link rel="stylesheet" href="lib/fancybox-3/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="mobile-menu-open visible-mobile"><span></span></div>
-			<div class="logo">
-				<a href="index.html" class="logo__link"><img src="images/logo.svg" alt="КАРКУША — детский развивающий центр" class="logo__img"></a>
-			</div>
-			<div class="mobile-contact-open visible-mobile"><i class="icon-contacts"></i></div>
-			<nav class="menu hidden-mobile" id="menu">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="index.html#about" class="menu__link current">О НАС</a></li>
-					<li class="menu__item"><a href="index.html#features" class="menu__link">КАКИЕ МЫ</a></li>
-					<li class="menu__item"><a href="index.html#services" class="menu__link">УСЛУГИ</a></li>
-					<li class="menu__item"><a href="index.html#gallery" class="menu__link">ГАЛЕРЕЯ</a></li>
-					<li class="menu__item"><a href="index.html#contacts" class="menu__link">КОНТАКТЫ</a></li>
-				</ul>
-			</nav>
-			<div class="social hidden-mobile">
-				<ul class="social__list">
-					<li class="social__item"><a href="https://www.instagram.com/karkusha_grodno/" class="social__link" rel="nofollow" target="_blank"><i class="icon icon-instagram"></i></a></li>
-					<li class="social__item"><a href="https://vk.com/karkusha_grodno" class="social__link" rel="nofollow" target="_blank"><i class="icon icon-vk"></i></a></li>
-				</ul>
-			</div>
-			<div class="sign-up hidden-mobile yellow-btn_shadow">
-				<input type="button" value="ЗАПИСАТЬСЯ" class="sign-up__btn open-popup yellow-btn">
-			</div>
-		</div>
-		<div class="popup popup-menu">
-			<div class="container">
-				<a class="popup__close"><i class="icon-close"></i></a>
-				<div class="top">
-					<div class="logo">
-						<a href="index.html" class="logo__link"><img src="images/logo.svg" alt="КАРКУША — детский развивающий центр" class="logo__img"></a>
-					</div>
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__item"><a href="index.html#about" class="menu__link current">О НАС</a></li>
-							<li class="menu__item"><a href="index.html#features" class="menu__link">КАКИЕ МЫ</a></li>
-							<li class="menu__item"><a href="index.html#services" class="menu__link">УСЛУГИ</a></li>
-							<li class="menu__item"><a href="index.html#gallery" class="menu__link">ГАЛЕРЕЯ</a></li>
-							<li class="menu__item"><a href="index.html#contacts" class="menu__link">КОНТАКТЫ</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="bottom">
-					<div class="sign-up yellow-btn_shadow">
-						<input type="button" value="ЗАПИСАТЬСЯ В ГРУППУ" class="sign-up__btn open-popup yellow-btn">
-					</div>
-					<div class="social">
-						<ul class="social__list">
-							<li class="social__item"><a href="https://www.instagram.com/karkusha_grodno/" class="social__link" rel="nofollow" target="_blank"><i class="icon icon-instagram"></i></a></li>
-							<li class="social__item"><a href="https://vk.com/karkusha_grodno" class="social__link" rel="nofollow" target="_blank"><i class="icon icon-vk"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="popup popup-contacts">
-			<div class="container">
-				<a class="popup__close"><i class="icon-close"></i></a>
-				<div class="top">
-					<div class="logo">
-						<a href="index.html" class="logo__link"><img src="images/logo.svg" alt="КАРКУША — детский развивающий центр" class="logo__img"></a>
-					</div>
-					<div class="contact">
-						<p class="contact__text">
-							Адрес:
-							<br>
-							Беларусь, Гродно,
-							<br>
-							ул. Огинского, 8
-						</p>
-						<p class="contact__text">
-							Телефон:
-							<br>
-							<a href="tel:+375292000209">+375 29 200-02-09</a>
-						</p>
-						<p class="contact__text">
-							Режим работы:
-							<br>
-							Пн-Пт 10:00-21:00
-							<br>
-							Сб-Вс 10:00-18:00
-						</p>
-					</div>
-				</div>
-				<div class="bottom">
-					<div class="sign-up yellow-btn_shadow">
-						<input type="button" value="ЗАПИСАТЬСЯ В ГРУППУ" class="sign-up__btn open-popup yellow-btn">
-					</div>
-					<div class="social">
-						<ul class="social__list">
-							<li class="social__item"><a href="https://www.instagram.com/karkusha_grodno/" class="social__link" rel="nofollow" target="_blank"><i class="icon icon-instagram"></i></a></li>
-							<li class="social__item"><a href="https://vk.com/karkusha_grodno" class="social__link" rel="nofollow" target="_blank"><i class="icon icon-vk"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div class="main">
-		<div class="bg-main-2"></div>
-		<div class="container">
-			<img src="images/bg-main/mobile-bg-main.svg" alt="" class="visible-mobile main__title-bg">
-			<h1 class="main__title">РАЗВИТИЕ <br><span class="pink">И ОБРАЗОВАНИЕ</span><br><small>детей дошкольного и младшего возраста</small></h1>
-		</div>
-		<div class="small-container">
-			<div class="about" id="about">
-				<p class="about__text">Детский развивающий центр <span class="nowrap">&laquo;<i class="icon-karkusha"></i>&raquo;</span> расположен в самом большом микрорайоне <a href="https://yandex.ru/maps/-/CGDK7OMp" rel="nofollow" target="_blank" class="about__underline">города Гродно, &laquo;Ольшанке&raquo;,</a> который первым открыл свои двери в этом месте. Мы работаем с 1 января 2017 года, ежегодно выпуская подготовленных к саду и школе детей. <a class="about__text-mobile-more visible-mobile">Подробнее</a></p>
-				<p class="about__text about__text_mobile-hidden">С момента открытия мы не стоим на месте, совершенствуемся, развиваем новые направления, поддерживаем и укрепляем прочные, долгие и доверительные отношения с нашими маленькими друзьями и их родителями.</p>
-			</div>
-		</div>
-		<div class="small-container bg-mobile-wave">
-			<form action="index.html" method="POST" class="form form_shadow js-form">
-				<input type="hidden" name="form-id" value="sign_up"/>
-				<h3 class="form__title">Записывайтесь в наш центр</h3>
-				<p class="form__subtitle">В наш детский развивающий центр принимаются дети в возрасте от 1 до 7 лет</p>
-				<div class="form-row">
-					<label>
-						<input type="text" name="name" class="form__input" placeholder="Ваше имя">
-					</label>
-					<label>
-						<input type="tel" name="phone" class="form__input" placeholder="Ваш телефон">
-					</label>
-					<div class="yellow-btn_shadow">
-					  <input type="submit" value="ОТПРАВИТЬ" class="form__submit yellow-btn">
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="bg-lines-icons">
-		<div class="features" id="features">
-			<h2 class="blue-title">КАКИЕ МЫ</h2>
-			<div class="container mt-one">
-				<div class="feature-image">
-					<img src="images/features/feature-1.png" alt="КАКИЕ МЫ" class="feature__img hidden-mobile">
-					<img src="images/features/mobile-feature-1.jpg" alt="КАКИЕ МЫ" class="feature__img visible-mobile">
-				</div>
-				<div class="feature-text">
-					<h3 class="feature__title">Наш центр</h3>
-					<p class="feature__text">В нашем центре особенный интерьер, яркая и запоминающаяся обстановка, продуманные игровые и учебные зоны, а также комфортная зона ожидания. Именно здесь вы найдете все, что нужно для успешного развития Вашего ребенка!</p>
-					<div class="yellow-btn_shadow">
-					  <a class="feature__btn yellow-btn open-gallery">ПОСМОТРЕТЬ ФОТОГРАФИИ</a>
-					</div>
-				</div>
-			</div>
-			<div class="container mt-two">
-				<div class="feature-text">
-					<h3 class="feature__title">Педагоги</h3>
-					<p class="feature__text">С Вашими детьми будут работать высококвалифицированные педагоги с большим опытом работы. Работа наших специалистов основана на индивидуальном подходе к каждому ребенку.</p>
-				</div>
-				<div class="feature-image">
-					<img src="images/features/feature-2.png" alt="Педагоги" class="feature__img hidden-mobile">
-					<img src="images/features/mobile-feature-2.jpg" alt="Педагоги" class="feature__img visible-mobile">
-				</div>
-			</div>
-			<div class="container mt-three">
-				<div class="feature-image">
-					<img src="images/features/feature-3.png" alt="Маленькие группы" class="feature__img hidden-mobile">
-					<img src="images/features/mobile-feature-3.jpg" alt="Маленькие группы" class="feature__img visible-mobile">
-				</div>
-				<div class="feature-text">
-					<h3 class="feature__title">Маленькие группы</h3>
-					<p class="feature__text">В наших группах педагог уделяет внимание каждому ребенку, адаптирует задания в соответствии с возрастом и уровнем развития детей.</p>
-					<div class="yellow-btn_shadow">
-					  <a class="feature__btn open-popup yellow-btn">ЗАПИСАТЬСЯ В ГРУППУ</a>
-					</div>
-				</div>
-			</div>
-			<div class="container mt-four">
-				<div class="feature-text">
-					<h3 class="feature__title">Развитие</h3>
-					<p class="feature__text">Мы предлагаем Вам следующие направления работы:</p>
-					<ul class="feature__list">
-						<li class="feature__item">- коррекционно-развивающие занятия</li>
-						<li class="feature__item">- интеллектуальную и творческую деятельность</li>
-						<li class="feature__item">- музыкально-тематические развлечения</li>
-					</ul>
-				</div>
-				<div class="feature-image">
-					<img src="images/features/feature-4.png" alt="Развитие" class="feature__img hidden-mobile">
-					<img src="images/features/mobile-feature-4.jpg" alt="Развитие" class="feature__img visible-mobile">
-				</div>
-			</div>
-			<div class="swiper-container">
-				<div class="container row swiper-wrapper">
-					<div class="feature-block swiper-slide">
-						<div class="feature-block-image">
-							<img src="images/features/feature-5.jpg" alt="уютная атмосфера" class="feature-block__img">
-						</div>
-						<h4 class="feature-block__title">уютная атмосфера</h4>
-						<p class="feature-block__text">Уютные, светлые помещения, оборудованные всем необходимым для продуктивного проведения занятий</p>
-					</div>
-					<div class="feature-block swiper-slide">
-						<div class="feature-block-image">
-							<img src="images/features/feature-6.jpg" alt="Результативность" class="feature-block__img">
-						</div>
-						<h4 class="feature-block__title">Результативность</h4>
-						<p class="feature-block__text">Задача наших педагогов дать максимально эффективные знания, раскрыть потенциал каждого ребёнка</p>
-					</div>
-					<div class="feature-block swiper-slide">
-						<div class="feature-block-image">
-							<img src="images/features/feature-7.jpg" alt="Дружная компания" class="feature-block__img">
-						</div>
-						<h4 class="feature-block__title">Дружная компания</h4>
-						<p class="feature-block__text">Групповые занятия и мастер-классы позволяют найти новых друзей и единомышленников, установить тёплые отношения со сверстниками и педагогами.</p>
-					</div>
-				</div>
-				<div class="swiper-scrollbar"></div>
-			</div>
-		</div>
-		<div class="services" id="services">
-			<div class="bg-services"></div>
-			<h2 class="blue-title">НАШИ УСЛУГИ</h2>
-			<div class="swiper-container">
-				<div class="swiper-wrapper container">
-					<div class="swiper-slide service-block">
-						<h4 class="service__title">Занятия <br>с логопедом</h4>
-						<div class="service-image service-image_border">
-							<img src="images/services/service-1.jpg" alt="Занятия с логопедом" class="service__img">
-						</div>
-						<div class="service__text">Индивидуальные и групповые занятия с детьми от 3х до 7 лет, направленные на постановку звуков и коррекцию звукопроизношения, развитие речи, общей и мелкой моторики, формирование грамматического и лексического строя речи</div>
-					</div>
-					<div class="swiper-slide service-block">
-						<h4 class="service__title">Подготовка <br>к школе</h4>
-						<div class="service-image">
-							<img src="images/services/service-2.jpg" alt="Подготовка к школе" class="service__img">
-						</div>
-						<div class="service__text">Групповые и индивидуальные занятия с детьми от 4х до 7 лет. Комплексные занятия включают в себя: математику и счет, обучение грамоте, чтению и развитию речи, знакомство с окружающим миром, подготовку руки к письму</div>
-					</div>
-					<div class="swiper-slide service-block">
-						<h4 class="service__title">Занятия <br>«Мама и малыш»</h4>
-						<div class="service-image">
-							<img src="images/services/service-3.jpg" alt="Занятия «Мама и малыш»" class="service__img">
-						</div>
-						<div class="service__text">Групповые занятия от 1 года до 3х лет, стимулирующие коммуникативную, познавательную и эмоциональную сферу ребенка; развивающие моторику, сенсорное восприятие, двигательную активность.</div>
-					</div>
-					<div class="swiper-slide service-block">
-						<h4 class="service__title">Английский <br>язык</h4>
-						<div class="service-image">
-							<img src="images/services/service-4.jpg" alt="Английский язык" class="service__img">
-						</div>
-						<div class="service__text">Индивидуальные и групповые занятия с дошкольниками и младшими школьниками</div>
-					</div>
-					<div class="swiper-slide service-block">
-						<h4 class="service__title">Мастер – классы <br>и развлечения</h4>
-						<div class="service-image">
-							<img src="images/services/service-5.jpg" alt="Мастер – классы и развлечения" class="service__img">
-						</div>
-						<div class="service__text">Развитие творческих, музыкальных и двигательных навыков, работа в команде</div>
-					</div>
-					<div class="swiper-slide service-block">
-						<h4 class="service__title opacity-zero">ЗАПИСАТЬСЯ <br>В ГРУППУ</h4>
-						<div class="service-btn open-popup">
-							<a class="service-btn__text">ЗАПИСАТЬСЯ <br>В ГРУППУ</a>
-							<i class="icon-join"></i>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-scrollbar"></div>
-			</div>
-		</div>
-		<div class="gallery" id="gallery">
-			<h2 class="blue-title">ГАЛЕРЕЯ</h2>
-			<div class="swiper-container">
-				<div class="container swiper-wrapper">
-					<a class="swiper-slide gallery-block" data-fancybox="gallery" href="http://karkusha.by/images/gallery/363CF8CD-8185-4F56-A3CC-D500C74304BD-21-10-19-09-17.jpg" title=""><img src="images/gallery/small/363cf8cd-8185-4f56-a3cc-d500c74304bd-21-10-19-09-17.kVXAE.jpg" alt="Фото из галереи" class="gallery__img"></a>
-					<a class="swiper-slide gallery-block" data-fancybox="gallery" href="http://karkusha.by/images/gallery/C0FD1E94-EEC5-48E0-BADD-ACDACFA256C9-21-10-19-09-17.jpg" title=""><img src="images/gallery/small/c0fd1e94-eec5-48e0-badd-acdacfa256c9-21-10-19-09-17.yGeHM.jpg" alt="Фото из галереи" class="gallery__img"></a>
-					<a class="swiper-slide gallery-block" data-fancybox="gallery" href="http://karkusha.by/images/gallery/D9AC2EDE-1A2A-46AD-8483-2708D154C1FF-21-10-19-09-17.jpg" title=""><img src="images/gallery/small/d9ac2ede-1a2a-46ad-8483-2708d154c1ff-21-10-19-09-17.g8UlM.jpg" alt="Фото из галереи" class="gallery__img"></a>
-					<a class="swiper-slide gallery-block" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-30-1.jpg"><img src="images/gallery/small/fullsizerender-21-10-19-09-30-1.PegYU.jpg" alt="Фото из галереи" class="gallery__img"></a>
-					<a class="swiper-slide gallery-block" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-30.jpg"><img src="images/gallery/small/fullsizerender-21-10-19-09-30.Qa73A.jpg" alt="Фото из галереи" class="gallery__img"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-31-1.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-31-2.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-31.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-32-1.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-32-2.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-32.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/FullSizeRender-21-10-19-09-33.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_0124-21-10-19-09-33.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_1203-21-10-19-09-32.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_1520-21-10-19-09-32.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_1815-21-10-19-09-31.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_2344-21-10-19-09-17.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_2789-21-10-19-09-17.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_3367-21-10-19-09-31.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_3429-21-10-19-09-31.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_3795-21-10-19-09-31.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_3921-21-10-19-09-30.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_4014-21-10-19-09-30.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_4264-21-10-19-09-30.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_5696-21-10-19-09-17.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_6553-21-10-19-09-17.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_8985-21-10-19-09-17.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_9024-21-10-19-09-17.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_9338-21-10-19-09-33.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_9674-21-10-19-09-33.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_9721-21-10-19-09-33.jpg"></a>
-					<a style="display: none;" data-fancybox="gallery" href="http://karkusha.by/images/gallery/IMG_9740-21-10-19-09-33.jpg"></a>
-					<div class="swiper-slide gallery-btn open-gallery">
-						<a class="gallery-btn__text">ПОСМОТРЕТЬ <br>ВСЕ ФОТОГРАФИИ</a>
-					</div>
-				</div>
-				<div class="swiper-scrollbar"></div>
-			</div>
-		</div>
-		<div class="contacts" id="contacts">
-			<div class="bg-contacts"></div>
-			<h2 class="blue-title">КОНТАКТЫ</h2>
-			<div class="container">
-				<div class="contacts-left">
-					<h4 class="contacts__title">РАЗВИВАЮЩИЙ ЦЕНТР <span class="nowrap">&laquo;<i class="icon-karkusha"></i>&raquo;</span></h4>
-					<p class="contacts__text">
-						Адрес:
-						<br>
-						<a href="https://yandex.ru/maps/-/CGDK7OMp" rel="nofollow" target="_blank" class="contacts__link">Беларусь, Гродно, ул. Огинского, 8</a>
-					</p>
-					<p class="contacts__text">
-						Телефон:
-						<br>
-						<a href="tel:+375292000209" class="contacts__link">+375 29 200-02-09</a>
-					</p>
-					<p class="contacts__text">
-						Режим работы:
-						<br>
-						<span class="nowrap">Пн-Пт 10:00-21:00,</span> <span class="nowrap">Сб-Вс 10:00-18:00</span>
-					</p>
-				</div>
-				<div class="contacts-map contacts-map_border">
-					<div id="map"></div>
-				</div>
-			</div>
-			<div class="small-container">
-				<form action="index.html" method="POST" class="form js-form">
-					<input type="hidden" name="form-id" value="sign_up"/>
-					<h3 class="form__title">Записывайтесь в наш центр</h3>
-					<p class="form__subtitle">В наш детский развивающий центр принимаются дети в возрасте от 1 до 7 лет</p>
-					<div class="form-row">
-						<label>
-							<input type="text" name="name" class="form__input" placeholder="Ваше имя">
-						</label>
-						<label>
-							<input type="tel" name="phone" class="form__input" placeholder="Ваш телефон">
-						</label>
-						<div class="yellow-btn_shadow">
-						  <input type="submit" value="ОТПРАВИТЬ" class="form__submit yellow-btn">
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<footer class="footer">
-		<div class="container">
-			<p class="footer-copy">Copyright &copy; 2010&minus;2019</p>
-			<div class="rozart">
-				<a href="http://rozart.ru/" rel="nofollow" target="_blank" class="rozart__link">Разработка, <br>создание сайта</a>
-			</div>
-		</div>
-	</footer>
-	<div class="popup popup-sign-in">
-		<div class="overflow"></div>
-		<div class="container">
-			<form action="index.html" method="POST" class="form js-form">
-				<input type="hidden" name="form-id" value="sign_up"/>
-				<h3 class="form__title">Записывайтесь в наш центр</h3>
-				<p class="form__subtitle">В наш детский развивающий центр принимаются дети в возрасте от 1 до 7 лет</p>
-				<div class="form-row">
-					<label>
-						<input type="text" name="name" class="form__input" placeholder="Ваше имя">
-					</label>
-					<label>
-						<input type="tel" name="phone" class="form__input" placeholder="Ваш телефон">
-					</label>
-					<div class="yellow-btn_shadow">
-    					<input type="submit" value="ОТПРАВИТЬ" class="form__submit yellow-btn">
-					</div>
-				</div>
-			</form>
-			<!--<a class="popup__close">ЗАКРЫТЬ</a>-->
-			<a class="popup__close-desctop"></a>
-		</div>
-	</div>
-	<div class="popup popup-thank">
-		<div class="overflow"></div>
-		<div class="container">
-			<div class="top">
-				<h2 class="popup__title">СПАСИБО!</h2>
-				<i class="icon-ok"></i>
-				<p class="popup__text">Ваше сообщение отправлено, в ближайшее время мы Вам перезвоним</p>
-			</div>
-			<!--<a class="popup__close">ЗАКРЫТЬ</a>-->
-			<a class="popup__close-desctop"></a>
-		</div>
-	</div>
-	<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=c0e17e79-defa-41d5-94e1-a5a181d5c91f&lang=ru_RU"></script>
-	<script type="text/javascript" src="js/jquery-3.4.1.min.js@201910251305"></script>
-	<script type="text/javascript" src="js/swiper.min.js@201910251305"></script>
-	<script type="text/javascript" src="js/jquery.fancybox.min.js@201910251305"></script>
-	<script type="text/javascript" src="js/common.js@201910251305"></script>
-<!--	<script type="text/javascript" src="http://api.venyoo.ru/wnew.js?wc=venyoo/default/science&amp;widget_id=6266042226180096"></script>-->
+  <header class="header">
+    <div class="container">
+      <div class="mobile-menu-open visible-mobile">
+        <span></span>
+      </div>
+      <!-- /.mobile-menu-open-->
+      <div class="logo">
+        <a href="index.html" class="logo__link">
+          <img src="image/logo.svg" alt="КАРКУША - детский развивающий центр" class="logo__img">
+        </a>
+      </div>
+      <!-- /.logo-->
+      <div class="mobile-contact-open visible-mobile">
+        <i class="icon-contacts"></i>
+      </div>
+      <!-- /.mobile-contact-open-->
+      <nav class="menu hidden-mobile" id="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#about" class="menu__link current">О НАС</a></li>
+          <li class="menu__item"><a href="#features" class="menu__link">КАКИЕ МЫ</a></li>
+          <li class="menu__item"><a href="#services" class="menu__link">УСЛУГИ</a></li>
+          <li class="menu__item"><a href="#gallery" class="menu__link">ГАЛЕРЕЯ</a></li>
+          <li class="menu__item"><a href="#contacts" class="menu__link">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <!-- /.menu -->
+      <div class="social hidden-mobile">
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link" target="_blank"><i class="icon icon-instagram"></i></a></li>
+          <li class="social__item"><a href="https://vk.com/karkusha_grodno" class="social__link" target="_blank"><i class="icon icon-vk"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.social -->
+      <div class="sign-up hidden-mobile">
+        <input type="button" value="ЗАПИСАТЬСЯ" class="sign-up__btn open-popup  yellow-btn">
+      </div>
+      <!-- /.sign-up -->
+    </div>
+
+    <div class="popup popup-menu">
+      <div class="container">
+        <a class="popup__close">
+          <i class="icon-close"></i>
+        </a>
+        <div class="top">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <img src="image/logo.svg" alt="КАРКУША - детский развивающий центр" class="logo__img">
+            </a>
+          </div>
+          <!-- /.logo -->
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#about" class="menu__link current">О НАС</a></li>
+              <li class="menu__item"><a href="#features" class="menu__link">КАКИЕ МЫ</a></li>
+              <li class="menu__item"><a href="#services" class="menu__link">УСЛУГИ</a></li>
+              <li class="menu__item"><a href="#gallery" class="menu__link">ГАЛЕРЕЯ</a></li>
+              <li class="menu__item"><a href="#contacts" class="menu__link">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <!-- /.menu -->
+        </div>
+        <div class="bottom">
+          <div class="sign-up">
+            <input type="button" value="ЗАПИСАТЬСЯ В ГРУППУ" class="sign-up__btn open-popup  yellow-btn">
+          </div>
+          <!-- /.sign-up -->
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#" class="social__link" target="_blank"><i class="icon icon-instagram"></i></a></li>
+              <li class="social__item"><a href="https://vk.com/karkusha_grodno" class="social__link" target="_blank"><i class="icon icon-vk"></i></a></li>
+            </ul>
+          </div>
+          <!-- /.social -->
+        </div>
+      </div>
+    </div>
+    <!-- /.popup-menu -->
+    <div class="popup popup-contacts">
+      <div class="container">
+        <a class="popup__close">
+          <i class="icon-close"></i>
+        </a>
+        <div class="top">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <img src="image/logo.svg" alt="КАРКУША - детский развивающий центр" class="logo__img">
+            </a>
+          </div>
+          <!-- /.logo -->
+          <div class="contact">
+            <p class="contact__text">
+              Адрес:
+              <br>
+              Беларусь, Гродно,
+              <br>
+              ул. Огинского, 8
+            </p>
+            <p class="contact__text">
+              Телефон:
+              <br>
+              <a href="tel:+375292000209">+375 29 200-02-09</a>
+            </p>
+            <p class="contact__text">
+              Режим работы:
+              <br>
+              Пн-Пт 10:00-21:00
+              <br>
+              Сб-Вс 10:00-18:00
+            </p>
+          </div>
+          <!-- /.contact -->
+        </div>
+        
+        <div class="bottom">
+          <div class="sign-up">
+            <input type="button" value="ЗАПИСАТЬСЯ В ГРУППУ" class="sign-up__btn open-popup  yellow-btn">
+          </div>
+          <!-- /.sign-up -->
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#" class="social__link" target="_blank"><i class="icon icon-instagram"></i></a></li>
+              <li class="social__item"><a href="https://vk.com/karkusha_grodno" class="social__link" target="_blank"><i class="icon icon-vk"></i></a></li>
+            </ul>
+          </div>
+          <!-- /.social -->
+        </div>
+      </div>
+    </div>
+    <!-- /.popup-contacts -->
+  </header>
+
+  <div class="main">
+    <div class="bg-main-2"></div>
+    <div class="container">
+      <img src="image/bg-main/mobile-bg-main.svg" alt="" class="visible-mobile main__title-bg">
+      <h1 class="main__title">РАЗВИТИЕ <br><span class="pink">И ОБРАЗОВАНИЕ</span><br><small>детей дошкольного и младшего возраста</small></h1>
+    </div>
+    <div class="small-container">
+      <div class="about" id="about">
+        <p class="about__text">Детский развивающий центр <span class="nowrap">&laquo;<i class="icon-karkusha"></i>&raquo;</span> расположен в самом большом микрорайоне <a href="https://yandex.ru/maps/-/CGDK7OMp" target="_blank" class="about__underline">города Гродно, &laquo;Ольшанке&raquo;,</a> который первым открыл свои двери в этом месте. Мы работаем с 1 января 2017 года, ежегодно выпуская подготовленных к саду и школе детей. <a class="about__text-mobile-more visible-mobile">Подробнее</a></p>
+        <p class="about__text about__text_mobile-hidden">С момента открытия мы не стоим на месте, совершенствуемся, развиваем новые направления, поддерживаем и укрепляем прочные, долгие и доверительные отношения с нашими маленькими друзьями и их родителями.</p>
+      </div>
+    </div>
+    <div class="small-container bg-mobile-wave">
+      <form action="#" method="post" class="form form_shadow">
+        <h3 class="form__title">Записывайтесь в наш центр</h3>
+        <p class="form__subtitle">В наш детский развивающий центр принимаются дети в возрасте от 1 до 7 лет</p>
+        <div class="form-row">
+          <label class="error">
+            <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+            <span class="error__message">Это поле должно быть заполнено</span>
+          </label>
+          <label>
+            <input type="text" name="phone" class="form__input" placeholder="Ваш телефон">
+            <span class="error__message">Это поле должно быть заполнено</span>
+          </label>
+          <input type="submit" value="ОТПРАВИТЬ" class="form__submit yellow-btn">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="bg-lines-icons">
+    <div class="features" id="features">
+      <h2 class="blue-title">КАКИЕ МЫ</h2>
+      <div class="container mt-one">
+        <div class="feature-image">
+          <img src="image/features/feature-1.png" alt="КАКИЕ МЫ" class="feature__img hidden-mobile">
+          <img src="image/features/mobile-feature-1.jpg" alt="КАКИЕ МЫ" class="feature__img visible-mobile">
+        </div>
+        <div class="feature-text">
+          <h3 class="feature__title">Наш центр</h3>
+          <p class="feature__text">В нашем центре особенный интерьер, яркая и запоминающаяся обстановка, продуманные игровые и учебные зоны, а также комфортная зона ожидания. Именно здесь вы найдете все, что нужно для успешного развития Вашего ребенка!</p>
+          <a class="feature__btn yellow-btn open-gallery">ПОСМОТРЕТЬ ФОТОГРАФИИ</a>
+        </div>
+      </div>
+      <!-- /.container -->
+      <div class="container mt-two">
+        <div class="feature-text">
+          <h3 class="feature__title">Педагоги</h3>
+          <p class="feature__text">С Вашими детьми будут работать высококвалифицированные педагоги с большим опытом работы. Работа наших специалистов основана на индивидуальном подходе к каждому ребенку.</p>
+        </div>
+        <div class="feature-image">
+          <img src="image/features/feature-2.png" alt="Педагоги" class="feature__img hidden-mobile">
+          <img src="image/features/mobile-feature-2.jpg" alt="Педагоги" class="feature__img visible-mobile">
+        </div>
+      </div>
+      <!-- /.container -->
+      <div class="container mt-three">
+        <div class="feature-image">
+          <img src="image/features/feature-3.png" alt="Маленькие группы" class="feature__img hidden-mobile">
+          <img src="image/features/mobile-feature-3.jpg" alt="Маленькие группы" class="feature__img visible-mobile">
+        </div>
+        <div class="feature-text">
+          <h3 class="feature__title">Маленькие группы</h3>
+          <p class="feature__text">В наших группах педагог уделяет внимание каждому ребенку, адаптирует задания в соответствии с возрастом и уровнем развития детей.</p>
+          <a class="feature__btn open-popup yellow-btn">ЗАПИСАТЬСЯ В ГРУППУ</a>
+        </div>
+      </div>
+      <!-- /.container -->
+      <div class="container mt-four">
+        <div class="feature-text">
+          <h3 class="feature__title">Развитие</h3>
+          <p class="feature__text">Мы предлагаем Вам следующие направления работы:</p>
+          <ul class="feature__list">
+            <li class="feature__item">- коррекционно-развивающие занятия</li>
+            <li class="feature__item">- интеллектуальную и творческую деятельность</li>
+            <li class="feature__item">- музыкально-тематические развлечения</li>
+          </ul>
+        </div>
+        <div class="feature-image">
+          <img src="image/features/feature-4.png" alt="Развитие" class="feature__img hidden-mobile">
+          <img src="image/features/mobile-feature-4.jpg" alt="Развитие" class="feature__img visible-mobile">
+        </div>
+      </div>
+      <!-- /.container -->
+      <div class="swiper-container">
+        <div class="container row swiper-wrapper">
+          <div class="feature-block swiper-slide">
+            <div class="feature-block-image">
+              <img src="image/features/feature-5.jpg" alt="уютная атмосфера" class="feature-block__img">
+            </div>
+            <h4 class="feature-block__title">уютная атмосфера</h4>
+            <p class="feature-block__text">Уютные, светлые помещения, оборудованные всем необходимым для продуктивного проведения занятий</p>
+          </div>
+          <!-- /.feature-block -->
+          <div class="feature-block swiper-slide">
+            <div class="feature-block-image">
+              <img src="image/features/feature-6.jpg" alt="Результативность" class="feature-block__img">
+            </div>
+            <h4 class="feature-block__title">Результативность</h4>
+            <p class="feature-block__text">Задача наших педагогов дать максимально эффективные знания, раскрыть потенциал каждого ребёнка</p>
+          </div>
+          <!-- /.feature-block -->
+          <div class="feature-block swiper-slide">
+            <div class="feature-block-image">
+              <img src="image/features/feature-7.jpg" alt="Дружная компания" class="feature-block__img">
+            </div>
+            <h4 class="feature-block__title">Дружная компания</h4>
+            <p class="feature-block__text">Групповые занятия и мастер-классы позволяют найти новых друзей и единомышленников, установить тёплые отношения со сверстниками и педагогами.</p>
+          </div>
+          <!-- /.feature-block -->
+          
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <!-- /.container -->
+    </div>
+
+    <div class="services" id="services">
+      <div class="bg-services"></div>
+      <h2 class="blue-title">НАШИ УСЛУГИ</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper container">
+          <div class="swiper-slide service-block">
+            <h4 class="service__title">Занятия <br>с логопедом</h4>
+            <div class="service-image service-image_border">
+              <img src="image/services/service-1.jpg" alt="Занятия с логопедом" class="service__img">
+            </div>
+            <div class="service__text">Индивидуальные и групповые занятия с детьми от 3х до 7 лет, направленные на постановку звуков и коррекцию звукопроизношения, развитие речи, общей и мелкой моторики, формирование грамматического и лексического строя речи</div>
+          </div>
+          <!-- /.service-block -->
+          <div class="swiper-slide service-block">
+            <h4 class="service__title">Подготовка <br>к школе</h4>
+            <div class="service-image">
+              <img src="image/services/service-2.jpg" alt="Подготовка к школе" class="service__img">
+            </div>
+            <div class="service__text">Групповые и индивидуальные занятия с детьми от 4х до 7 лет. Комплексные занятия включают в себя: математику и счет, обучение грамоте, чтению и развитию речи, знакомство с окружающим миром, подготовку руки к письму</div>
+          </div>
+          <!-- /.service-block -->
+          <div class="swiper-slide service-block">
+            <h4 class="service__title">Занятия <br>«Мама и малыш»</h4>
+            <div class="service-image">
+              <img src="image/services/service-3.jpg" alt="Занятия «Мама и малыш»" class="service__img">
+            </div>
+            <div class="service__text">Групповые занятия от 1 года до 3х лет, стимулирующие коммуникативную, познавательную и эмоциональную сферу ребенка; развивающие моторику, сенсорное восприятие, двигательную активность.</div>
+          </div>
+          <!-- /.service-block -->
+          <div class="swiper-slide service-block">
+            <h4 class="service__title">Английский <br>язык</h4>
+            <div class="service-image">
+              <img src="image/services/service-4.jpg" alt="Английский язык" class="service__img">
+            </div>
+            <div class="service__text">Индивидуальные и групповые занятия с дошкольниками и младшими школьниками</div>
+          </div>
+          <!-- /.service-block -->
+          <div class="swiper-slide service-block">
+            <h4 class="service__title">Мастер – классы <br>и развлечения</h4>
+            <div class="service-image">
+              <img src="image/services/service-5.jpg" alt="Мастер – классы и развлечения" class="service__img">
+            </div>
+            <div class="service__text">Развитие творческих, музыкальных и двигательных навыков, работа в команде</div>
+          </div>
+          <!-- /.service-block -->
+          <div class="swiper-slide service-block">
+            <h4 class="service__title opacity-zero">ЗАПИСАТЬСЯ <br>В ГРУППУ</h4>
+            <div class="service-btn open-popup">
+              <a class="service-btn__text">ЗАПИСАТЬСЯ <br>В ГРУППУ</a>
+              <i class="icon-join"></i>
+            </div>
+          </div>
+          <!-- /.service-block -->
+          
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+
+
+    <div class="gallery" id="gallery">
+      <h2 class="blue-title">ГАЛЕРЕЯ</h2>
+      <div class="swiper-container">
+        <div class="container swiper-wrapper">
+          <a class="swiper-slide gallery-block" data-fancybox="gallery" href="image/gallery/363CF8CD-8185-4F56-A3CC-D500C74304BD-21-10-19-09-17.jpg" title="">
+            <img src="image/gallery/small/363cf8cd-8185-4f56-a3cc-d500c74304bd-21-10-19-09-17.kVXAE.jpg" alt="Фото из галереи" class="gallery__img">            
+          </a>
+          <!-- /.gallery-block -->
+          <a class="swiper-slide gallery-block" data-fancybox="gallery" href="image/gallery/C0FD1E94-EEC5-48E0-BADD-ACDACFA256C9-21-10-19-09-17.jpg" title="">
+            <img src="image/gallery/small/c0fd1e94-eec5-48e0-badd-acdacfa256c9-21-10-19-09-17.yGeHM.jpg" alt="Фото из галереи" class="gallery__img">            
+          </a>
+          <!-- /.gallery-block -->
+          <a class="swiper-slide gallery-block" data-fancybox="gallery" href="image/gallery/D9AC2EDE-1A2A-46AD-8483-2708D154C1FF-21-10-19-09-17.jpg" title="">
+            <img src="image/gallery/small/d9ac2ede-1a2a-46ad-8483-2708d154c1ff-21-10-19-09-17.g8UlM.jpg" alt="Фото из галереи" class="gallery__img">            
+          </a>
+          <!-- /.gallery-block -->
+          <a class="swiper-slide gallery-block" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-30-1.jpg">
+            <img src="image/gallery/small/fullsizerender-21-10-19-09-30-1.PegYU.jpg" alt="Фото из галереи" class="gallery__img">            
+          </a>
+          <!-- /.gallery-block -->
+          <a class="swiper-slide gallery-block" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-30.jpg">
+            <img src="image/gallery/small/fullsizerender-21-10-19-09-30.Qa73A.jpg" alt="Фото из галереи" class="gallery__img">            
+          </a>
+          <!-- Остальные скрытые фото -->
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-31-1.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-31-2.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-31.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-32-1.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-32-2.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-32.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/FullSizeRender-21-10-19-09-33.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_0124-21-10-19-09-33.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_1203-21-10-19-09-32.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_1520-21-10-19-09-32.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_1815-21-10-19-09-31.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_2344-21-10-19-09-17.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_2789-21-10-19-09-17.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_3367-21-10-19-09-31.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_3429-21-10-19-09-31.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_3795-21-10-19-09-31.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_3921-21-10-19-09-30.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_4014-21-10-19-09-30.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_4264-21-10-19-09-30.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_5696-21-10-19-09-17.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_6553-21-10-19-09-17.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_8985-21-10-19-09-17.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_9024-21-10-19-09-17.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_9338-21-10-19-09-33.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_9674-21-10-19-09-33.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_9721-21-10-19-09-33.jpg"></a>
+          <a style="display: none;" data-fancybox="gallery" href="image/gallery/IMG_9740-21-10-19-09-33.jpg"></a>
+          <!-- /.gallery-block -->
+          <div class="swiper-slide gallery-btn open-gallery">
+            <a class="gallery-btn__text">ПОСМОТРЕТЬ <br>ВСЕ ФОТОГРАФИИ</a>
+          </div>
+          <!-- /.gallery-btn -->
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    <div class="contacts" id="contacts">
+      <div class="bg-contacts"></div>
+      <h2 class="blue-title">КОНТАКТЫ</h2>
+      <div class="container">
+        <div class="contacts-left">
+          <h4 class="contacts__title">РАЗВИВАЮЩИЙ ЦЕНТР <span class="nowrap">&laquo;<i class="icon-karkusha"></i>&raquo;</span></h4>
+          <p class="contacts__text">
+            Адрес:
+            <br>
+            <a href="https://yandex.ru/maps/-/CGDK7OMp" target="_blank" class="contacts__link">Беларусь, Гродно, ул. Огинского, 8</a>
+          </p>
+          <p class="contacts__text">
+            Телефон:
+            <br>
+            <a href="tel: +375292000209" class="contacts__link">+375 29 200-02-09</a>
+          </p>
+          <p class="contacts__text">
+            Режим работы:
+            <br>
+            <span class="nowrap">Пн-Пт 10:00-21:00,</span> <span class="nowrap">Сб-Вс 10:00-18:00</span>
+          </p>
+        </div>
+        <div class="contacts-map contacts-map_border">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="small-container">
+        <form action="#" method="post" class="form">
+          <h3 class="form__title">Записывайтесь в наш центр</h3>
+          <p class="form__subtitle">В наш детский развивающий центр принимаются дети в возрасте от 1 до 7 лет</p>
+          <div class="form-row">
+            <label>
+              <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+              <span class="error__message">Это поле должно быть заполнено</span>
+            </label>
+            <label>
+              <input type="text" name="phone" class="form__input" placeholder="Ваш телефон">
+              <span class="error__message">Это поле должно быть заполнено</span>
+            </label>
+            <input type="submit" value="ОТПРАВИТЬ" class="form__submit yellow-btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-copy">Copyright &copy; 2010-2019</p>
+      <div class="rozart">
+        <a href="http://rozart.ru/" target="_blank" class="rozart__link">Разработка, <br>создание сайта</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="popup popup-sign-in">
+    <div class="overflow"></div>
+    <div class="container">
+      <form action="#" method="post" class="form">
+        <h3 class="form__title">Записывайтесь в наш центр</h3>
+        <p class="form__subtitle">В наш детский развивающий центр принимаются дети в возрасте от 1 до 7 лет</p>
+        <div class="form-row">
+          <label class="error">
+            <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+            <span class="error__message">Это поле должно быть заполнено</span>
+          </label>
+          <label>
+            <input type="text" name="phone" class="form__input" placeholder="Ваш телефон">
+            <span class="error__message">Это поле должно быть заполнено</span>
+          </label>          <input type="submit" value="ОТПРАВИТЬ" class="form__submit yellow-btn">
+        </div>
+      </form>
+      <a class="popup__close">ЗАКРЫТЬ</a>
+      <a class="popup__close-desctop hidden-mobile"></a>
+    </div>
+  </div>
+  <!-- /.popup-sign-in -->
+  <div class="popup popup-thank">
+    <div class="overflow"></div>
+    <div class="container">
+      <div class="top">
+        <h2 class="popup__title">СПАСИБО!</h2>
+        <i class="icon-ok"></i>
+        <p class="popup__text">Ваше сообщение отправлено, в ближайшее время мы Вам перезвоним</p>
+      </div>
+      <a class="popup__close">ЗАКРЫТЬ</a>
+      <a class="popup__close-desctop hidden-mobile"></a>
+    </div>
+  </div>
+  <!-- /.popup-thank -->
+  
+  <!-- JAVA SCRIPT -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c0e17e79-defa-41d5-94e1-a5a181d5c91f&lang=ru_RU"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!--swiper слайдер-->
+  <script src="lib/swiper/swiper.min.js"></script>
+  <!--галерея fancybox-->
+  <script src="lib/fancybox-3/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    ymaps.ready(init);
+    function init () {
+      var myMap = new ymaps.Map("map", {
+        center:[53.617306, 23.816951],
+        zoom: 18,
+        controls: []
+      });
+
+      var myGeoObjects = [];
+
+      myGeoObjects = new ymaps.Placemark([53.617306, 23.816951],{
+        //balloonContentBody: 'Детсткий развивающий центр КАРКУША',
+      },{
+        iconLayout: 'default#image',
+        iconImageHref: 'image/placemark-karkusha.svg',
+        iconImageSize: [216, 136],
+        iconImageOffset: [-108, -68]
+      });
+
+      var clusterer = new ymaps.Clusterer({
+        clusterDisableClickZoom: false,
+        clusterOpenBalloonOnClick: false,
+      });
+
+      clusterer.add(myGeoObjects);
+      myMap.geoObjects.add(clusterer);
+
+    }
+  </script>
+<!--  <script type="text/javascript" src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=6266042226180096"></script>-->
 </body>
+
 </html>

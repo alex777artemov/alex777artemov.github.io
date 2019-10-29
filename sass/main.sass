@@ -1,0 +1,1444 @@
+@import 'reset'
+
+$black: #444444
+$blue: #3D78C0
+$pink: #FF80AA
+$font-family: 'M PLUS Rounded 1c', sans-serif
+
+/* settings */
+body
+  color: $black
+  font-size: 18px
+  font-family: $font-family !important
+.container
+  max-width: 1110px
+  width: 100%
+  margin: 0 auto
+.small-container
+  max-width: 920px
+  width: 100%
+  margin: 0 auto
+a
+  font-family: $font-family
+h1
+  font-size: 56px
+  font-weight: 900
+  line-height: 70px
+h2
+  font-size: 56px
+  font-weight: 900
+  line-height: 70px
+h3
+  font-size: 36px
+  font-weight: 900
+  line-height: 70px
+h4
+  font-size: 24px
+  font-weight: 900
+  line-height: 36px
+.nowrap
+  white-space: nowrap
+.visible-mobile
+  display: none
+.hidden-mobile
+.opacity-zero
+  opacity: 0
+.popup
+  display: none
+.popup__close-desctop
+  position: absolute
+  top: -18px
+  right: -18px
+  width: 36px
+  height: 36px
+  background-image: url(../image/fancybox_sprite.png)
+  cursor: pointer
+  z-index: 100
+.bg
+  &-lines-icons
+    background: url(../image/bg-lines-icons.svg) left calc(50% + 45px) top 138px no-repeat
+    //background: url(../image/bg-lines-icons.svg) left 66% top 138px no-repeat
+    //background: url(../image/bg-lines-icons.svg) 55% 138px no-repeat
+    //background: url(../image/bg-lines-icons.svg) 0 138px no-repeat
+  &-services
+    position: absolute
+    top: -244px
+    left: 0
+    right: 0
+    bottom: 0
+    background: url(../image/bg-services.png) center top -47px no-repeat
+    background-size: 100% 100%
+    z-index: -1 !important
+  &-contacts
+    position: absolute
+    top: -285px
+    left: 0
+    right: 0
+    bottom: 0
+    background: url(../image/bg-contacts.png) center top 20px no-repeat
+    background-size: 100% 100%
+    z-index: -1
+  
+.blue-title
+  color: $blue
+  text-align: center
+  text-shadow: 2px 4px 0px #F5D6E0
+
+.yellow-btn
+  display: inline-block
+  padding: 19px 38px 20px
+  color: #414141
+  font-family: $font-family
+  font-size: 13px
+  font-weight: 500
+  background: url(../image/bg-orange-btn.png) center no-repeat
+  background-size: 100% 100%
+  border: none
+  border-radius: 6px
+  outline: none
+  cursor: pointer
+  transition: all 0.15s
+  filter: drop-shadow(0px 10px 8px rgba(186, 137, 37, 0.47))
+  &:hover
+    background: url(../image/bg-orange-btn-hover.png) center no-repeat
+    background-size: 100% 100%
+    //box-shadow: 0px 10px 20px 0px rgba(186, 137, 37, 0.47)
+  &:active
+    background: url(../image/bg-orange-btn-active.png) center no-repeat
+    background-size: 100% 100%
+    filter: none
+    
+.icon
+  &-instagram
+    display: block
+    width: 30px
+    height: 30px
+    margin: 3px
+    background: url(../image/icon-instagram.svg) center no-repeat #fff
+    background-size: 16px 16px
+    border-radius: 50%
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.16)
+    //transition: all 0.15s
+    &:hover
+      width: 36px
+      height: 36px
+      margin: 0
+      background-size: 20px 20px
+  &-vk
+    display: block
+    width: 30px
+    height: 30px
+    margin: 3px
+    background: url(../image/icon-vk.svg) center no-repeat #25668E
+    background-size: 16px 9px
+    border-radius: 50%
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.16)
+    //transition: all 0.15s
+    &:hover
+      width: 36px
+      height: 36px
+      background-size: 20px 11px
+      margin: 0
+  &-karkusha
+    display: inline-block
+    width: 104px
+    height: 20px
+    background: url(../image/icon-karkusha.svg) center no-repeat
+    background-size: 104px 20px
+    vertical-align: middle 
+  &-join
+    display: inline-block
+    width: 168px
+    height: 104px
+    background: url(../image/icon-join.svg) center no-repeat
+    background-size: 104%
+  &-ok
+    display: block
+    width: 174px
+    height: 174px
+    margin: 0 auto
+    background: url(../image/icon-ok.svg) center no-repeat
+    background-size: 174px 174px
+  &-contacts
+    display: block
+    width: 24px
+    height: 24px
+    margin-left: 1px
+    background: url(../image/icon-contacts.svg) center no-repeat
+    background-size: 24px 24px
+
+/* header */
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  padding: 36px 0
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.89) 60%, rgba(255, 255, 255, 0) 100%)
+  z-index: 9
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+.logo
+  &__link
+  &__img
+    width: 160px
+    height: 47px
+.menu
+  &__list
+    display: flex
+    align-items: center
+  &__item
+    margin: 0 14px 0 38px 
+  &__link
+    color: $black
+    font-size: 14px
+    font-weight: 500
+    white-space: nowrap
+    &.current, &:hover
+      color: $blue
+.social
+  &__list
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 22px
+  &__item
+    margin-right: 4px
+  &__link
+    .icon
+      &-instagram
+      &-vk
+.sign-up
+  &__btn
+
+
+/* main */
+.main
+  position: relative
+  padding-top: 127px
+  background: url(../image/bg-main/bg-main.svg) center bottom 130px no-repeat
+  background-size: cover
+  z-index: 8
+  .bg-main-2
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 5
+    background: url(../image/bg-main/bg-main-2.png) 45% 128px no-repeat
+  .container
+    position: relative
+    z-index: 8
+  .small-container
+  &__title
+    max-width: 535px
+    margin-top: 229px
+    color: $blue
+    text-shadow: 2px 4px 0px rgba(255, 255, 255, 1)
+    .pink
+      color: $pink
+      white-space: nowrap
+    small
+      display: inline-block
+      width: 397px
+      margin-top: 8px
+      color: $black
+      font-size: 36px  
+      line-height: 46px
+.about
+  position: relative
+  margin-top: 226px
+  margin-bottom: 67px
+  z-index: 8
+  &__text
+    margin-bottom: 18px
+    color: $black
+    font-size: 18px  
+    line-height: 30px
+  &__underline
+    color: $blue
+    text-decoration: underline
+    
+/* формы */
+.form
+  padding: 60px 95px 40px
+  background: #F7FAFF
+  *
+    position: relative
+    z-index: 8
+  &_shadow
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.07)
+  &__title
+    text-align: center
+    text-transform: uppercase
+  &__subtitle
+    margin-top: 8px
+    font-size: 18px
+    line-height: 30px
+    text-align: center
+  &-row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 24px
+  &__input
+    position: relative
+    width: 255px
+    height: 49px
+    padding: 0 20px
+    color: #333
+    font-size: 16px
+    background: #fff
+    border: none
+    border-radius: 5px
+    outline: none
+    box-sizing: border-box
+    &::placeholder
+      color: #999
+    &:focus
+      border: none
+      outline: none
+  .error
+    &__message
+      display: none
+    .error__message
+      position: absolute
+      top: calc(100% + 5px)
+      right: auto
+      left: 0
+      display: block
+      color: #F04D4A
+      font-size: 12px
+      line-height: 16px
+    .form__input
+      border: 1px solid #F34C45
+      &::placeholder
+        color: #F04D4A
+  &__submit
+/* КАКИЕ МЫ */
+.features
+  margin-top: 106px
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &.row
+      align-items: flex-start
+      margin-top: 165px
+  .mt-one
+    margin-top: 100px
+  .mt-two
+    margin-top: 60px
+  .mt-three
+    margin-top: 63px
+  .mt-four
+    margin-top: 56px
+.feature
+  &-image
+    max-width: 570px
+    min-width: 570px
+    width: 570px
+    height: 565px
+  &__img
+  &-text
+    width: 454px
+    margin-left: 80px
+    padding: 0 16px
+    box-sizing: border-box
+  &__title
+    text-transform: uppercase
+    line-height: 1.2
+  &__text
+    margin-top: 30px
+    font-size: 18px
+    line-height: 30px
+  &__btn
+    margin-top: 36px
+  &__list
+    margin-top: 14px
+  &__item
+    font-size: 18px
+    line-height: 36px
+.feature-block
+  max-width: 350px
+  width: 100%
+  &-image
+    width: 350px
+    height: 273px
+    border-radius: 10px
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2)
+    overflow: hidden
+  &__img
+  &__title
+    margin-top: 20px
+    text-transform: uppercase
+  &__text
+    margin-top: 26px
+    font-size: 18px
+    line-height: 30px
+/* НАШИ УСЛУГИ */
+.services
+  position: relative
+  margin-top: 244px
+  padding-bottom: 216px
+  *
+    z-index: 8
+  .blue-title
+    margin-bottom: 84px
+  .container
+    display: flex
+    align-items: flex-start
+    justify-content: left
+    flex-wrap: wrap
+.service
+  &-block
+    max-width: 285px
+    width: 100%
+    margin-bottom: 76px
+    margin-right: 95px
+    &:nth-child(3),
+    &:last-child
+      margin-right: auto
+  &__title
+    margin-bottom: 29px
+    font-size: 24px
+    line-height: 36px
+    text-transform: uppercase
+  &-image
+    display: flex 
+    align-items: center
+    justify-content: center
+    width: 285px
+    height: 285px
+    border-radius: 10px 150px 10px 10px
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2)
+    overflow: hidden
+    &_border
+  &__img
+  &__text
+    margin-top: 27px
+    font-size: 18px
+    line-height: 30px
+  &-btn
+    position: relative
+    display: flex 
+    align-items: center
+    justify-content: center
+    width: 285px
+    height: 285px
+    background: #FFC858
+    border-radius: 10px 150px 10px 10px
+    box-shadow: 0px 10px 30px 0px rgba(247, 166, 0, 0.42)
+    cursor: pointer
+    &:hover
+      background: #F0B641
+    &:active
+      background: #F2B731
+      box-shadow: none
+    &__text
+      font-size: 24px
+      font-weight: 900
+      line-height: 36px
+      text-align: center
+    .icon-join
+      position: absolute
+      bottom: -23px
+      left: 12px
+.gallery
+  //margin-top: 216px
+  .container
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 83px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 350px
+    height: 273px
+    margin-bottom: 30px
+    border-radius: 10px
+    overflow: hidden
+  &__img
+    transition: all .3s 
+    &:hover
+      transform: scale(1.3)
+  &-btn
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 350px
+    height: 273px
+    border-radius: 10px
+    background: #FFC858
+    box-shadow: 0px 10px 30px 0px rgba(247, 166, 0, 0.42)
+    cursor: pointer
+    &:hover
+      background: #F0B641
+    &:active
+      background: #F2B731
+      box-shadow: none
+    &__text
+      font-size: 24px
+      font-weight: 900
+      line-height: 36px
+      text-align: center
+      text-transform: uppercase
+.contacts
+  position: relative
+  margin-top: 285px
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 70px
+  &-left
+    margin-top: 22px
+  &__title
+    margin-bottom: 20px
+    .icon-karkusha
+      vertical-align: baseline
+  &__text
+    margin-bottom: 16px
+    font-size: 18px
+    line-height: 38px
+  &__link
+    color: $black
+    font-size: 18px
+    line-height: 36px
+    &:hover
+      text-decoration: underline
+  &-map
+    width: 540px
+    height: 477px
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, .1)
+    &_border
+  .small-container
+    padding-top: 45px
+  .form
+    background-color: transparent
+#map
+  width: 100%
+  height: 100%
+    
+.footer
+  padding-bottom: 29px
+  background: #F7FAFF
+  .container
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    padding-top: 26px
+  &-copy
+    font-size: 12px
+    line-height: 23px
+.rozart
+  padding-top: 4px
+  padding-left: 70px
+  background: url(../image/rozart.svg) top left no-repeat
+  &__link
+    color: $black
+    font-size: 12px
+    line-height: 15px
+    text-decoration: underline
+/* Всплывающие окна */
+.popup
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 99
+  &__close
+    display: none
+  .overflow
+    width: 100%
+    height: 100%
+    background: rgba(68, 68, 68, 0.91)
+  .container
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 540px
+    box-sizing: border-box
+    transform: translate(-50%, -50%)
+  &-sign-in,
+    .container
+      background: url(../image/bg-popup.png) center no-repeat
+      background-size: 100% 100%
+  &-thank
+    .container
+      background: url(../image/bg-popup.png) center no-repeat
+      background-size: 100% 100%
+      padding: 149px 141px 155px
+  &__title
+    margin-bottom: 18px
+    font-size: 24px
+    line-height: 34px
+    text-align: center
+  &__text
+    width: 234px
+    margin: 24px auto 0
+    font-size: 16px
+    line-height: 26px
+    text-align: center
+  .form
+    padding: 124px 95px 107px
+    width: 288px
+    margin: 0 auto
+    background-color: transparent
+    &__title
+      width: 230px
+      margin: 0 auto
+      font-size: 24px
+      line-height: 34px
+    &__subtitle
+      width: 230px
+      margin: 24px auto 0
+      font-size: 16px
+      line-height: 26px
+    &-row
+      flex-direction: column
+      margin-top: 32px
+    &__input
+      width: 100%
+      margin-bottom: 10px
+      text-align: center
+    .error
+      padding-bottom: 15px
+      .error__message
+        top: auto
+        bottom: 6px
+    &__submit
+      width: 100%
+      margin-top: 10px
+    
+
+@media screen and (max-width: 1140px) 
+  html
+    -webkit-text-size-adjust: none
+  body
+    zoom: 0.9
+    //width: 1110px
+//  .container
+//    width: 100%
+//    padding: 0 16px
+//    box-sizing: border-box
+//  .header
+//    position: sticky
+//    width: 1110px
+//  .main
+//    top: -130px
+@media screen and (max-width: 1024px) and (min-width: 740px)
+  body
+    zoom: 1
+  .container
+    max-width: 960px
+  .menu__item
+    margin: 0 10px
+  .social__list
+    margin-right: 0
+  .main 
+    .bg-main-2
+      background-size: 125%
+    &__title
+      margin-top: 150px
+      font-size: 46px
+  .about
+    margin-top: 144px
+    &__text
+      padding: 0 106px
+  .bg-lines-icons
+    background-size: 130%
+  .features
+    .mt-one
+      margin-top: 74px
+    .mt-two
+      margin-top: 34px
+    .mt-three
+      margin-top: 42px
+    .mt-four
+      margin-top: 20px
+  .feature
+    .container
+      justify-content: space-evenly
+      &.row
+        margin-top: 78px
+    &-image
+      max-width: 430px
+      min-width: 430px
+      width: 430px
+      height: 430px
+    &__img
+      width: 100%
+    &-text
+      width: 490px
+      margin-top: 15px
+      margin-left: 30px
+      padding: 0 24px
+    &__btn
+      margin-top: 20px
+    &-block
+      max-width: 260px
+      &-image
+        width: 260px
+        height: 200px
+      &__img
+        width: 100%
+      &__title
+        font-size: 21px
+        margin-top: 14px
+      &__text
+        margin-top: 8px
+        font-size: 17px
+        line-height: 26px
+  .bg-services
+    top: -130px
+    background-size: 170% 103%
+  .services
+    margin-top: 60px
+    padding-bottom: 50px
+    .blue-title
+      margin-bottom: 40px
+    .container
+      justify-content: space-evenly
+  .service
+    &-block
+      max-width: 240px
+      margin-right: 16px
+      margin-left: 16px
+      &:nth-child(3),
+      &:last-child
+        margin-right: 16px
+    &__title
+      margin-bottom: 20px
+      font-size: 22px
+      line-height: 28px
+    &-image
+      width: 240px
+      height: 240px
+    &__img
+      width: 100%
+    &__text
+      margin-top: 20px
+      font-size: 16px
+      line-height: 22px
+    &-btn
+      width: 240px
+      height: 240px
+  .gallery
+    .container
+      margin-top: 50px
+    &-block
+      width: 276px
+      height: 182px
+    &__img
+      width: 100%
+    &-btn
+      width: 276px
+      height: 182px 
+  .bg-contacts
+    top: -200px
+  .contacts
+    margin-top: 180px
+    &-map
+      width: 460px
+      height: 400px
+
+  
+@media screen and (max-width: 992px) and (min-width: 740px)
+  h2
+    font-size: 42px
+    line-height: 56px
+  .container
+    max-width: 720px
+  .small-container
+    max-width: 680px
+  .yellow-btn
+    padding: 14px 17px 14px
+  .logo__img
+    width: 120px
+    height: auto
+  .menu
+    &__item
+      margin: 0 6px
+    &__link
+      -webkit-appearance: none
+  .main
+    padding-top: 172px
+    &__title
+      margin-top: 122px
+      font-size: 40px
+      line-height: 54px
+      small
+        font-size: 29px
+        line-height: 36px
+  .about
+    margin-top: 150px
+    margin-bottom: 34px
+    &__text
+      margin-bottom: 8px
+      padding: 0 40px
+      font-size: 16px
+      line-height: 23px
+  .form
+    padding: 40px 46px 30px
+    &__title
+      font-size: 32px
+      line-height: 48px
+    &__subtitle
+      font-size: 15px
+    &__input
+      width: 220px
+  .bg-lines-icons
+    background: url(../image/bg-lines-icons.svg) left calc(50% + 20px) top 138px no-repeat
+    background-size: 1014px auto
+  .features
+    margin-top: 60px
+    .container
+      &.row
+        margin-top: 70px
+    .mt-one
+      margin-top: 120px
+    .mt-two
+      margin-top: 38px
+    .mt-three
+      margin-top: 56px
+    .mt-four
+      margin-top: 36px
+  .feature
+    &-image
+      max-width: 300px
+      min-width: 300px
+      width: 300px
+      height: 300px
+    &-text
+      padding: 0 14px
+      margin-left: 15px
+    &__title
+      font-size: 28px
+    &__text
+      margin-top: 10px
+      font-size: 16px
+      line-height: 22px
+    &__btn
+      margin-top: 14px
+    &__item
+      font-size: 16px
+      line-height: 22px
+    &-block
+      max-width: 220px
+      &-image
+        width: 220px
+        height: 170px
+      &__title
+        font-size: 18px
+        line-height: 22px
+      &__text
+        font-size: 16px
+        font-size: 15px
+        line-height: 22px
+        line-height: 20px
+  .bg-services
+    top: -66px
+    background-size: 270% 107%
+  .services
+    margin-top: 30px
+    padding-bottom: 0px
+    .blue-title
+      margin-bottom: 20px
+  .service
+    &-block
+      max-width: 206px
+      margin-bottom: 30px
+    &__title
+      margin-bottom: 12px
+      font-size: 20px
+      line-height: 26px
+    &-image
+      width: 206px
+      height: 206px
+    &__text
+      font-size: 14px
+      font-size: 15px
+      line-height: 18px
+      line-height: 20px
+    &-btn
+      width: 206px
+      height: 206px
+      &__text
+        font-size: 22px
+        line-height: 30px
+      .icon-join
+        width: 130px
+        height: 80px
+  .gallery
+    .container
+      margin-top: 30px
+    &-block
+      width: 220px
+      height: 146px
+      margin-bottom: 16px
+      margin-bottom: 32px
+    &-btn
+      width: 220px
+      height: 146px
+      &__text
+        font-size: 22px
+        line-height: 30px
+  .bg-contacts
+    top: -120px
+    background-size: 140% 100%
+  .contacts
+    margin-top: 64px
+    .container
+      margin-top: 50px
+    &-left
+      margin-top: 0
+    &__title
+      margin-bottom: 10px
+      font-size: 22px
+      line-height: 30px
+    &__text
+      font-size: 16px
+      line-height: 20px
+    &__link
+      font-size: 16px
+      line-height: 20px
+    &-map
+      width: 330px
+      height: 300px
+  .icon-karkusha
+    width: 94px
+    height: 18px
+    background-size: 94px 18px
+@media screen and (max-width: 900px) and (min-width: 740px)
+  .about
+    margin-top: 110px
+@media screen and (max-width: 940px) and (min-width: 740px)
+  .about
+    margin-top: calc(100vw - 782px)
+@media screen and (max-width: 850px) and (min-width: 740px)
+  .main__title 
+    margin-top: calc(100vw - 697px)
+  .about
+    margin-top: 90px
+    
+@media screen and (max-width: 740px)
+  body
+    width: auto
+    font-size: 16px
+    line-height: 26px
+    zoom: 1
+  .container, .small-container
+    padding: 0 16px
+    box-sizing: border-box
+  .hidden-mobile
+    display: none
+  .visible-mobile
+    display: block
+  .mobile-menu-open
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 36px
+    height: 36px
+    background: #FFC858
+    border-radius: 5px
+    box-shadow: 0px 10px 20px 0px rgba(186, 137, 37, 0.47)
+    span
+      position: relative
+      display: block
+      width: 12px
+      height: 2px
+      margin-right: 6px
+      border-radius: 1px
+      background-color: $blue
+      &:before
+        content: ''
+        position: absolute
+        top: -5px
+        display: block
+        width: 18px
+        height: 2px
+        border-radius: 1px
+        background-color: $blue
+      &:after
+        content: ''
+        position: absolute
+        bottom: -5px
+        display: block
+        width: 16px
+        height: 2px
+        border-radius: 1px
+        background-color: $blue
+  .mobile-contact-open
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 36px
+    height: 36px
+    background: #FFC858
+    border-radius: 5px
+    box-shadow: 0px 10px 20px 0px rgba(186, 137, 37, 0.47)
+  h1
+    font-size: 34px
+    line-height: 39px
+  h2
+    font-size: 34px
+    line-height: 70px
+  h3
+    font-size: 24px
+    line-height: 34px
+  h4
+    font-size: 20px
+  .bg-mobile-wave
+    background: url(../image/mobile-bg-wave.png) center no-repeat
+    background-size: 100% 100%
+  .yellow-btn
+    width: 100%
+    height: 52px
+    line-height: 14px
+    text-align: center
+    box-sizing: border-box
+    &:hover,
+    &:active
+      width: 100%
+      background: url(../image/bg-orange-btn.png) center no-repeat
+      background-size: 100% 100%
+      filter: drop-shadow(0px 10px 8px rgba(186, 137, 37, 0.47))
+  .header
+    position: fixed
+    width: 100%
+    padding: 11px 0 17px
+  .logo
+    //width: 100%
+    margin-top: 9px
+    &__img
+      width: 136px
+      height: 39px
+  .main
+    top: 0
+    padding-top: 0px
+    background: none
+    .bg-main-2
+      background: none
+    .container
+      position: relative
+      width: 100%
+      margin: 0 auto
+      padding: 80px 0 0
+      background-color: #F7FAFF
+      z-index: 1
+      &:after
+        position: absolute
+        bottom: 0
+        left: 0
+        content: ''
+        display: block
+        width: 100%
+        height: 40px
+        background: #fff
+      *
+        z-index: 3
+    &__title
+      position: absolute
+      bottom: 108px
+      max-width: none
+      margin-top: 0
+      //padding: 318px 16px 42px
+      padding: 0px 16px
+      //background: url(../image/bg-main/mobile-bg-main-2.png) center center no-repeat
+      //background-size: cover
+      &-bg
+        position: relative
+        z-index: 2
+        width: 100%
+        background: url(../image/bg-main/children.png) center top -5px no-repeat
+        background-size: 114% auto
+      small
+        width: 100%
+        margin-top: 3px
+        font-size: 20px
+        line-height: 28px
+        white-space: normal
+    .bg-mobile-wave
+      padding-top: 68px
+      padding-bottom: 40px
+  .about
+    margin-top: 18px
+    margin-bottom: 0
+    &__text
+      font-size: 16px
+      line-height: 26px
+      &_mobile-hidden
+        display: none
+      &-mobile-more
+        display: inline-block
+        color: $blue
+        border-bottom: 1px dashed $blue
+  .form
+    padding: 0
+    &_shadow
+      box-shadow: none
+    &__title
+      font-size: 24px
+      line-height: 34px
+    &__subtitle
+      width: 258px
+      margin: 23px auto 0
+      font-size: 16px
+      line-height: 26px
+    &-row
+      flex-direction: column
+      margin-top: 32px
+    &__input
+      width: 100%
+      margin-bottom: 10px
+      text-align: center
+    .error
+      padding-bottom: 15px
+      .error__message
+        top: auto
+        bottom: 6px
+    &__submit
+      width: 100%
+      margin-top: 10px
+  .bg-lines-icons
+    background: none
+  .bg-services
+    top: 0
+    background: url(../image/mobile-bg-services.png) center top 49px no-repeat
+    background-size: 100% 94%
+  .bg-contacts
+    background: url(../image/mobile-bg-contacts.png) center top 2px no-repeat
+    background-size: 100% 100%
+    top: 0
+  .features
+    margin-top: 39px
+    .container
+      padding: 0
+      &.mt-one
+        flex-direction: column
+        margin-top: 19px
+      &.mt-two
+        flex-direction: column-reverse
+        margin-top: 50px
+      &.mt-three
+        flex-direction: column
+        margin-top: 49px
+      &.mt-four
+        flex-direction: column-reverse
+        margin-top: 49px
+      &.row
+        margin-top: 48px
+        //padding: 0 16px 32px
+    .visible-mobile
+      display: none
+    .hidden-mobile
+      display: block
+  .feature
+    &-block
+      width: 250px
+    &-image
+      display: flex
+      justify-content: center
+      min-width: auto
+      max-width: none
+      height: auto
+      width: 100%
+    &__img
+      width: 100%
+      height: 100%  
+      //min-height: 285px
+      //object-fit: cover
+    &-text
+      width: 100%
+      margin-top: 18px
+      margin-left: 0
+      padding: 0 16px
+    &__text
+      margin-top: 16px
+      font-size: 16px
+      line-height: 26px
+    &__btn
+      margin-top: 23px
+    &__list
+      margin-top: 9px
+    &__item
+      font-size: 16px
+      line-height: 28px
+    &-block
+      max-width: none
+      &-image
+        width: 250px
+        height: 194px
+      &__img
+        width: 100%
+      &__title
+        width: 250px
+        line-height: 21px
+      &__text
+        width: 250px
+        margin-top: 14px
+        font-size: 16px
+        line-height: 26px
+  .services
+    margin-top: 0px
+    padding-top: 99px
+    padding-bottom: 10px
+    .blue-title
+      width: 180px
+      margin: 0 auto
+      line-height: 44px
+    .container
+      flex-wrap: nowrap
+      margin-bottom: 32px
+      padding: 0
+  .service
+    &-block
+      width: 250px
+      max-width: none
+      margin-right: 0
+    &__title
+      margin-top: 40px
+      margin-bottom: 19px
+      font-size: 20px
+      line-height: 30px
+    &__text
+      width: 250px
+      margin-top: 13px
+      font-size: 16px
+      line-height: 26px
+    &-image
+      width: 250px
+      height: 250px
+    &__img
+      width: 100%
+    &-btn
+      width: 250px
+      height: 250px
+  .gallery
+    margin-top: 32px
+    .container
+      flex-wrap: nowrap
+      margin-top: 29px
+      padding: 0 0 62px
+    &-block
+      justify-content: flex-start
+      height: 195px
+      width: 250px
+    &__img
+      min-width: 250px
+      min-height: 195px
+      width: 100%
+      height: auto
+      object-fit: cover
+      &:hover
+        transform: scale(1)
+    &-btn
+      width: 250px
+      max-width: 250px
+      height: 195px
+  .contacts
+    margin-top: 0
+    padding-top: 39px
+    padding-bottom: 42px
+    .container
+      margin-top: 2px
+      flex-direction: column
+    .small-container
+      padding-top: 30px
+    &-left
+      width: 100%
+    &__title
+      width: 246px
+      margin-bottom: 10px
+    &__text
+      margin-bottom: 10px
+      font-size: 16px
+      line-height: 28px
+    &__link
+      text-decoration: underline
+    &-map
+      width: 100%
+      height: 254px
+      margin-top: 17px
+  .footer
+    background: #fff
+    .container
+      flex-direction: column
+      align-items: center
+      padding-top: 20px
+    &-copy
+      font-size: 12px
+      line-height: 36px
+  .rozart
+    margin-top: 8px
+    &__link
+      display: inline-block
+      width: 92px
+      line-height: 16px
+      br
+        display: none
+  .popup
+    overflow: auto
+    .container
+      overflow: auto
+      width: 100%
+    .overflow
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+  /* Всплывающее меню и контакты*/
+  .icon-close
+    display: block
+    width: 14px
+    height: 14px
+    background: url(../image/icon-close.svg) center no-repeat
+    background-size: 14px 14px
+  .popup-menu,
+  .popup-contacts
+    height: 100%
+    background: #fff
+    .popup__close
+      position: absolute
+      top: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 36px
+      height: 36px
+      background: #ED4F4F
+      box-shadow: 0px 10px 20px 0px rgba(240, 77, 74, 0.5)
+      border-radius: 5px
+    .container 
+      flex-direction: column
+      justify-content: space-between
+      height: 100%
+      padding: 0 16px
+    .top
+      width: 100%
+    .logo
+      display: block
+      width: 100%
+      margin: 0
+      padding: 20px 0 10px
+      text-align: center
+      border-bottom: 1px solid #efefef
+    .menu
+      &__list
+        flex-direction: column
+      &__item
+        width: 100%
+        margin: 0
+        text-align: center
+        border-bottom: 1px solid #efefef
+      &__link
+        display: block
+        width: 100%
+        padding: 20px 0
+        &.current
+          background: #F7FAFF
+    .contact
+      margin-top: 18px
+      text-align: center
+      border-bottom: 1px solid #efefef
+      &__text
+        margin-bottom: 28px
+        font-size: 18px
+        line-height: 30px
+        &:last-child
+          margin-bottom: 19px
+        a
+          color: $blue
+          text-decoration: underline
+    .bottom
+      width: 100%
+    .sign-up
+      margin: 22px 0
+    .social
+      margin-bottom: 30px
+      &__list
+        margin-right: 0
+      &__item
+        margin-right: 0
+  .popup-menu .popup__close
+    left: 16px
+  .popup-contacts .popup__close
+    right: 16px
+  /* Всплывающие окна */
+  .popup-sign-in,
+  .popup-thank
+    .popup__close
+      display: inline-block
+      width: 98px
+      margin: 20px auto 8px
+      color: #F04D4A
+      font-size: 13px
+      text-align: center
+    .container
+      top: 0
+      right: 0
+      left: 0
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: auto
+      min-height: 520px
+      transform: translate(0, 0)
+      margin: 27px 16px
+      padding: 46px 15px 38px
+      background: url(../image/mobile-bg-popup.png) center no-repeat
+      background-size: 100% 100%
+    .form
+      padding: 0
+      margin: 0
+      width: auto
+    &__title
+      margin-bottom: 16px
+  .swiper-scrollbar
+    background: #E5E5E5
+    &-drag
+      background: #FFC858
+  .features .swiper-container-horizontal>.swiper-scrollbar
+    bottom: -1px
+  .services .swiper-container-horizontal>.swiper-scrollbar
+    bottom: 52px
+  .gallery .swiper-container-horizontal>.swiper-scrollbar
+    bottom: 48px
+  .swiper-container-horizontal>.swiper-scrollbar
+    left: 5%
+    width: 90%
+  .swiper-container
+    padding: 0 16px 32px
+    
+    
+    
+
+@media screen and (max-width: 540px)
+@media screen and (max-width: 478px)
+  .main__title
+    bottom: 58px
+  .about
+    //margin-top: 14px
+@media screen and (max-width: 375px)
+@media screen and (max-width: 360px)
+  .features
+    .visible-mobile
+      display: block
+    .hidden-mobile
+      display: none
+@media screen and (max-width: 340px)
+  .main__title
+    bottom: 35px
+/*перекрытие круглого звонка на сайте*/
+#productview.is_loaded.pv_fixed-widget.on_device.small_device.pv_control_btn_hidden
+  z-index: 8 !important
