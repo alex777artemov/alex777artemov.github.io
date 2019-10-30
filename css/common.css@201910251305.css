@@ -473,6 +473,7 @@ h4 {
 	margin-top: 24px;
 }
 .form__input {
+  -webkit-appearance: none;
 	position: relative;
 	width: 255px;
 	height: 49px;
@@ -736,6 +737,7 @@ h4 {
 	margin-top: 83px;
 }
 .gallery-block {
+  -webkit-appearance: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
