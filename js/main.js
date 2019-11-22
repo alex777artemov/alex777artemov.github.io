@@ -1,115 +1,58 @@
 $(document).ready(function(){
-  
-  //Плавный переход по якорям
-  var headerHeight = $("header").outerHeight();
-  $(".menu a").on("click", function (event) {
-    event.preventDefault();
-    var linkHref  = $(this).attr('href');
-    $("html, body").animate({
-      scrollTop: $(linkHref).offset().top - headerHeight - 20
-    }, 500);
-  });
-  //Закрывать мобильное меню при нажатии на пункт меню
-  $(".popup-menu .menu__link").on("click", function(){
-    $(".popup-menu").fadeOut();
-  });
-//  открыть всплывающее окно
-  $(".open-popup").on("click", function(event){
-    event.preventDefault();
-    $(".popup-sign-in").fadeIn();
-    $('body').css('overflow','hidden');
-  });  
-  //после отправки формы
-  $(".form__submit").on("click", function(event){
-    event.preventDefault();
-    $(".popup").fadeOut();
-    $(".popup-thank").fadeIn();
-    setTimeout(function(){
-      $(".popup-thank").fadeOut();
-    }, 2500);
-    $('body').css('overflow','visible');
-  }); 
-  //открыть мобильное меню
-  $(".mobile-menu-open").on("click", function(){
-    $(".popup-menu").fadeIn();
-  });
-  //открыть мобильнst контакты
-  $(".mobile-contact-open").on("click", function(){
-    $(".popup-contacts").fadeIn();
-  });
-  //закрыть popup
-  $(".popup .overflow").on("click", function(event){
-    event.preventDefault();
-    $(this).parent().fadeOut();
-    $('body').css('overflow','visible');
-  });
-  $(".popup__close, .popup__close-desctop").on("click", function(){
-    $(this).parent().parent().fadeOut();
-    $('body').css('overflow','visible');
-  });
-  //открыть полностью текст в мобильной версии в блоке О НАС
-  $(".about__text-mobile-more").on("click", function(){
-    $(this).hide();
-    $(".about__text_mobile-hidden").show();
-  });
-  
-  //Слайдер SWIPER
-  if(document.documentElement.clientWidth < 740) {
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-      breakpoints: {
-        540: {
-          slidesPerView: 'auto',
-        }
-      }
-    });
-  }
-  //Галерея изображений
-  $('[data-fancybox="gallery"]').fancybox({
-    buttons: [
-      //"zoom",
-      //"share",
-      //"slideShow",
-      //"fullScreen",
-      //"download",
-      //"thumbs",
-      "close"
-    ],
-    thumbs : {
-      //autoStart : true
-    },
-    mobile: {
-      thumbs : {
-        autoStart : false
-      },
-    }
-  });
-  $(".open-gallery").on("click", function(event){
-    event.preventDefault();
-    $.fancybox.open($('[data-fancybox="gallery"]'),{
-      buttons: [
-        //"thumbs",
-        "close"
-      ],
-      thumbs : {
-        //autoStart : true
-      },
-      mobile: {
-        thumbs : {
-          autoStart : false
-        },
-      }
-    });
-  });
-  //Ошибка при заполнении
-  if(".form .error"){
-    $(".form .error").children('.form__input').attr("placeholder", "Ошибка");
-  }
-  
-  
+	//Мобильное меню
+	$('.open-mobile-menu').on('click', function(){
+		$('.popup-mob-menu').fadeIn();
+	});
+	$('.popup-mob-menu .popup__close').on('click', function(){
+		$('.popup-mob-menu').fadeOut();
+	});
+	//Сладеры на главной странице
+	$('.main-slider').slick({
+		infinite: false,
+		prevArrow: '<i class="arrow arrow-prev"></i>',
+		nextArrow: '<i class="arrow arrow-next"></i>',
+	});
+	$('.project-slider').slick({
+		infinite: false,
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		variableWidth: true,
+		swipeToSlide: true
+	});
+	$('.ensemble-slider').slick({
+		centerMode: true,
+		slidesToShow: 3,
+		swipeToSlide: true,
+		focusOnSelect: true,
+		//centerPadding: 50,
+		centerPadding: 10,
+		//rtl: true,
+		prevArrow: '<i class="arrow arrow-prev"></i>',
+		nextArrow: '<i class="arrow arrow-next"></i>',
+		responsive: [
+			{
+				breakpoint: 1240,
+				settings: {
+					centerMode: false,
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					centerMode: false,
+					slidesToShow: 1,
+				}
+			},
+		]
+	});
+	$('.project-page-gallery-slider').slick({
+		prevArrow: '<i class="arrow arrow-prev"></i>',
+		nextArrow: '<i class="arrow arrow-next"></i>',
+		variableWidth: true,
+		centerMode: true,
+		//slidesToShow: 1,
+		swipeToSlide: true,
+		focusOnSelect: true,
+	});
 });
-
