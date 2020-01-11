@@ -5,8 +5,7 @@ body
 	letter-spacing: .4px
 	font-family: Arial,Helvetica,sans-serif
 	-webkit-font-smoothing: antialiased
-.bg_grey
-	background-color: #e8e8e8 !important
+
 .wrapper
 	display: flex
 	flex-direction: column
@@ -418,7 +417,7 @@ body
 		&:first-child
 			margin-left: 0
 		&:last-child
-			margin-right: 0
+			margin-right: auto
 	.small-block
 		width: calc(25% - 9px)
 	.banner-block
@@ -451,6 +450,8 @@ body
 
 
 @media (max-width: 768px)
+	.bg_grey
+		background-color: #e8e8e8 !important
 	.main-wrapper
 		max-width: 425px
 		margin: 0 auto
