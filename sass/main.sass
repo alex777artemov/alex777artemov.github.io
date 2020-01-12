@@ -520,14 +520,35 @@ body
 			font-size: 17px
 			font-weight: 900
 			line-height: 12.76px
-		
+	.long-block
+		display: block
+		width: 211px
+		min-height: 105px
+		padding: 23px 20px !important
+		.block-icon
+			float: left
+			width: 48px
+			min-width: 48px
+			height: 100%
+			margin-right: 10px
+		.block__percent
+			font-size: 12px
+			font-weight: 900
+			line-height: 1
+		.block__title
+			margin-top: 6px
+			line-height: 13.5px
+			color: #2b2b29
+			font-size: 12px
+			font-weight: 900
+			line-height: 13.5px
+		.block__subtitle
+			color: #2b2b29
+			font-size: 11px
+			font-weight: 700
+			line-height: 13.5px
 
 
-
-	.slider-four 
-		.small-block
-			width: 211px
-			padding: 23px 20px
 	.stock-page .block_border.small-block
 		padding-top: 23px
 
@@ -537,6 +558,10 @@ body
 		.block
 			&-image
 				height: 102px
+	
+	
+	
+	
 	
 	.slider-one, .slider-two, .slider-three, .slider-four
 		padding-right: 0
@@ -561,9 +586,44 @@ body
 				&.active
 					span
 						background-color: #e9d275
+	.slider-one 
+		.slide-big-block
+			width: 211px
+			height: 373px
+			padding: 0 10px
+			.block-text
+				justify-content: flex-start
+				height: 100%
+				margin-left: 0px
+			.block__big-btn
+				position: absolute
+				bottom: 20px
+				left: 50%
+				transform: translateX(-50%)
+			.block__big-title
+				line-height: 24px
+			.block__subtitle
+				margin-bottom: 20px
+		.slide-three-block
+			width: 211px
+			.block_border
+				width: 100%
+				margin-right: 0px !important
+				margin-bottom: 18px
+				height: auto
+			.long-block
+				padding: 14px 10px 40px 20px !important
+				
+	
 	.slider-three
 		.block-avg
 			min-height: 222px
+	.slider-four 
+		.small-block
+			width: 211px
+			padding: 23px 20px
+		.long-block
+			width: 211px
 	.stock-five 
 		padding: 0
 		.small-block
@@ -593,7 +653,42 @@ body
 		padding-left: 12px
 		padding-right: 12px
 		padding-bottom: 18px
-
-
-
+	.stock-five
+		&-row
+			flex-wrap: wrap
+		.block_border:last-child
+			margin-right: 0
+			margin-left: 0
+		.banner-block
+			min-width: 142px
+			width: calc(50% - 9px)
+			margin-bottom: 18px
+			margin-right: 0
+			.banner__text
+				line-height: 18px
+		.banner-long-block
+			width: 100%
+		.long-block
+			width: 100%
+	.stock-six
+		flex-wrap: wrap
+		.long-block
+			width: 100%
+			margin-bottom: 18px
+			&-col
+				width: 100%
+		> div
+			margin-left: 0
+			margin-right: 0
+		.block-avg
+			width: 100%
+			margin-bottom: 18px
+		.small-block
+			width: 100%
+			height: auto
+			&-col
+				width: 100%
+	
+	
+	
 @media (max-width: 460px)

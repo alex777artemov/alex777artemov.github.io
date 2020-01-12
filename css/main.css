@@ -477,9 +477,33 @@ body {
       font-weight: 900;
       line-height: 12.76px; }
 
-  .slider-four .small-block {
+  .long-block {
+    display: block;
     width: 211px;
-    padding: 23px 20px; }
+    min-height: 105px;
+    padding: 23px 20px !important; }
+    .long-block .block-icon {
+      float: left;
+      width: 48px;
+      min-width: 48px;
+      height: 100%;
+      margin-right: 10px; }
+    .long-block .block__percent {
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1; }
+    .long-block .block__title {
+      margin-top: 6px;
+      line-height: 13.5px;
+      color: #2b2b29;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 13.5px; }
+    .long-block .block__subtitle {
+      color: #2b2b29;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 13.5px; }
 
   .stock-page .block_border.small-block {
     padding-top: 23px; }
@@ -511,8 +535,41 @@ body {
         .slider-one .owl-dots .owl-dot.active span, .slider-two .owl-dots .owl-dot.active span, .slider-three .owl-dots .owl-dot.active span, .slider-four .owl-dots .owl-dot.active span {
           background-color: #e9d275; }
 
+  .slider-one .slide-big-block {
+    width: 211px;
+    height: 373px;
+    padding: 0 10px; }
+    .slider-one .slide-big-block .block-text {
+      justify-content: flex-start;
+      height: 100%;
+      margin-left: 0px; }
+    .slider-one .slide-big-block .block__big-btn {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .slider-one .slide-big-block .block__big-title {
+      line-height: 24px; }
+    .slider-one .slide-big-block .block__subtitle {
+      margin-bottom: 20px; }
+  .slider-one .slide-three-block {
+    width: 211px; }
+    .slider-one .slide-three-block .block_border {
+      width: 100%;
+      margin-right: 0px !important;
+      margin-bottom: 18px;
+      height: auto; }
+    .slider-one .slide-three-block .long-block {
+      padding: 14px 10px 40px 20px !important; }
+
   .slider-three .block-avg {
     min-height: 222px; }
+
+  .slider-four .small-block {
+    width: 211px;
+    padding: 23px 20px; }
+  .slider-four .long-block {
+    width: 211px; }
 
   .stock-five {
     padding: 0; }
@@ -543,6 +600,42 @@ body {
   .stock-five, .stock-six {
     padding-left: 12px;
     padding-right: 12px;
-    padding-bottom: 18px; } }
+    padding-bottom: 18px; }
+
+  .stock-five-row {
+    flex-wrap: wrap; }
+  .stock-five .block_border:last-child {
+    margin-right: 0;
+    margin-left: 0; }
+  .stock-five .banner-block {
+    min-width: 142px;
+    width: calc(50% - 9px);
+    margin-bottom: 18px;
+    margin-right: 0; }
+    .stock-five .banner-block .banner__text {
+      line-height: 18px; }
+  .stock-five .banner-long-block {
+    width: 100%; }
+  .stock-five .long-block {
+    width: 100%; }
+
+  .stock-six {
+    flex-wrap: wrap; }
+    .stock-six .long-block {
+      width: 100%;
+      margin-bottom: 18px; }
+      .stock-six .long-block-col {
+        width: 100%; }
+    .stock-six > div {
+      margin-left: 0;
+      margin-right: 0; }
+    .stock-six .block-avg {
+      width: 100%;
+      margin-bottom: 18px; }
+    .stock-six .small-block {
+      width: 100%;
+      height: auto; }
+      .stock-six .small-block-col {
+        width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
