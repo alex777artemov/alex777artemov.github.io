@@ -101,6 +101,13 @@ body {
     letter-spacing: 0.51px;
     background-color: #fcd357;
     border-radius: 15px; }
+    .stock-page .block__btn:hover {
+      text-decoration: none;
+      -webkit-box-shadow: 0 0 7px 3px rgba(229, 191, 74, 0.22);
+              box-shadow: 0 0 7px 3px rgba(229, 191, 74, 0.22); }
+    .stock-page .block__btn:active {
+      -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.16);
+              box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.16); }
   .stock-page .block__big-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -120,18 +127,28 @@ body {
     letter-spacing: 0.46px;
     border-radius: 23px;
     background-color: #fcd357; }
+    .stock-page .block__big-btn:hover {
+      text-decoration: none;
+      -webkit-box-shadow: 0 0 7px 3px rgba(229, 191, 74, 0.42);
+              box-shadow: 0 0 7px 3px rgba(229, 191, 74, 0.42); }
+    .stock-page .block__big-btn:active {
+      -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.16);
+              box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.16); }
   .stock-page .block__yellow-link {
     color: #d3b53a;
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
-    text-decoration: underline;
     letter-spacing: 0.56px; }
+    .stock-page .block__yellow-link:hover {
+      text-decoration: underline; }
   .stock-page .slide-background__image {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+  .stock-page .banner-block:hover .banner__text {
+    text-decoration: underline; }
 
 .slide-big-block {
   position: relative;
@@ -378,6 +395,8 @@ body {
     .slider-one.owl-carousel .owl-nav .owl-next, .slider-two.owl-carousel .owl-nav .owl-next, .slider-three.owl-carousel .owl-nav .owl-next, .slider-four.owl-carousel .owl-nav .owl-next, .stock-five.owl-carousel .owl-nav .owl-next, .stock-six.owl-carousel .owl-nav .owl-next {
       position: absolute;
       right: -37px; }
+.slider-one a:hover, .slider-two a:hover, .slider-three a:hover, .slider-four a:hover, .stock-five a:hover, .stock-six a:hover {
+  text-decoration: underline; }
 
 .slider-one {
   margin-top: 32px;
