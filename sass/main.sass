@@ -17,7 +17,11 @@ body
 	max-width: 1280px
 	margin: auto
 .full-width
-
+.slider-one-mobile,
+.slider-four-mobile,
+.stock-five-mobile,
+.stock-six-mobile
+	display: none
 .stock
 	&__title
 		margin-top: 30px
@@ -39,6 +43,7 @@ body
 		background-color: rgba(244, 232, 186, 0.5)
 .stock-page
 	margin-bottom: 50px
+	
 	.block_border
 		padding: 0 12px 0 26px
 		border-radius: 10px
@@ -110,6 +115,47 @@ body
 		line-height: 22px
 		text-decoration: underline
 		letter-spacing: 0.56px
+	.slide-background
+		&__image
+			width: 100%
+			height: 100%
+			object-fit: cover
+.slide-big-block
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		//width: 50%
+		min-height: 298px
+		height: 100%
+		box-sizing: border-box
+		//margin-right: 9px
+		.block
+			&-text
+				position: relative
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				//width: 211px
+				padding: 0 10px 0 12px
+				height: 296px
+				margin-left: 10px
+				background: rgba(252, 252, 252, 0.83)
+				z-index: 2
+			&__big-title
+				margin-top: 30px
+				font-weight: 900
+			&__subtitle
+				margin-top: 10px
+				margin-bottom: auto
+			&__big-size
+				margin-bottom: 25px
+				font-weight: 900
+			&__big-btn
+				position: relative
+				margin-right: 3px
+				margin-bottom: 14px
+				z-index: 2
 .long-block
 	position: relative
 	display: flex
@@ -229,7 +275,8 @@ body
 		height: 100%
 		z-index: 1
 		&__image
-			min-width: 100%
+			width: 100%
+			height: 100%
 			object-fit: cover
 	.banner
 		&__text
@@ -269,7 +316,7 @@ body
 
 
 
-.slider-one, .slider-two, .slider-three, .slider-four
+.slider-one, .slider-two, .slider-three, .slider-four, .stock-five, .stock-six
 	&.owl-carousel
 		position: relative
 		.owl-nav
@@ -307,42 +354,6 @@ body
 			height: 100%
 			object-fit: cover
 	.slide
-		&-big-block
-			position: relative
-			display: flex
-			justify-content: space-between
-			align-items: flex-end
-			//width: 50%
-			min-height: 298px
-			height: 100%
-			box-sizing: border-box
-			//margin-right: 9px
-			.block
-				&-text
-					position: relative
-					display: flex
-					flex-direction: column
-					justify-content: space-between
-					//width: 211px
-					padding: 0 10px 0 12px
-					height: 296px
-					margin-left: 10px
-					background: rgba(252, 252, 252, 0.83)
-					z-index: 2
-				&__big-title
-					margin-top: 30px
-					font-weight: 900
-				&__subtitle
-					margin-top: 10px
-					margin-bottom: auto
-				&__big-size
-					margin-bottom: 25px
-					font-weight: 900
-				&__big-btn
-					position: relative
-					margin-right: 3px
-					margin-bottom: 14px
-					z-index: 2
 		&-three-block
 			display: flex
 			justify-content: space-between
@@ -450,6 +461,8 @@ body
 
 
 @media (max-width: 768px)
+	.mobile-hide
+		display: none
 	.bg_grey
 		background-color: #e8e8e8 !important
 	.main-wrapper
@@ -457,7 +470,7 @@ body
 		margin: 0 auto
 	.stock__h2
 		height: auto
-		padding: 25px 12px
+		padding: 24px 10px 20px
 		margin: 0
 		color: #202020
 		font-size: 18px
@@ -478,12 +491,12 @@ body
 			font-weight: 700
 			line-height: 13.5px
 		.block__btn
-			width: 94px
-			height: 23px
+			width: 95px
+			height: 24px
 			padding-bottom: 2px
 			color: #000000
 			font-size: 12px
-			font-weight: 700
+			font-weight: 900
 			background-color: #fcd357
 			border-radius: 11px
 		.block__yellow-link
@@ -520,33 +533,46 @@ body
 			font-size: 17px
 			font-weight: 900
 			line-height: 12.76px
+
+
+
 	.long-block
-		display: block
-		width: 211px
-		min-height: 105px
-		padding: 23px 20px !important
+		display: flex
+		align-items: center
+		justify-content: space-between
+		min-width: 300px
+		width: auto
+		min-height: 141px
+		height: auto
+		margin: 0 10px 
+		padding: 20px 12px 20px 16px !important
 		.block-icon
+			display: none
 			float: left
 			width: 48px
 			min-width: 48px
 			height: 100%
 			margin-right: 10px
 		.block__percent
-			font-size: 12px
-			font-weight: 900
-			line-height: 1
+			margin-right: 24px
+			font-size: 58px
+			font-weight: 700
+			line-height: 37.52px
 		.block__title
-			margin-top: 6px
+			align-self: flex-start
+			margin-top: 0px
+			margin-bottom: 30px
 			line-height: 13.5px
 			color: #2b2b29
 			font-size: 12px
 			font-weight: 900
-			line-height: 13.5px
+			line-height: 16.5px
 		.block__subtitle
 			color: #2b2b29
 			font-size: 11px
 			font-weight: 700
 			line-height: 13.5px
+
 
 
 	.stock-page .block_border.small-block
@@ -563,17 +589,17 @@ body
 	
 	
 	
-	.slider-one, .slider-two, .slider-three, .slider-four
+	.slider-one, .slider-two, .slider-three, .slider-four, .stock-five, .stock-six
 		padding-right: 0
-		padding-left: 12px
+		padding-left: 10px
 		.owl-dots 
 			position: relative
 			//left: 0
 			display: flex
 			//width: 100%
-			margin-top: 25px
-			left: -12px
-			width: calc(100% + 12px)
+			margin-top: 20px
+			left: -10px
+			width: calc(100% + 10px)
 			.owl-dot 
 				width: 100%
 				span
@@ -586,7 +612,58 @@ body
 				&.active
 					span
 						background-color: #e9d275
+	.slider-one-mobile
+		display: block
+		.slide-big-block
+			position: relative
+			min-width: 300px
+			width: auto
+			min-height: 162px
+			height: auto
+			margin: 0 10px 10px
+			padding: 0 22px
+			.slide-background
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+			.block-text
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 22px
+				justify-content: space-between
+				height: auto
+				width: 46%
+				margin-left: 0px
+				padding: 14px 6px 
+			.block__big-btn
+				position: absolute
+				bottom: 7px
+				right: 8px
+				width: 90px
+				height: 26px
+				margin-right: 0
+				margin-bottom: 0
+				padding-bottom: 0
+				font-size: 12px
+				background-color: #fcd357
+				border-radius: 13px
+			.block__big-title
+				margin-top: 0
+				font-size: 14px
+				line-height: 9.33px
+			.block__subtitle
+				margin-bottom: auto
+				font-size: 12px
+				line-height: 14px
+			.block__big-size
+				margin-bottom: 0
+				font-size: 12px
+
 	.slider-one 
+		margin-top: 25px
 		.slide-big-block
 			width: 211px
 			height: 373px
@@ -614,7 +691,12 @@ body
 			.long-block
 				padding: 14px 10px 40px 20px !important
 				
-	
+	.slider-two
+		flex-wrap: wrap
+		padding-left: 0px !important
+		.slide:not(:last-child)
+			.long-block
+				margin-bottom: 10px
 	.slider-three
 		.block-avg
 			min-height: 222px
@@ -624,7 +706,74 @@ body
 			padding: 23px 20px
 		.long-block
 			width: 211px
+	.slider-four-mobile
+		display: block
+		.long-block
+			margin-bottom: 23px
+	.stock-five-mobile
+		display: block
+	
+	
 	.stock-five 
+		padding: 0
+		.banner-block
+			width: 211px
+		.small-block
+			width: 211px
+	.stock-five-mobile
+		.banner-long-block
+			position: relative
+			min-width: 300px
+			width: auto
+			min-height: 162px
+			height: auto
+			margin: 0 10px 10px
+			padding: 0 22px
+			.slide-background
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+			.block-text
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 22px
+				justify-content: space-between
+				height: auto
+				width: 46%
+				margin-left: 0px
+				padding: 14px 6px 
+			.block__big-btn
+				position: absolute
+				bottom: 7px
+				right: 8px
+				width: 90px
+				height: 26px
+				margin-right: 0
+				margin-bottom: 0
+				padding-bottom: 0
+				font-size: 12px
+				background-color: #fcd357
+				border-radius: 13px
+			.banner__text
+				margin-top: 0
+				font-size: 14px
+				line-height: 9.33px
+			.block__subtitle
+				margin-top: 10px
+				margin-bottom: auto
+				font-size: 12px
+				font-weight: 700
+				line-height: 14px
+			.block__size
+				margin-bottom: 0
+				font-size: 12px
+				font-weight: 900
+		.long-block
+			margin-bottom: 10px
+	//.stock-five 
 		padding: 0
 		.small-block
 			min-width: 142px
@@ -641,7 +790,7 @@ body
 				text-align: center
 				color: #2b2b29
 				font-size: 16px
-				line-height: 13.5px
+				line-height: 16px
 			.block__subtitle
 				font-size: 12px
 			.block__yellow-link
@@ -650,10 +799,10 @@ body
 				transform: translateX(-50%)
 				bottom: 12px
 	.stock-five, .stock-six
-		padding-left: 12px
-		padding-right: 12px
+		padding-left: 10px
+		//padding-right: 10px
 		padding-bottom: 18px
-	.stock-five
+	//.stock-five
 		&-row
 			flex-wrap: wrap
 		.block_border:last-child
@@ -670,18 +819,20 @@ body
 			width: 100%
 		.long-block
 			width: 100%
+	.stock-six-mobile
+		display: block
+		.long-block
+			margin-bottom: 18px
+	
+	
+	
 	.stock-six
 		flex-wrap: wrap
-		.long-block
-			width: 100%
-			margin-bottom: 18px
-			&-col
-				width: 100%
 		> div
 			margin-left: 0
 			margin-right: 0
 		.block-avg
-			width: 100%
+			width: 211px
 			margin-bottom: 18px
 		.small-block
 			width: 100%
