@@ -7,6 +7,10 @@
 		.text-block
 			width: 33.333%
 	
+@media (max-width: 1200px)
+	.sub-megamenu
+		//left: -15px
+		width: 100vw
 @media (max-width: 1024px)
 	/*header*/
 	.header
@@ -22,12 +26,15 @@
 			padding: 5px 15px 0px 0
 		&-button
 			order: 2
+	.sub-megamenu
+		left: -15px
+		width: 100vw
 	/*1. section-1*/
 	.section-1
 		.container
 	.main
 		&-bg
-			margin-top: -105px
+			margin-top: -120px
 			margin-bottom: 0px
 			padding: 200px 0px 200px 0px
 		&-text
@@ -362,12 +369,15 @@
 			&__link
 				width: 100%
 				overflow: hidden
+		.post
+			display: none
 	/*1. section-1*/
 	/*1. section-1*/
 	.section-1
 		.container
 	.main
 		&-bg
+			margin-top: -105px
 		&__title
 			font-size: 40px
 			line-height: 1.2em
