@@ -236,6 +236,8 @@
 			background-color: #fff
 			transition: right .3s cubic-bezier(.35,.19,.45,.91)
 		.menu-list
+			overflow-y: scroll
+			height: 100vh
 			//display: none
 		&-toggle-menu
 			display: block
@@ -276,6 +278,16 @@
 					top: .75em
 					content: '\f0c9'
 		/*Мобильное меню при открытии*/
+		.mobile-menu-overlay
+			display: none
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,0.2)
+			&_show
+				display: block
 		.mobile-menu-active-state
 			right: 0
 			transition: all .5s cubic-bezier(.35,.19,.45,.91)
@@ -285,14 +297,71 @@
 					content: '\f00d'
 			.menu
 				&-list
+					display: block
 					flex-flow: column wrap
 					justify-content: flex-start
 					height: 100%
 					padding: 0
 					background-color: #34314b
 				&-item
-					padding: 8px 15px 8px 15px
 					width: 100%
+					padding: 0
+				&__link
+					display: inline-block
+					padding: 8px 15px 8px 15px
+	.mobile-menu-visible
+		overflow: hidden
+		width: 100%
+		height: auto
+	.sub-menu
+		position: static
+		.active
+			display: block
+		&-list
+			padding: 15px 10px 15px 10px
+			margin-left: 0
+			border-radius: 0
+		&-item
+			&:hover
+				.sub-menu__link
+					color: #7f7d8e
+					background-color: #fff
+					background-image: none
+			.sub-menu
+				position: static
+				&-list
+					box-shadow: none
+	.sub-megamenu
+		width: 100%
+		position: static
+		padding: 15px 10px 15px 10px
+		border-radius: 0
+		.active
+			display: block
+		&-row
+			flex-wrap: wrap
+		&-col
+			width: 100%
+		&-list
+			margin-left: 0
+		&-item
+			&:hover
+				.sub-megamenu__link
+					color: #7f7d8e
+					background-color: #fff
+					background-image: none
+			.sub-megamenu
+				position: static
+				width: 100%
+				&-list
+					box-shadow: none
+		&-banner
+			&__img
+				height: auto
+		.banner-four
+			&__link
+				width: 100%
+				overflow: hidden
 	/*1. section-1*/
 	/*1. section-1*/
 	.section-1

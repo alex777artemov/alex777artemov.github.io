@@ -67,14 +67,15 @@ a
 		width: 100%
 	&-logo
 		min-width: 148px
-		padding: 2px 15px 0px 14px
+		padding: 2px 15px 0px 0px
 		&__link
 		&__img
 			max-width: 100%
 			height: auto
 	&-menu
+		position: relative
 		margin-right: auto
-		padding: 0 15px 0px 17px
+		padding: 0 15px 0px 32px
 	&-toggle-menu
 		display: none
 	.menu
@@ -87,6 +88,18 @@ a
 			align-items: center
 		&-item
 			margin-right: 26px
+			position: relative
+			padding: 20px 0
+			&:hover
+				.menu__link
+					color: #5f45ea
+					span, i
+						color: #5f45ea
+				> .sub-menu,
+				> .sub-megamenu
+					display: block
+			&.menu-sub-megamenu
+				position: static
 		&__link
 			padding: 0px 0px 0px 0px
 			margin: 0px
@@ -99,10 +112,6 @@ a
 			line-height: 21px
 			letter-spacing: 0px
 			color: #ffffff
-			&:hover
-				color: #5f45ea
-				span, i
-					color: #5f45ea
 			span
 				color: #ffffff
 				font-family: "Hind", Sans-serif
@@ -155,6 +164,159 @@ a
 				text-decoration: none
 				line-height: 21px
 				letter-spacing: 0px
+/*sub-megamenu*/
+.sub-megamenu
+	display: none
+	position: absolute
+	top: 100%
+	//left: -210px
+	left: -178px
+	z-index: 999
+	width: 1200px
+	padding: 36px 20px 29px 20px
+	background-color: #fff
+	border-radius: 5px
+	box-shadow: 0 0 18px rgba(48,63,100,.13)
+	&-row
+		display: flex
+		width: 100%
+		.sub-megamenu-row
+	&-col
+		width: 50%
+		padding: 0 14px
+	&__title
+		padding: 0 0 5px 20px
+		color: #34314b
+		font-family: "Hind", Sans-serif
+		font-size: 16px
+		font-weight: 400
+	&-list
+		width: 100%
+		padding: 10px
+	&-item
+		width: 100%
+		margin-bottom: 1px
+	&__link
+		display: inline-block
+		width: 100%
+		padding: 0px 10px 0px 10px
+		color: #7f7d8e
+		font-family: "Open Sans", Sans-serif
+		font-size: 13px
+		font-weight: 400
+		line-height: 2em
+		border-radius: 3px 3px 3px 3px
+		transition: all 0s
+		&:hover
+			background-image: linear-gradient(180deg, #5f45ea 0%, #5f45ea 100%)
+			color: #fff
+	&-banner
+		text-align: right
+		width: 100%
+		display: inline-block
+		&__img
+			width: 100%
+	.banner-four
+		display: flex
+		flex-wrap: wrap
+		&__link
+			position: relative
+			display: inline-block
+			width: 50%
+			height: 194px
+			&:hover
+				transition: all .3s 
+				.hover
+					opacity: 1
+					display: flex
+					align-items: center
+					justify-content: center
+					flex-direction: column
+		&__img
+			max-width: 280px
+			max-height: 194px
+			min-width: 100%
+			height: 194px
+			object-fit: cover
+		.hover
+			position: absolute
+			//display: none
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			color: #ffffff
+			font-family: "Open Sans", Sans-serif
+			font-size: 13px
+			font-weight: 400
+			line-height: 1.571em
+			text-align: center
+			background-color: rgba(33, 36, 41, 0.5)
+			opacity: 0
+			transition: all .3s 
+			span
+				margin-bottom: 20px
+			i
+/*sub-menu*/
+.sub-menu
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	&-list
+		min-width: 200px
+		padding: 20px
+		margin-left: 11px
+		background: #fff
+		border-radius: 5px
+		box-shadow: 2px 2px 5px rgba(0,0,0,.2)
+		z-index: 999
+	&-item
+		position: relative
+		.sub-menu
+			display: none
+			position: absolute
+			top: 0
+			left: 100%
+			z-index: 999
+			&-list
+				//margin-left: 0
+			&-item
+			&__link
+		&:hover > .sub-menu
+			display: block
+		&:hover
+			> .sub-menu__link
+				background-color: #6046ea
+				background-image: linear-gradient( to right,#6046ea,#8667f7 )
+				color: #fff
+				.sub-menu .sub-menu__link
+					background-color: #fff
+					background-image: none
+	&__link
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		padding: 0 10px
+		color: #7f7d8e
+		font-size: 13px
+		font-family: Open Sans,sans-serif
+		font-weight: 400
+		line-height: 2em
+		border-radius: 3px
+		transition: all 0s
+		span
+		i
+//		&:hover
+//			background-color: #6046ea
+//			background-image: linear-gradient( to right,#6046ea,#8667f7 )
+//			color: #fff
+	
 /*1. section-1*/
 .section-1
 	.container
