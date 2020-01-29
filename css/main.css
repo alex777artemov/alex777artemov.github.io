@@ -768,6 +768,8 @@ a {
     box-shadow: 0px 0px 20px 0px rgba(52, 49, 75, 0.1);
     transform: rotate(-90deg);
     border-radius: 50%; }
+  .section-6 .circle-progress__value {
+    stroke-linecap: round; }
   .section-6 .position-in-circle {
     height: 170px;
     position: absolute;
