@@ -1668,7 +1668,7 @@ a {
   .footer-bottom .copy {
     margin-top: 10px;
     text-align: center; } }
-@media (max-width: 767px) {
+@media (max-width: 768.8px) {
   .hidden-phone {
     display: none; }
 
@@ -1802,7 +1802,8 @@ a {
       .sub-megamenu-item .sub-megamenu-list {
         box-shadow: none; }
     .sub-megamenu-banner__img {
-      height: auto; }
+      height: auto;
+      width: 100%; }
     .sub-megamenu .banner-four__link {
       width: 100%;
       overflow: hidden; }
